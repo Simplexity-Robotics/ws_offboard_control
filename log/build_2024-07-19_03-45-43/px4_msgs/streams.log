@@ -1,0 +1,13 @@
+[0.029s] Invoking command in '/root/ws_offboard_control/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/px4_msgs -- -j8 -l8
+[0.739s] [  0%] Built target px4_msgs__cpp
+[0.753s] [ 12%] Built target px4_msgs__rosidl_generator_c
+[0.864s] [ 26%] Built target px4_msgs__rosidl_typesupport_introspection_c
+[0.865s] [ 38%] Built target px4_msgs__rosidl_typesupport_c
+[0.918s] [ 50%] Built target px4_msgs__rosidl_typesupport_cpp
+[0.920s] [ 63%] Built target px4_msgs__rosidl_typesupport_introspection_cpp
+[0.932s] [ 75%] Built target px4_msgs__rosidl_typesupport_fastrtps_cpp
+[1.119s] [ 88%] Built target px4_msgs__rosidl_typesupport_fastrtps_c
+[1.158s] [ 88%] Built target px4_msgs
+[1.215s] make[1]: *** [CMakeFiles/Makefile2:542: px4_msgs__py/CMakeFiles/px4_msgs__py.dir/all] Interrupt
+[1.217s] make: *** [Makefile:146: all] Interrupt
+[1.219s] Invoked command in '/root/ws_offboard_control/build/px4_msgs' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/px4_msgs -- -j8 -l8

@@ -1,0 +1,9 @@
+[01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:[m[K In lambda function:
+[01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:40:61:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[Kconst char*[m[K’ and ‘[01m[Kconst char [2][m[K’ to binary ‘[01m[Koperator+[m[K’
+   40 |      std::cout << [32m[K"Counting: " + offboard_setpoint_counter_[m[K [01;31m[K+[m[K [34m[K"."[m[K << std::endl;
+      |                   [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K [01;31m[K^[m[K [34m[K~~~[m[K
+      |                                [32m[K|[m[K                              [34m[K|[m[K
+      |                                [32m[Kconst char*[m[K                    [34m[Kconst char [2][m[K
+make[2]: *** [CMakeFiles/comp_routine.dir/build.make:76: CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comp_routine.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

@@ -1,4 +1,1 @@
-# Request GPIO mask to be read
-
-uint64 timestamp			# time since system start (microseconds)
-uint32 device_id			# Device id
+/root/ws_offboard_control/src/px4_msgs/msg/GpioRequest.msg

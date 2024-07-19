@@ -1,0 +1,4 @@
+source;share/comp_routine/local_setup.bash
+source;share/comp_routine/local_setup.dsv
+source;share/comp_routine/local_setup.sh
+source;share/comp_routine/local_setup.zsh

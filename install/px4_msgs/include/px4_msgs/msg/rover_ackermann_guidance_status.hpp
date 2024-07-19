@@ -1,12 +1,1 @@
-// generated from rosidl_generator_cpp/resource/idl.hpp.em
-// generated code does not contain a copyright notice
-
-#ifndef PX4_MSGS__MSG__ROVER_ACKERMANN_GUIDANCE_STATUS_HPP_
-#define PX4_MSGS__MSG__ROVER_ACKERMANN_GUIDANCE_STATUS_HPP_
-
-#include "px4_msgs/msg/detail/rover_ackermann_guidance_status__struct.hpp"
-#include "px4_msgs/msg/detail/rover_ackermann_guidance_status__builder.hpp"
-#include "px4_msgs/msg/detail/rover_ackermann_guidance_status__traits.hpp"
-#include "px4_msgs/msg/detail/rover_ackermann_guidance_status__type_support.hpp"
-
-#endif  // PX4_MSGS__MSG__ROVER_ACKERMANN_GUIDANCE_STATUS_HPP_
+/root/ws_offboard_control/build/px4_msgs/rosidl_generator_cpp/px4_msgs/msg/rover_ackermann_guidance_status.hpp

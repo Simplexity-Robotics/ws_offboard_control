@@ -1,5 +1,1 @@
-uint64 timestamp		# time since system start (microseconds)
-
-int32 val
-
-uint8[512] junk
+/root/ws_offboard_control/src/px4_msgs/msg/OrbTestLarge.msg

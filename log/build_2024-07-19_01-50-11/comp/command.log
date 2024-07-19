@@ -1,6 +1,0 @@
-Invoking command in '/root/ws_offboard_control/build/comp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake /root/ws_offboard_control/src/comp -DCMAKE_INSTALL_PREFIX=/root/ws_offboard_control/install/comp
-Invoked command in '/root/ws_offboard_control/build/comp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake /root/ws_offboard_control/src/comp -DCMAKE_INSTALL_PREFIX=/root/ws_offboard_control/install/comp
-Invoking command in '/root/ws_offboard_control/build/comp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/comp -- -j8 -l8
-Invoked command in '/root/ws_offboard_control/build/comp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/comp -- -j8 -l8
-Invoking command in '/root/ws_offboard_control/build/comp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --install /root/ws_offboard_control/build/comp
-Invoked command in '/root/ws_offboard_control/build/comp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --install /root/ws_offboard_control/build/comp

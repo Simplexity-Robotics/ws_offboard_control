@@ -1,9 +1,1 @@
-uint64 timestamp		# time since system start (microseconds)
-
-uint8 len                       # length of data
-uint32 MAX_BUFLEN = 128
-
-uint8[128] data                 # data
-
-# TOPICS voxl2_io_data
-
+/root/ws_offboard_control/src/px4_msgs/msg/Buffer128.msg

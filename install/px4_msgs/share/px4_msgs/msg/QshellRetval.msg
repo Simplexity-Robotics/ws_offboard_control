@@ -1,3 +1,1 @@
-uint64 timestamp		# time since system start (microseconds)
-int32 return_value
-uint32 return_sequence
+/root/ws_offboard_control/src/px4_msgs/msg/QshellRetval.msg

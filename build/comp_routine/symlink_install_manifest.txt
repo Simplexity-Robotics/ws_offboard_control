@@ -1,0 +1,16 @@
+/root/ws_offboard_control/install/comp_routine/lib/comp_routine/comp_routine
+/root/ws_offboard_control/install/comp_routine/share/ament_index/resource_index/package_run_dependencies/comp_routine
+/root/ws_offboard_control/install/comp_routine/share/ament_index/resource_index/parent_prefix_path/comp_routine
+/root/ws_offboard_control/install/comp_routine/share/comp_routine/environment/ament_prefix_path.sh
+/root/ws_offboard_control/install/comp_routine/share/comp_routine/environment/ament_prefix_path.dsv
+/root/ws_offboard_control/install/comp_routine/share/comp_routine/environment/path.sh
+/root/ws_offboard_control/install/comp_routine/share/comp_routine/environment/path.dsv
+/root/ws_offboard_control/install/comp_routine/share/comp_routine/local_setup.bash
+/root/ws_offboard_control/install/comp_routine/share/comp_routine/local_setup.sh
+/root/ws_offboard_control/install/comp_routine/share/comp_routine/local_setup.zsh
+/root/ws_offboard_control/install/comp_routine/share/comp_routine/local_setup.dsv
+/root/ws_offboard_control/install/comp_routine/share/comp_routine/package.dsv
+/root/ws_offboard_control/install/comp_routine/share/ament_index/resource_index/packages/comp_routine
+/root/ws_offboard_control/install/comp_routine/share/comp_routine/cmake/comp_routineConfig.cmake
+/root/ws_offboard_control/install/comp_routine/share/comp_routine/cmake/comp_routineConfig-version.cmake
+/root/ws_offboard_control/install/comp_routine/share/comp_routine/package.xml
