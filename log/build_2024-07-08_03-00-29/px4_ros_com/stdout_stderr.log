@@ -1,0 +1,14 @@
+[ 33%] Built target offboard_control_srv
+[ 33%] Built target debug_vect_advertiser
+[ 50%] Built target sensor_combined_listener
+[ 58%] [32mBuilding CXX object CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o[0m
+[ 75%] Built target frame_transforms
+[ 91%] Built target vehicle_gps_position_listener
+[01m[K/root/ws_offboard_control/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::publish_attitude_setpoint()[m[K’:
+[01m[K/root/ws_offboard_control/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:172:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kcoun[m[K’ was not declared in this scope; did you mean ‘[01m[Kcount[m[K’?
+  172 |  if ([01;31m[Kcoun[m[K%200==0) {
+      |      [01;31m[K^~~~[m[K
+      |      [32m[Kcount[m[K
+make[2]: *** [CMakeFiles/offboard_control.dir/build.make:76: CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/offboard_control.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

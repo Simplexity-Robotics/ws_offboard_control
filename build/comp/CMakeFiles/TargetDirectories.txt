@@ -1,0 +1,9 @@
+/root/ws_offboard_control/build/comp/CMakeFiles/uninstall.dir
+/root/ws_offboard_control/build/comp/CMakeFiles/comp_uninstall.dir
+/root/ws_offboard_control/build/comp/CMakeFiles/test.dir
+/root/ws_offboard_control/build/comp/CMakeFiles/edit_cache.dir
+/root/ws_offboard_control/build/comp/CMakeFiles/rebuild_cache.dir
+/root/ws_offboard_control/build/comp/CMakeFiles/list_install_components.dir
+/root/ws_offboard_control/build/comp/CMakeFiles/install.dir
+/root/ws_offboard_control/build/comp/CMakeFiles/install/local.dir
+/root/ws_offboard_control/build/comp/CMakeFiles/install/strip.dir

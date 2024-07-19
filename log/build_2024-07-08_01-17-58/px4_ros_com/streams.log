@@ -1,0 +1,98 @@
+[0.048s] Invoking command in '/root/ws_offboard_control/build/px4_ros_com': CMAKE_PREFIX_PATH=/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/px4_ros_com:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/root/ws_offboard_control/install/px4_msgs/lib:/root/ws_offboard_control/install/px4_ros_com/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/px4_ros_com -- -j8 -l8
+[0.158s] [ 16%] Built target frame_transforms
+[0.169s] [ 33%] Built target vehicle_gps_position_listener
+[0.175s] [ 50%] Built target sensor_combined_listener
+[0.179s] [ 58%] [32mBuilding CXX object CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o[0m
+[0.182s] [ 75%] Built target debug_vect_advertiser
+[0.183s] [ 91%] Built target offboard_control_srv
+[1.673s] [01m[K/root/ws_offboard_control/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:98:20:[m[K [01;31m[Kerror: [m[K‘[01m[KVehicleAttitudeSetpoint[m[K’ was not declared in this scope
+[1.673s]    98 |  rclcpp::Publisher<[01;31m[KVehicleAttitudeSetpoint[m[K>::SharedPtr attitude_setpoint_publisher_;
+[1.673s]       |                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.674s] [01m[K/root/ws_offboard_control/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:98:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.674s]    98 |  rclcpp::Publisher<VehicleAttitudeSetpoint[01;31m[K>[m[K::SharedPtr attitude_setpoint_publisher_;
+[1.674s]       |                                           [01;31m[K^[m[K
+[1.675s] [01m[K/root/ws_offboard_control/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:98:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.675s]    98 |  rclcpp::Publisher<VehicleAttitudeSetpoint>::[01;31m[KSharedPtr[m[K attitude_setpoint_publisher_;
+[1.675s]       |                                              [01;31m[K^~~~~~~~~[m[K
+[1.676s]       |                                                       [32m[K;[m[K
+[1.678s] [01m[K/root/ws_offboard_control/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:98:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kattitude_setpoint_publisher_[m[K’ does not name a type
+[1.679s]    98 |  rclcpp::Publisher<VehicleAttitudeSetpoint>::SharedPtr [01;31m[Kattitude_setpoint_publisher_[m[K;
+[1.679s]       |                                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.693s] [01m[K/root/ws_offboard_control/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In constructor ‘[01m[KOffboardControl::OffboardControl()[m[K’:
+[1.694s] [01m[K/root/ws_offboard_control/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:63:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kattitude_setpoint_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktrajectory_setpoint_publisher_[m[K’?
+[1.694s]    63 |   [01;31m[Kattitude_setpoint_publisher_[m[K this->create_publisher<VehicleAttitudeSetpoint>("/fmu/in/vehicle_attitude_setpoint", 10);
+[1.695s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.695s]       |   [32m[Ktrajectory_setpoint_publisher_[m[K
+[1.699s] [01m[K/root/ws_offboard_control/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In lambda function:
+[1.699s] [01m[K/root/ws_offboard_control/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:80:4:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_attitude_control[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublish_attitude_setpoint[m[K’?
+[1.699s]    80 |    [01;31m[Kpublish_attitude_control[m[K();
+[1.700s]       |    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.700s]       |    [32m[Kpublish_attitude_setpoint[m[K
+[1.727s] [01m[K/root/ws_offboard_control/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::publish_attitude_setpoint()[m[K’:
+[1.728s] [01m[K/root/ws_offboard_control/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:163:2:[m[K [01;31m[Kerror: [m[K‘[01m[KVehicleAttitudeSetpoint[m[K’ was not declared in this scope
+[1.728s]   163 |  [01;31m[KVehicleAttitudeSetpoint[m[K msg{};
+[1.728s]       |  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.729s] [01m[K/root/ws_offboard_control/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:164:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+[1.729s]   164 |         [01;31m[Kmsg[m[K.timestamp = this->get_clock()->now().nanoseconds() / 1000;
+[1.729s]       |         [01;31m[K^~~[m[K
+[1.730s] [01m[K/root/ws_offboard_control/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:164:9:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[1.730s] In file included from [01m[K/root/ws_offboard_control/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7[m[K,
+[1.731s]                  from [01m[K/root/ws_offboard_control/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:41[m[K:
+[1.731s] [01m[K/root/ws_offboard_control/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kpx4_msgs::msg[m[K’
+[1.731s]    26 | namespace [01;36m[Kmsg[m[K
+[1.732s]       |           [01;36m[K^~~[m[K
+[1.732s] In file included from [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp:7[m[K,
+[1.732s]                  from [01m[K/opt/ros/foxy/include/rclcpp/duration.hpp:20[m[K,
+[1.733s]                  from [01m[K/opt/ros/foxy/include/rclcpp/qos.hpp:20[m[K,
+[1.733s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+[1.733s]                  from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:34[m[K,
+[1.734s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.734s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.734s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.735s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.735s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.736s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.736s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.736s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.737s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.737s]                  from [01m[K/root/ws_offboard_control/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:45[m[K:
+[1.738s] [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[1.738s]    26 | namespace [01;36m[Kmsg[m[K
+[1.738s]       |           [01;36m[K^~~[m[K
+[1.739s] In file included from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp:22[m[K,
+[1.739s]                  from [01m[K/opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[1.739s]                  from [01m[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[1.740s]                  from [01m[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[1.740s]                  from [01m[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50[m[K,
+[1.740s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25[m[K,
+[1.741s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.741s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.741s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.742s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.742s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.742s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.743s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.743s]                  from [01m[K/root/ws_offboard_control/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:45[m[K:
+[1.743s] [01m[K/opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[1.744s]    26 | namespace [01;36m[Kmsg[m[K
+[1.744s]       |           [01;36m[K^~~[m[K
+[1.744s] In file included from [01m[K/opt/ros/foxy/include/rcl_interfaces/msg/list_parameters_result.hpp:7[m[K,
+[1.745s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:34[m[K,
+[1.745s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.746s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.746s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.746s]                  from [01m[K/root/ws_offboard_control/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:45[m[K:
+[1.747s] [01m[K/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:26:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[1.747s]    26 | namespace [01;36m[Kmsg[m[K
+[1.747s]       |           [01;36m[K^~~[m[K
+[1.747s] [01m[K/root/ws_offboard_control/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:168:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kangle_to_radian[m[K’ was not declared in this scope
+[1.747s]   168 |  msg.yaw_body = [01;31m[Kangle_to_radian[m[K(0);
+[1.747s]       |                 [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.747s] [01m[K/root/ws_offboard_control/src/px4_ros_com/src/examples/offboard/offboard_control.cpp:169:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kattitude_setpoint_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktrajectory_setpoint_publisher_[m[K’?
+[1.747s]   169 |  [01;31m[Kattitude_setpoint_publisher_[m[K->publish(msg);
+[1.747s]       |  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.748s]       |  [32m[Ktrajectory_setpoint_publisher_[m[K
+[2.846s] make[2]: *** [CMakeFiles/offboard_control.dir/build.make:76: CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o] Error 1
+[2.846s] make[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/offboard_control.dir/all] Error 2
+[2.850s] make: *** [Makefile:146: all] Error 2
+[2.853s] Invoked command in '/root/ws_offboard_control/build/px4_ros_com' returned '2': CMAKE_PREFIX_PATH=/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/px4_ros_com:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/root/ws_offboard_control/install/px4_msgs/lib:/root/ws_offboard_control/install/px4_ros_com/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/px4_ros_com -- -j8 -l8
