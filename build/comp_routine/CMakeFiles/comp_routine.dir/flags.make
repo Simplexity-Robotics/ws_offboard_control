@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB
 
-CXX_INCLUDES = -isystem /root/ws_offboard_control/install/px4_msgs/include -isystem /opt/ros/foxy/include -isystem /opt/motovisio/ros_ws/install/micro_ros_agent/include
+CXX_INCLUDES = -isystem /opt/ros/foxy/include -isystem /root/ws_offboard_control/install/px4_msgs/include -isystem /opt/motovisio/ros_ws/install/micro_ros_agent/include
 
 CXX_FLAGS = -std=gnu++14 -Wall -Wextra -Wpedantic
 

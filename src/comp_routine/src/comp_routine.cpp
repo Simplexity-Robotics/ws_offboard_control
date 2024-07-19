@@ -25,8 +25,10 @@ class CompRoutine : public rclcpp::Node {
 		uint64_t offboard_setpoint_counter_ = 0;   //!< counter for the number of setpoints sent
 
 		void publish_offboard_control_mode();
-		void publish_attitude_setpoint();
+		void publish_attitude_setpoint(double x, double y, double z, double yaw, double pitch, double roll);
 		void publish_vehicle_command(uint16_t command, float param1 = 0.0, float param2 = 0.0);
+
+		void move(double x, double y, double z, double seconds);
 
 		enum State {
 			ARM,
@@ -37,6 +39,8 @@ class CompRoutine : public rclcpp::Node {
 		};
 
 		State currentState = State::ARM;
+
+		bool foundTarget = false;
 
 	public:
 		CompRoutine() : Node("comp_routine") { // constructor
@@ -63,7 +67,7 @@ class CompRoutine : public rclcpp::Node {
 			switch (currentState) {
 				case ARM:
 					publish_offboard_control_mode();
-					publish_attitude_setpoint();
+					publish_attitude_setpoint(0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
 
 					if (offboard_setpoint_counter_ == 10) {
 						// Change to Offboard mode after 10 setpoints
@@ -78,6 +82,7 @@ class CompRoutine : public rclcpp::Node {
 					offboard_setpoint_counter_++;
 					break;
 				case SEARCH:
+					// move(0.1, 0.0, 0.0, 10.0);
 					std::cout << "SEARCH" << std::endl;
 					break;
 				case ALIGN:
@@ -109,16 +114,26 @@ void CompRoutine::publish_offboard_control_mode()
 	offboard_control_mode_publisher_->publish(msg);
 }
 
-void CompRoutine::publish_attitude_setpoint()
-{
+void CompRoutine::publish_attitude_setpoint(double x, double y, double z, double yaw, double pitch, double roll) {
 	VehicleAttitudeSetpoint msg{};
 	msg.timestamp = this->get_clock()->now().nanoseconds() / 1000;
-	msg.thrust_body[0] = 0.0; // x
-	msg.thrust_body[1] = 0.0; // y
-	msg.thrust_body[2] = 0.0; // z
-	msg.yaw_body = 0;
+	msg.thrust_body[0] = x; // x
+	msg.thrust_body[1] = y; // y
+	msg.thrust_body[2] = z; // z
+	msg.yaw_body = yaw;
+	msg.pitch_body = pitch;
+	msg.roll_body = roll;
 
 	attitude_setpoint_publisher_->publish(msg);
+}
+
+void CompRoutine::move(double x, double y, double z, double seconds) {
+	auto start = std::chrono::steady_clock::now(); // Get the start time
+    auto end = start + std::chrono::duration<double>(seconds); // Calculate the end time
+    
+    while (std::chrono::steady_clock::now() < end) {
+       publish_attitude_setpoint(x, y, z, 0.0, 0.0, 0.0);
+    }
 }
 
 /**
@@ -139,6 +154,7 @@ void CompRoutine::publish_vehicle_command(uint16_t command, float param1, float 
 	msg.source_component = 1;
 	msg.from_external = true;
 	msg.timestamp = this->get_clock()->now().nanoseconds() / 1000;
+
 	vehicle_command_publisher_->publish(msg);
 }
 
