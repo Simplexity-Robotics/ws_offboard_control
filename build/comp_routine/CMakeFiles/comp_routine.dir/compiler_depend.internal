@@ -3,6 +3,27 @@
 
 CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o
  /root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__builder.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__traits.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__type_support.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude_setpoint__builder.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude_setpoint__struct.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude_setpoint__traits.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude_setpoint__type_support.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__builder.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__struct.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__traits.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__type_support.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__builder.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__struct.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__traits.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__type_support.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_attitude_setpoint.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_command.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_control_mode.hpp
  /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__builder.hpp
  /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp
  /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__traits.hpp
@@ -297,27 +318,6 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o
  /opt/ros/foxy/include/tracetools/tracetools.h
  /opt/ros/foxy/include/tracetools/utils.hpp
  /opt/ros/foxy/include/tracetools/visibility_control.hpp
- /root/ws_offboard_control/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__builder.hpp
- /root/ws_offboard_control/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp
- /root/ws_offboard_control/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__traits.hpp
- /root/ws_offboard_control/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__type_support.hpp
- /root/ws_offboard_control/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude_setpoint__builder.hpp
- /root/ws_offboard_control/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude_setpoint__struct.hpp
- /root/ws_offboard_control/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude_setpoint__traits.hpp
- /root/ws_offboard_control/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_attitude_setpoint__type_support.hpp
- /root/ws_offboard_control/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__builder.hpp
- /root/ws_offboard_control/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__struct.hpp
- /root/ws_offboard_control/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__traits.hpp
- /root/ws_offboard_control/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__type_support.hpp
- /root/ws_offboard_control/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__builder.hpp
- /root/ws_offboard_control/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__struct.hpp
- /root/ws_offboard_control/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__traits.hpp
- /root/ws_offboard_control/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__type_support.hpp
- /root/ws_offboard_control/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp
- /root/ws_offboard_control/install/px4_msgs/include/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
- /root/ws_offboard_control/install/px4_msgs/include/px4_msgs/msg/vehicle_attitude_setpoint.hpp
- /root/ws_offboard_control/install/px4_msgs/include/px4_msgs/msg/vehicle_command.hpp
- /root/ws_offboard_control/install/px4_msgs/include/px4_msgs/msg/vehicle_control_mode.hpp
  /usr/include/aarch64-linux-gnu/asm/bitsperlong.h
  /usr/include/aarch64-linux-gnu/asm/errno.h
  /usr/include/aarch64-linux-gnu/asm/posix_types.h

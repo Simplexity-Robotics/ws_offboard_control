@@ -93,10 +93,10 @@ comp_routine_EXTERNAL_OBJECTS =
 comp_routine: CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o
 comp_routine: CMakeFiles/comp_routine.dir/build.make
 comp_routine: /opt/ros/foxy/lib/librclcpp.so
-comp_routine: /root/ws_offboard_control/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_introspection_c.so
-comp_routine: /root/ws_offboard_control/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_c.so
-comp_routine: /root/ws_offboard_control/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_introspection_cpp.so
-comp_routine: /root/ws_offboard_control/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_cpp.so
+comp_routine: /opt/motovisio/ros_ws/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_introspection_c.so
+comp_routine: /opt/motovisio/ros_ws/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_c.so
+comp_routine: /opt/motovisio/ros_ws/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_introspection_cpp.so
+comp_routine: /opt/motovisio/ros_ws/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_cpp.so
 comp_routine: /opt/ros/foxy/lib/liblibstatistics_collector.so
 comp_routine: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_c.so
 comp_routine: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_generator_c.so
@@ -131,7 +131,7 @@ comp_routine: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_c.so
 comp_routine: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so
 comp_routine: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
 comp_routine: /opt/ros/foxy/lib/libtracetools.so
-comp_routine: /root/ws_offboard_control/install/px4_msgs/lib/libpx4_msgs__rosidl_generator_c.so
+comp_routine: /opt/motovisio/ros_ws/install/px4_msgs/lib/libpx4_msgs__rosidl_generator_c.so
 comp_routine: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
 comp_routine: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_generator_c.so
 comp_routine: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so

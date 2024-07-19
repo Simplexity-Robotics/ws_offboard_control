@@ -28,7 +28,7 @@ class CompRoutine : public rclcpp::Node {
 		void publish_attitude_setpoint(double x, double y, double z, double yaw, double pitch, double roll);
 		void publish_vehicle_command(uint16_t command, float param1 = 0.0, float param2 = 0.0);
 
-		void move(double x, double y, double z, double seconds);
+		void move(double x, double y, double z, double angle, double seconds);
 
 		enum State {
 			ARM,
@@ -64,9 +64,9 @@ class CompRoutine : public rclcpp::Node {
 		}
 
 		void loop() {
+			publish_offboard_control_mode();
 			switch (currentState) {
 				case ARM:
-					publish_offboard_control_mode();
 					publish_attitude_setpoint(0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
 
 					if (offboard_setpoint_counter_ == 10) {
@@ -82,7 +82,7 @@ class CompRoutine : public rclcpp::Node {
 					offboard_setpoint_counter_++;
 					break;
 				case SEARCH:
-					// move(0.1, 0.0, 0.0, 10.0);
+					move(0.3, 0.0, 0.0, 4.27606, 10.0);
 					std::cout << "SEARCH" << std::endl;
 					break;
 				case ALIGN:
@@ -127,12 +127,12 @@ void CompRoutine::publish_attitude_setpoint(double x, double y, double z, double
 	attitude_setpoint_publisher_->publish(msg);
 }
 
-void CompRoutine::move(double x, double y, double z, double seconds) {
+void CompRoutine::move(double x, double y, double z, double angle, double seconds) {
 	auto start = std::chrono::steady_clock::now(); // Get the start time
     auto end = start + std::chrono::duration<double>(seconds); // Calculate the end time
     
     while (std::chrono::steady_clock::now() < end) {
-       publish_attitude_setpoint(x, y, z, 0.0, 0.0, 0.0);
+       publish_attitude_setpoint(x, y, z, angle, 0.0, 0.0);
     }
 }
 

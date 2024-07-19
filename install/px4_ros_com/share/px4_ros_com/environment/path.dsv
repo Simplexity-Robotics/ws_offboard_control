@@ -1,1 +1,1 @@
-/root/ws_offboard_control/build/px4_ros_com/ament_cmake_environment_hooks/path.dsv
+prepend-non-duplicate-if-exists;PATH;bin

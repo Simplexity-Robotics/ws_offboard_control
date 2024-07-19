@@ -1,1 +1,1 @@
-/root/ws_offboard_control/build/px4_msgs/ament_cmake_environment_hooks/library_path.dsv
+prepend-non-duplicate;LD_LIBRARY_PATH;lib

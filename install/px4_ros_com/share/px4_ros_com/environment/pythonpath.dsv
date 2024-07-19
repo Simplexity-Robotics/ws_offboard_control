@@ -1,1 +1,1 @@
-/root/ws_offboard_control/build/px4_ros_com/ament_cmake_environment_hooks/pythonpath.dsv
+prepend-non-duplicate;PYTHONPATH;lib/python3.8/site-packages
