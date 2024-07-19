@@ -564,3 +564,149 @@ events:
       Running the CXX compiler's linker: "/usr/bin/ld" "-v"
       GNU ld (GNU Binutils for Ubuntu) 2.34
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.29/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.29/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/opt/ros/foxy/share/rmw_implementation/cmake/rmw_implementation-extras.cmake:67 (find_package)"
+      - "/opt/ros/foxy/share/rmw_implementation/cmake/rmw_implementationConfig.cmake:41 (include)"
+      - "/opt/ros/foxy/share/rcl/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/foxy/share/rcl/cmake/rclConfig.cmake:41 (include)"
+      - "/opt/ros/foxy/share/libstatistics_collector/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/foxy/share/libstatistics_collector/cmake/libstatistics_collectorConfig.cmake:41 (include)"
+      - "/opt/ros/foxy/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/foxy/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)"
+      - "CMakeLists.txt:25 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-EwQCRv"
+      binary: "/root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-EwQCRv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/ros/foxy/share/eigen3_cmake_module/cmake/Modules;/opt/ros/foxy/share/fastrtps_cmake_module/cmake/Modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-EwQCRv'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f52ee/fast
+        make[1]: Entering directory '/root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-EwQCRv'
+        /usr/bin/make  -f CMakeFiles/cmTC_f52ee.dir/build.make CMakeFiles/cmTC_f52ee.dir/build
+        make[2]: Entering directory '/root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-EwQCRv'
+        Building C object CMakeFiles/cmTC_f52ee.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_f52ee.dir/src.c.o -c /root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-EwQCRv/src.c
+        Linking C executable cmTC_f52ee
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f52ee.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_f52ee.dir/src.c.o -o cmTC_f52ee
+        /usr/bin/ld: CMakeFiles/cmTC_f52ee.dir/src.c.o: in function `main':
+        src.c:(.text+0x48): undefined reference to `pthread_create'
+        /usr/bin/ld: src.c:(.text+0x50): undefined reference to `pthread_detach'
+        /usr/bin/ld: src.c:(.text+0x58): undefined reference to `pthread_cancel'
+        /usr/bin/ld: src.c:(.text+0x64): undefined reference to `pthread_join'
+        collect2: error: ld returned 1 exit status
+        make[2]: *** [CMakeFiles/cmTC_f52ee.dir/build.make:99: cmTC_f52ee] Error 1
+        make[2]: Leaving directory '/root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-EwQCRv'
+        make[1]: *** [Makefile:127: cmTC_f52ee/fast] Error 2
+        make[1]: Leaving directory '/root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-EwQCRv'
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/usr/share/cmake-3.29/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "/opt/ros/foxy/share/rmw_implementation/cmake/rmw_implementation-extras.cmake:67 (find_package)"
+      - "/opt/ros/foxy/share/rmw_implementation/cmake/rmw_implementationConfig.cmake:41 (include)"
+      - "/opt/ros/foxy/share/rcl/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/foxy/share/rcl/cmake/rclConfig.cmake:41 (include)"
+      - "/opt/ros/foxy/share/libstatistics_collector/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/foxy/share/libstatistics_collector/cmake/libstatistics_collectorConfig.cmake:41 (include)"
+      - "/opt/ros/foxy/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/foxy/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)"
+      - "CMakeLists.txt:25 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "/root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-YokZnv"
+      binary: "/root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-YokZnv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/ros/foxy/share/eigen3_cmake_module/cmake/Modules;/opt/ros/foxy/share/fastrtps_cmake_module/cmake/Modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: '/root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-YokZnv'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4d809/fast
+        make[1]: Entering directory '/root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-YokZnv'
+        /usr/bin/make  -f CMakeFiles/cmTC_4d809.dir/build.make CMakeFiles/cmTC_4d809.dir/build
+        make[2]: Entering directory '/root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-YokZnv'
+        Building C object CMakeFiles/cmTC_4d809.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_4d809.dir/CheckFunctionExists.c.o -c /root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-YokZnv/CheckFunctionExists.c
+        Linking C executable cmTC_4d809
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d809.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_4d809.dir/CheckFunctionExists.c.o -o cmTC_4d809  -lpthreads
+        /usr/bin/ld: cannot find -lpthreads
+        collect2: error: ld returned 1 exit status
+        make[2]: *** [CMakeFiles/cmTC_4d809.dir/build.make:99: cmTC_4d809] Error 1
+        make[2]: Leaving directory '/root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-YokZnv'
+        make[1]: *** [Makefile:127: cmTC_4d809/fast] Error 2
+        make[1]: Leaving directory '/root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-YokZnv'
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/usr/share/cmake-3.29/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "/opt/ros/foxy/share/rmw_implementation/cmake/rmw_implementation-extras.cmake:67 (find_package)"
+      - "/opt/ros/foxy/share/rmw_implementation/cmake/rmw_implementationConfig.cmake:41 (include)"
+      - "/opt/ros/foxy/share/rcl/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/foxy/share/rcl/cmake/rclConfig.cmake:41 (include)"
+      - "/opt/ros/foxy/share/libstatistics_collector/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/foxy/share/libstatistics_collector/cmake/libstatistics_collectorConfig.cmake:41 (include)"
+      - "/opt/ros/foxy/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/foxy/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)"
+      - "CMakeLists.txt:25 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "/root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-j5IbJu"
+      binary: "/root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-j5IbJu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/ros/foxy/share/eigen3_cmake_module/cmake/Modules;/opt/ros/foxy/share/fastrtps_cmake_module/cmake/Modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: '/root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-j5IbJu'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ccb7b/fast
+        make[1]: Entering directory '/root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-j5IbJu'
+        /usr/bin/make  -f CMakeFiles/cmTC_ccb7b.dir/build.make CMakeFiles/cmTC_ccb7b.dir/build
+        make[2]: Entering directory '/root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-j5IbJu'
+        Building C object CMakeFiles/cmTC_ccb7b.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_ccb7b.dir/CheckFunctionExists.c.o -c /root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-j5IbJu/CheckFunctionExists.c
+        Linking C executable cmTC_ccb7b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ccb7b.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_ccb7b.dir/CheckFunctionExists.c.o -o cmTC_ccb7b  -lpthread
+        make[2]: Leaving directory '/root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-j5IbJu'
+        make[1]: Leaving directory '/root/ws_offboard_control/build/comp/CMakeFiles/CMakeScratch/TryCompile-j5IbJu'
+        
+      exitCode: 0
+...

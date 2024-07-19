@@ -197,6 +197,43 @@ comp_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_uninstall.dir/build.make CMakeFiles/comp_uninstall.dir/build
 .PHONY : comp_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named comp_routine
+
+# Build rule for target.
+comp_routine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 comp_routine
+.PHONY : comp_routine
+
+# fast build rule for target.
+comp_routine/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_routine.dir/build.make CMakeFiles/comp_routine.dir/build
+.PHONY : comp_routine/fast
+
+src/comp.o: src/comp.cpp.o
+.PHONY : src/comp.o
+
+# target to build an object file
+src/comp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_routine.dir/build.make CMakeFiles/comp_routine.dir/src/comp.cpp.o
+.PHONY : src/comp.cpp.o
+
+src/comp.i: src/comp.cpp.i
+.PHONY : src/comp.i
+
+# target to preprocess a source file
+src/comp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_routine.dir/build.make CMakeFiles/comp_routine.dir/src/comp.cpp.i
+.PHONY : src/comp.cpp.i
+
+src/comp.s: src/comp.cpp.s
+.PHONY : src/comp.s
+
+# target to generate assembly for a file
+src/comp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/comp_routine.dir/build.make CMakeFiles/comp_routine.dir/src/comp.cpp.s
+.PHONY : src/comp.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +249,10 @@ help:
 	@echo "... test"
 	@echo "... comp_uninstall"
 	@echo "... uninstall"
+	@echo "... comp_routine"
+	@echo "... src/comp.o"
+	@echo "... src/comp.i"
+	@echo "... src/comp.s"
 .PHONY : help
 
 

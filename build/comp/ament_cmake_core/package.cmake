@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "comp")
 set(comp_VERSION "0.0.0")
-set(comp_MAINTAINER "root <root@todo.todo>")
+set(comp_MAINTAINER "root <hudson.n.kim@gmail.com>")
 set(comp_BUILD_DEPENDS )
 set(comp_BUILDTOOL_DEPENDS "ament_cmake")
 set(comp_BUILD_EXPORT_DEPENDS )

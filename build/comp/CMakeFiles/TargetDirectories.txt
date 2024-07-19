@@ -1,5 +1,6 @@
 /root/ws_offboard_control/build/comp/CMakeFiles/uninstall.dir
 /root/ws_offboard_control/build/comp/CMakeFiles/comp_uninstall.dir
+/root/ws_offboard_control/build/comp/CMakeFiles/comp_routine.dir
 /root/ws_offboard_control/build/comp/CMakeFiles/test.dir
 /root/ws_offboard_control/build/comp/CMakeFiles/edit_cache.dir
 /root/ws_offboard_control/build/comp/CMakeFiles/rebuild_cache.dir
