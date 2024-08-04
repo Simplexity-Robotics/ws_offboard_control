@@ -1,0 +1,803 @@
+[0.000000] (-) TimerEvent: {}
+[0.001695] (comp_routine) JobQueued: {'identifier': 'comp_routine', 'dependencies': OrderedDict()}
+[0.002311] (px4_msgs) JobQueued: {'identifier': 'px4_msgs', 'dependencies': OrderedDict()}
+[0.002633] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/root/ws_offboard_control/install/px4_msgs')])}
+[0.002791] (px4_msgs) JobStarted: {'identifier': 'px4_msgs'}
+[0.014077] (comp_routine) JobStarted: {'identifier': 'comp_routine'}
+[0.022793] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'cmake'}
+[0.023656] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'build'}
+[0.024548] (px4_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ws_offboard_control/build/px4_msgs', '--', '-j8', '-l8'], 'cwd': '/root/ws_offboard_control/build/px4_msgs', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('COLORTERM', 'truecolor'), ('TERM_PROGRAM_VERSION', '1.91.1'), ('ROS_PYTHON_VERSION', '3'), ('PWD', '/root/ws_offboard_control/build/px4_msgs'), ('LOGNAME', 'root'), ('XDG_SESSION_TYPE', 'tty'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/node'), ('ROS_LOG_DIR', '/root/ros2_logs'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('AMENT_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass.sh'), ('CMAKE_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('COLCON_PREFIX_PATH', '/root/ws_offboard_control/install:/opt/motovisio/ros_ws/install'), ('SSH_CONNECTION', '192.168.2.120 49390 192.168.2.2 22'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONPATH', '/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-84e0a71231.sock'), ('SHLVL', '3'), ('XDG_SESSION_ID', '3'), ('LD_LIBRARY_PATH', '/root/ws_offboard_control/install/px4_ros_com/lib:/root/ws_offboard_control/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('LC_CTYPE', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('ROS_LOCALHOST_ONLY', '0'), ('SSH_CLIENT', '192.168.2.120 49390 22'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass-main.js'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/helpers/browser.sh'), ('PATH', '/root/.motovisio/bin/:/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/remote-cli:/opt/ros/foxy/bin:/root/.motovisio/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('ROS_DISTRO', 'foxy'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-a36ab639-8be8-4a53-bb4c-4854dfa61834.sock'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.035383] (comp_routine) JobProgress: {'identifier': 'comp_routine', 'progress': 'cmake'}
+[0.036190] (comp_routine) JobProgress: {'identifier': 'comp_routine', 'progress': 'build'}
+[0.038346] (comp_routine) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ws_offboard_control/build/comp_routine', '--', '-j8', '-l8'], 'cwd': '/root/ws_offboard_control/build/comp_routine', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('COLORTERM', 'truecolor'), ('TERM_PROGRAM_VERSION', '1.91.1'), ('ROS_PYTHON_VERSION', '3'), ('PWD', '/root/ws_offboard_control/build/comp_routine'), ('LOGNAME', 'root'), ('XDG_SESSION_TYPE', 'tty'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/node'), ('ROS_LOG_DIR', '/root/ros2_logs'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('AMENT_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass.sh'), ('CMAKE_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('COLCON_PREFIX_PATH', '/root/ws_offboard_control/install:/opt/motovisio/ros_ws/install'), ('SSH_CONNECTION', '192.168.2.120 49390 192.168.2.2 22'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONPATH', '/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-84e0a71231.sock'), ('SHLVL', '3'), ('XDG_SESSION_ID', '3'), ('LD_LIBRARY_PATH', '/root/ws_offboard_control/install/px4_ros_com/lib:/root/ws_offboard_control/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('LC_CTYPE', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('ROS_LOCALHOST_ONLY', '0'), ('SSH_CLIENT', '192.168.2.120 49390 22'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass-main.js'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/helpers/browser.sh'), ('PATH', '/root/.motovisio/bin/:/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/remote-cli:/opt/ros/foxy/bin:/root/.motovisio/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('ROS_DISTRO', 'foxy'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-a36ab639-8be8-4a53-bb4c-4854dfa61834.sock'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.099951] (-) TimerEvent: {}
+[0.162539] (comp_routine) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o\x1b[0m\n'}
+[0.200181] (-) TimerEvent: {}
+[0.301182] (-) TimerEvent: {}
+[0.402332] (-) TimerEvent: {}
+[0.503345] (-) TimerEvent: {}
+[0.604556] (-) TimerEvent: {}
+[0.705645] (-) TimerEvent: {}
+[0.744683] (px4_msgs) StdoutLine: {'line': b'[  0%] Built target px4_msgs__cpp\n'}
+[0.772723] (px4_msgs) StdoutLine: {'line': b'[ 12%] Built target px4_msgs__rosidl_generator_c\n'}
+[0.805891] (-) TimerEvent: {}
+[0.898598] (px4_msgs) StdoutLine: {'line': b'[ 25%] Built target px4_msgs__rosidl_typesupport_introspection_c\n'}
+[0.906178] (-) TimerEvent: {}
+[0.921714] (px4_msgs) StdoutLine: {'line': b'[ 37%] Built target px4_msgs__rosidl_typesupport_cpp\n'}
+[0.923877] (px4_msgs) StdoutLine: {'line': b'[ 50%] Built target px4_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.926453] (px4_msgs) StdoutLine: {'line': b'[ 63%] Built target px4_msgs__rosidl_typesupport_c\n'}
+[0.938918] (px4_msgs) StdoutLine: {'line': b'[ 75%] Built target px4_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[1.006438] (-) TimerEvent: {}
+[1.107817] (-) TimerEvent: {}
+[1.134943] (px4_msgs) StdoutLine: {'line': b'[ 88%] Built target px4_msgs__rosidl_typesupport_fastrtps_c\n'}
+[1.176551] (px4_msgs) StdoutLine: {'line': b'[ 88%] Built target px4_msgs\n'}
+[1.208086] (-) TimerEvent: {}
+[1.264813] (px4_msgs) StdoutLine: {'line': b'[ 88%] Built target px4_msgs__py\n'}
+[1.308324] (-) TimerEvent: {}
+[1.409401] (-) TimerEvent: {}
+[1.435861] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__python\n'}
+[1.482581] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__rosidl_typesupport_c__pyext\n'}
+[1.485987] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.504916] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[1.509533] (-) TimerEvent: {}
+[1.525820] (px4_msgs) CommandEnded: {'returncode': 0}
+[1.610056] (-) TimerEvent: {}
+[1.639883] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:127:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::_V2::steady_clock::time_point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99 in initialization\n'}
+[1.640825] (comp_routine) StderrLine: {'line': b'  127 |   long start = \x1b[01;31m\x1b[Kstd::chrono::steady_clock::now()\x1b[m\x1b[K; // Get the start time\n'}
+[1.641192] (comp_routine) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[1.641545] (comp_routine) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[1.641894] (comp_routine) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[Kstd::chrono::_V2::steady_clock::time_point {aka std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >}\x1b[m\x1b[K\n'}
+[1.663264] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid CompRoutine::run_state_machine()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.664019] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:132:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::_V2::steady_clock::time_point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99 in assignment\n'}
+[1.668457] (comp_routine) StderrLine: {'line': b'  132 |      start = \x1b[01;31m\x1b[Kstd::chrono::steady_clock::now()\x1b[m\x1b[K; // Get the start time\n'}
+[1.674304] (comp_routine) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[1.678010] (comp_routine) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[1.679892] (comp_routine) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[Kstd::chrono::_V2::steady_clock::time_point {aka std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >}\x1b[m\x1b[K\n'}
+[1.680287] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:139:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator+\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double>\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[1.680728] (comp_routine) StderrLine: {'line': b'  139 |      if (std::chrono::steady_clock::now()< \x1b[32m\x1b[Kstart\x1b[m\x1b[K \x1b[01;31m\x1b[K+\x1b[m\x1b[K std::chrono::\x1b[34m\x1b[Kduration<double>(10)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.681105] (comp_routine) StderrLine: {'line': b'      |                                            \x1b[32m\x1b[K~~~~~\x1b[m\x1b[K \x1b[01;31m\x1b[K^\x1b[m\x1b[K              \x1b[34m\x1b[K~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.681475] (comp_routine) StderrLine: {'line': b'      |                                            \x1b[32m\x1b[K|\x1b[m\x1b[K                    \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[1.681858] (comp_routine) StderrLine: {'line': b'      |                                            \x1b[32m\x1b[Klong int\x1b[m\x1b[K             \x1b[34m\x1b[Kstd::chrono::duration<double>\x1b[m\x1b[K\n'}
+[1.682228] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/mutex:39\x1b[m\x1b[K,\n'}
+[1.682588] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/future:38\x1b[m\x1b[K,\n'}
+[1.682947] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[1.683499] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.683984] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:6\x1b[m\x1b[K:\n'}
+[1.684379] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/chrono:450:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Rep1, class _Period1, class _Rep2, class _Period2> constexpr typename std::common_type<std::chrono::duration<_Rep1, _Period1>, std::chrono::duration<_Rep2, _Period2> >::type std::chrono::operator+(const std::chrono::duration<_Rep1, _Period1>&, const std::chrono::duration<_Rep2, _Period2>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.684790] (comp_routine) StderrLine: {'line': b'  450 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const duration<_Rep1, _Period1>& __lhs,\n'}
+[1.685148] (comp_routine) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.685548] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/chrono:450:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.685938] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:139:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::chrono::duration<_Rep1, _Period1>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.686310] (comp_routine) StderrLine: {'line': b'  139 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.686716] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.687089] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/mutex:39\x1b[m\x1b[K,\n'}
+[1.687589] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/future:38\x1b[m\x1b[K,\n'}
+[1.687955] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[1.688334] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.688718] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:6\x1b[m\x1b[K:\n'}
+[1.689080] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/chrono:725:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Clock, class _Dur1, class _Rep2, class _Period2> constexpr std::chrono::time_point<_Clock, typename std::common_type<_Dur1, std::chrono::duration<_Rep2, _Period2> >::type> std::chrono::operator+(const std::chrono::time_point<_Clock, _Duration1>&, const std::chrono::duration<_Rep2, _Period2>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.689475] (comp_routine) StderrLine: {'line': b'  725 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const time_point<_Clock, _Dur1>& __lhs,\n'}
+[1.689839] (comp_routine) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.690197] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/chrono:725:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.690570] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:139:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::chrono::time_point<_Clock, _Duration1>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.690940] (comp_routine) StderrLine: {'line': b'  139 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.691323] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.691708] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/mutex:39\x1b[m\x1b[K,\n'}
+[1.692067] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/future:38\x1b[m\x1b[K,\n'}
+[1.692425] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[1.692798] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.693152] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:6\x1b[m\x1b[K:\n'}
+[1.693511] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/chrono:738:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Rep1, class _Period1, class _Clock, class _Dur2> constexpr std::chrono::time_point<_Clock, typename std::common_type<std::chrono::duration<_Rep1, _Period1>, _Dur2>::type> std::chrono::operator+(const std::chrono::duration<_Rep1, _Period1>&, const std::chrono::time_point<_Clock, _Dur2>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.693894] (comp_routine) StderrLine: {'line': b'  738 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const duration<_Rep1, _Period1>& __lhs,\n'}
+[1.694256] (comp_routine) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.694618] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/chrono:738:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.695235] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:139:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::chrono::duration<_Rep1, _Period1>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.695656] (comp_routine) StderrLine: {'line': b'  139 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.696055] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.696430] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[1.696798] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/algorithm:61\x1b[m\x1b[K,\n'}
+[1.697176] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:18\x1b[m\x1b[K,\n'}
+[1.697537] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.697916] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.698284] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.698766] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_iterator.h:423:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.699202] (comp_routine) StderrLine: {'line': b'  423 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(typename reverse_iterator<_Iterator>::difference_type __n,\n'}
+[1.699712] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.699841] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_iterator.h:423:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.699958] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:139:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.700073] (comp_routine) StderrLine: {'line': b'  139 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.700180] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.700275] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[1.700373] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/algorithm:61\x1b[m\x1b[K,\n'}
+[1.700472] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:18\x1b[m\x1b[K,\n'}
+[1.700578] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.700687] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.700778] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.700869] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_iterator.h:1216:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator> std::move_iterator<_IteratorL> std::operator+(typename std::move_iterator<_IteratorL>::difference_type, const std::move_iterator<_IteratorL>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.700980] (comp_routine) StderrLine: {'line': b' 1216 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(typename move_iterator<_Iterator>::difference_type __n,\n'}
+[1.701076] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.701170] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_iterator.h:1216:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.701264] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:139:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.701370] (comp_routine) StderrLine: {'line': b'  139 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.701464] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.701564] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:55\x1b[m\x1b[K,\n'}
+[1.701661] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.701756] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.701858] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.701952] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.702047] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.702156] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.702258] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.702367] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.702467] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.702564] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6023:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.702663] (comp_routine) StderrLine: {'line': b' 6023 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[1.702763] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.702862] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6023:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.702966] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:139:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.703087] (comp_routine) StderrLine: {'line': b'  139 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.703185] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.703281] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:56\x1b[m\x1b[K,\n'}
+[1.703410] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.703518] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.703618] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.703716] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.703824] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.703919] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.704017] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.704115] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.704207] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.704299] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.tcc:1158:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.704396] (comp_routine) StderrLine: {'line': b' 1158 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const _CharT* __lhs,\n'}
+[1.704487] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.704574] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.tcc:1158:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.704672] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:139:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst _CharT*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.704774] (comp_routine) StderrLine: {'line': b'  139 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.704876] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.704974] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:56\x1b[m\x1b[K,\n'}
+[1.705073] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.705172] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.705279] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.705370] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.705461] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.705556] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.705662] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.705759] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.705848] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.705934] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.tcc:1174:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.706027] (comp_routine) StderrLine: {'line': b' 1174 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)\n'}
+[1.706117] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.706214] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.tcc:1174:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.706305] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:139:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.706410] (comp_routine) StderrLine: {'line': b'  139 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.706524] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.706621] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:55\x1b[m\x1b[K,\n'}
+[1.706720] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.706820] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.706923] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.707020] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.707111] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.707211] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.707317] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.707438] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.707552] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.707661] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6060:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.707762] (comp_routine) StderrLine: {'line': b' 6060 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[1.707856] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.707953] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6060:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.708043] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:139:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.708134] (comp_routine) StderrLine: {'line': b'  139 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.708233] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.708325] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:55\x1b[m\x1b[K,\n'}
+[1.708421] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.708509] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.708598] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.708684] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.708778] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.708875] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.708966] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.709060] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.709153] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.709247] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6076:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, _CharT)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.709350] (comp_routine) StderrLine: {'line': b' 6076 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)\n'}
+[1.709458] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.709558] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6076:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.709658] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:139:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.709756] (comp_routine) StderrLine: {'line': b'  139 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.709851] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.709953] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:55\x1b[m\x1b[K,\n'}
+[1.710048] (-) TimerEvent: {}
+[1.710219] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.710339] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.710450] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.710557] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.710670] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.710786] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.710892] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.710992] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.711089] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.711183] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6088:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.711309] (comp_routine) StderrLine: {'line': b' 6088 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,\n'}
+[1.711425] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.711529] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6088:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.711641] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:139:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.711747] (comp_routine) StderrLine: {'line': b'  139 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.711864] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.711965] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:55\x1b[m\x1b[K,\n'}
+[1.712064] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.712161] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.712260] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.712365] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.712464] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.712561] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.712658] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.712763] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.712865] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.712968] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6094:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.713085] (comp_routine) StderrLine: {'line': b' 6094 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[1.713189] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.713281] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6094:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.713377] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:139:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.713475] (comp_routine) StderrLine: {'line': b'  139 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.713568] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.713662] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:55\x1b[m\x1b[K,\n'}
+[1.713754] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.713862] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.713973] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.714083] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.714192] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.714294] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.714393] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.714490] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.714580] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.714680] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6100:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.714794] (comp_routine) StderrLine: {'line': b' 6100 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,\n'}
+[1.714896] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.714988] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6100:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.715089] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:139:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.715189] (comp_routine) StderrLine: {'line': b'  139 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.715285] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.715445] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:55\x1b[m\x1b[K,\n'}
+[1.716021] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.716197] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.716310] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.716418] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.716525] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.716624] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.716728] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.716830] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.716929] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.717042] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6112:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.717149] (comp_routine) StderrLine: {'line': b' 6112 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const _CharT* __lhs,\n'}
+[1.717245] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.717326] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6112:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.717417] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:139:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst _CharT*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.717509] (comp_routine) StderrLine: {'line': b'  139 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.717598] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.717681] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:55\x1b[m\x1b[K,\n'}
+[1.717768] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.717856] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.717949] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.718046] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.718159] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.718255] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.718366] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.718454] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.718541] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.718625] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6118:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.718722] (comp_routine) StderrLine: {'line': b' 6118 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(_CharT __lhs,\n'}
+[1.718809] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.718893] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6118:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.718978] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:139:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.719082] (comp_routine) StderrLine: {'line': b'  139 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.719170] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.719253] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:55\x1b[m\x1b[K,\n'}
+[1.719374] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.719483] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.719583] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.719677] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.719769] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.719864] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.719961] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.720050] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.720139] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.720226] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6124:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const _CharT*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.720319] (comp_routine) StderrLine: {'line': b' 6124 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,\n'}
+[1.720405] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.720492] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6124:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.720587] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:139:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.720672] (comp_routine) StderrLine: {'line': b'  139 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.720760] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.720848] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:55\x1b[m\x1b[K,\n'}
+[1.720933] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.721019] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.721119] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.721205] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.721289] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.721368] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.721455] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.721559] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.721657] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.721748] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6130:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, _CharT)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.721837] (comp_routine) StderrLine: {'line': b' 6130 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,\n'}
+[1.721921] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.722012] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6130:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.722104] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:139:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.722195] (comp_routine) StderrLine: {'line': b'  139 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.722283] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.722374] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/vector:68\x1b[m\x1b[K,\n'}
+[1.722463] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:22\x1b[m\x1b[K,\n'}
+[1.722551] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.722634] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.722720] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.722803] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_bvector.h:303:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bit_iterator std::operator+(std::ptrdiff_t, const std::_Bit_iterator&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.722892] (comp_routine) StderrLine: {'line': b'  303 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(ptrdiff_t __n, const _Bit_iterator& __x)\n'}
+[1.722992] (comp_routine) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.723078] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_bvector.h:303:49:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 2 from \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::_Bit_iterator&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.723166] (comp_routine) StderrLine: {'line': b'  303 |   operator+(ptrdiff_t __n, \x1b[01;36m\x1b[Kconst _Bit_iterator& __x\x1b[m\x1b[K)\n'}
+[1.723257] (comp_routine) StderrLine: {'line': b'      |                            \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.723365] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_bvector.h:393:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bit_const_iterator std::operator+(std::ptrdiff_t, const std::_Bit_const_iterator&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.723466] (comp_routine) StderrLine: {'line': b'  393 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(ptrdiff_t __n, const _Bit_const_iterator& __x)\n'}
+[1.723565] (comp_routine) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.723664] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_bvector.h:393:55:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 2 from \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::_Bit_const_iterator&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.723765] (comp_routine) StderrLine: {'line': b'  393 |   operator+(ptrdiff_t __n, \x1b[01;36m\x1b[Kconst _Bit_const_iterator& __x\x1b[m\x1b[K)\n'}
+[1.723863] (comp_routine) StderrLine: {'line': b'      |                            \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.723957] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:140:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::_V2::steady_clock::time_point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99 in assignment\n'}
+[1.724055] (comp_routine) StderrLine: {'line': b'  140 |       start = \x1b[01;31m\x1b[Kstd::chrono::steady_clock::now()\x1b[m\x1b[K; // Reset the start time\n'}
+[1.724144] (comp_routine) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[1.724234] (comp_routine) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[1.724323] (comp_routine) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[Kstd::chrono::_V2::steady_clock::time_point {aka std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >}\x1b[m\x1b[K\n'}
+[1.724424] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:147:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator+\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double>\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[1.724525] (comp_routine) StderrLine: {'line': b'  147 |      if (std::chrono::steady_clock::now()< \x1b[32m\x1b[Kstart\x1b[m\x1b[K \x1b[01;31m\x1b[K+\x1b[m\x1b[K std::chrono::\x1b[34m\x1b[Kduration<double>(10)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.724618] (comp_routine) StderrLine: {'line': b'      |                                            \x1b[32m\x1b[K~~~~~\x1b[m\x1b[K \x1b[01;31m\x1b[K^\x1b[m\x1b[K              \x1b[34m\x1b[K~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.724719] (comp_routine) StderrLine: {'line': b'      |                                            \x1b[32m\x1b[K|\x1b[m\x1b[K                    \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[1.724809] (comp_routine) StderrLine: {'line': b'      |                                            \x1b[32m\x1b[Klong int\x1b[m\x1b[K             \x1b[34m\x1b[Kstd::chrono::duration<double>\x1b[m\x1b[K\n'}
+[1.724896] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/mutex:39\x1b[m\x1b[K,\n'}
+[1.725000] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/future:38\x1b[m\x1b[K,\n'}
+[1.725089] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[1.725184] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.725274] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:6\x1b[m\x1b[K:\n'}
+[1.725361] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/chrono:450:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Rep1, class _Period1, class _Rep2, class _Period2> constexpr typename std::common_type<std::chrono::duration<_Rep1, _Period1>, std::chrono::duration<_Rep2, _Period2> >::type std::chrono::operator+(const std::chrono::duration<_Rep1, _Period1>&, const std::chrono::duration<_Rep2, _Period2>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.725454] (comp_routine) StderrLine: {'line': b'  450 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const duration<_Rep1, _Period1>& __lhs,\n'}
+[1.725539] (comp_routine) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.725628] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/chrono:450:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.725714] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:147:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::chrono::duration<_Rep1, _Period1>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.725804] (comp_routine) StderrLine: {'line': b'  147 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.725890] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.725975] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/mutex:39\x1b[m\x1b[K,\n'}
+[1.726065] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/future:38\x1b[m\x1b[K,\n'}
+[1.726156] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[1.726249] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.726345] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:6\x1b[m\x1b[K:\n'}
+[1.726434] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/chrono:725:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Clock, class _Dur1, class _Rep2, class _Period2> constexpr std::chrono::time_point<_Clock, typename std::common_type<_Dur1, std::chrono::duration<_Rep2, _Period2> >::type> std::chrono::operator+(const std::chrono::time_point<_Clock, _Duration1>&, const std::chrono::duration<_Rep2, _Period2>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.726531] (comp_routine) StderrLine: {'line': b'  725 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const time_point<_Clock, _Dur1>& __lhs,\n'}
+[1.726616] (comp_routine) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.726701] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/chrono:725:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.726790] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:147:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::chrono::time_point<_Clock, _Duration1>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.726884] (comp_routine) StderrLine: {'line': b'  147 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.726976] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.727066] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/mutex:39\x1b[m\x1b[K,\n'}
+[1.727157] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/future:38\x1b[m\x1b[K,\n'}
+[1.727244] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[1.727363] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.727465] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:6\x1b[m\x1b[K:\n'}
+[1.727552] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/chrono:738:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Rep1, class _Period1, class _Clock, class _Dur2> constexpr std::chrono::time_point<_Clock, typename std::common_type<std::chrono::duration<_Rep1, _Period1>, _Dur2>::type> std::chrono::operator+(const std::chrono::duration<_Rep1, _Period1>&, const std::chrono::time_point<_Clock, _Dur2>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.727648] (comp_routine) StderrLine: {'line': b'  738 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const duration<_Rep1, _Period1>& __lhs,\n'}
+[1.727735] (comp_routine) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.727817] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/chrono:738:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.727913] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:147:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::chrono::duration<_Rep1, _Period1>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.728008] (comp_routine) StderrLine: {'line': b'  147 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.728094] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.728180] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[1.728264] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/algorithm:61\x1b[m\x1b[K,\n'}
+[1.728353] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:18\x1b[m\x1b[K,\n'}
+[1.728445] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.728529] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.728612] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.728696] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_iterator.h:423:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.728786] (comp_routine) StderrLine: {'line': b'  423 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(typename reverse_iterator<_Iterator>::difference_type __n,\n'}
+[1.728872] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.728956] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_iterator.h:423:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.729055] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:147:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.729146] (comp_routine) StderrLine: {'line': b'  147 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.729233] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.729324] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[1.729418] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/algorithm:61\x1b[m\x1b[K,\n'}
+[1.729516] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:18\x1b[m\x1b[K,\n'}
+[1.729627] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.729729] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.729835] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.729940] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_iterator.h:1216:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator> std::move_iterator<_IteratorL> std::operator+(typename std::move_iterator<_IteratorL>::difference_type, const std::move_iterator<_IteratorL>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.730042] (comp_routine) StderrLine: {'line': b' 1216 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(typename move_iterator<_Iterator>::difference_type __n,\n'}
+[1.730135] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.730221] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_iterator.h:1216:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.730348] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:147:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.730444] (comp_routine) StderrLine: {'line': b'  147 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.730529] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.730624] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:55\x1b[m\x1b[K,\n'}
+[1.730712] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.730798] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.730888] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.730972] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.731055] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.731140] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.731223] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.731332] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.731450] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.731550] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6023:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.731658] (comp_routine) StderrLine: {'line': b' 6023 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[1.731759] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.731850] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6023:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.731936] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:147:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.732029] (comp_routine) StderrLine: {'line': b'  147 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.732128] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.732229] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:56\x1b[m\x1b[K,\n'}
+[1.732323] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.732415] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.732504] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.732586] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.732668] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.732755] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.732845] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.732934] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.733022] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.733112] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.tcc:1158:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.733200] (comp_routine) StderrLine: {'line': b' 1158 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const _CharT* __lhs,\n'}
+[1.733283] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.733370] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.tcc:1158:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.733453] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:147:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst _CharT*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.733555] (comp_routine) StderrLine: {'line': b'  147 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.733646] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.733733] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:56\x1b[m\x1b[K,\n'}
+[1.733818] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.733899] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.733981] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.734071] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.734159] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.734244] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.734328] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.734420] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.734512] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.734600] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.tcc:1174:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.734694] (comp_routine) StderrLine: {'line': b' 1174 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)\n'}
+[1.734777] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.734861] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.tcc:1174:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.734947] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:147:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.735034] (comp_routine) StderrLine: {'line': b'  147 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.735119] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.735205] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:55\x1b[m\x1b[K,\n'}
+[1.735305] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.735401] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.735490] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.735573] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.735654] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.735742] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.735829] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.735920] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.736009] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.736094] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6060:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.736196] (comp_routine) StderrLine: {'line': b' 6060 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[1.736282] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.736368] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6060:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.736450] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:147:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.736545] (comp_routine) StderrLine: {'line': b'  147 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.736648] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.736733] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:55\x1b[m\x1b[K,\n'}
+[1.736813] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.736891] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.736971] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.737056] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.737141] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.737228] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.737318] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.737402] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.737489] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.737584] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6076:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, _CharT)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.737674] (comp_routine) StderrLine: {'line': b' 6076 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)\n'}
+[1.737761] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.737845] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6076:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.737930] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:147:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.738035] (comp_routine) StderrLine: {'line': b'  147 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.738125] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.738208] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:55\x1b[m\x1b[K,\n'}
+[1.738290] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.738375] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.738463] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.738546] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.738631] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.738718] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.738800] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.738884] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.738966] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.739050] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6088:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.739138] (comp_routine) StderrLine: {'line': b' 6088 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,\n'}
+[1.739221] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.739317] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6088:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.739427] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:147:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.739538] (comp_routine) StderrLine: {'line': b'  147 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.739636] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.739746] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:55\x1b[m\x1b[K,\n'}
+[1.739835] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.739920] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.740007] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.740102] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.740197] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.740285] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.740373] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.740460] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.740549] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.740641] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6094:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.740738] (comp_routine) StderrLine: {'line': b' 6094 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[1.740826] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.740914] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6094:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.741016] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:147:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.741117] (comp_routine) StderrLine: {'line': b'  147 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.741215] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.741311] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:55\x1b[m\x1b[K,\n'}
+[1.741399] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.741488] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.741578] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.741680] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.741771] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.741860] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.741946] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.742031] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.742131] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.742222] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6100:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.742320] (comp_routine) StderrLine: {'line': b' 6100 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,\n'}
+[1.742409] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.742499] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6100:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.742589] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:147:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.742673] (comp_routine) StderrLine: {'line': b'  147 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.742759] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.742847] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:55\x1b[m\x1b[K,\n'}
+[1.742949] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.743048] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.743137] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.743216] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.743309] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.743390] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.743477] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.743574] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.743674] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.743769] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6112:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.743868] (comp_routine) StderrLine: {'line': b' 6112 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const _CharT* __lhs,\n'}
+[1.743958] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.744051] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6112:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.744160] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:147:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst _CharT*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.744258] (comp_routine) StderrLine: {'line': b'  147 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.744355] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.744448] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:55\x1b[m\x1b[K,\n'}
+[1.744542] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.744639] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.744745] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.744843] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.744933] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.745023] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.745115] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.745205] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.745288] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.745377] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6118:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.745463] (comp_routine) StderrLine: {'line': b' 6118 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(_CharT __lhs,\n'}
+[1.745545] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.745625] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6118:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.745721] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:147:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.745819] (comp_routine) StderrLine: {'line': b'  147 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.745904] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.745985] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:55\x1b[m\x1b[K,\n'}
+[1.746080] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.746160] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.746240] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.746318] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.746401] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.746480] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.746579] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.746663] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.746753] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.746836] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6124:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const _CharT*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.746932] (comp_routine) StderrLine: {'line': b' 6124 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,\n'}
+[1.747017] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.747096] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6124:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.747180] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:147:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.747265] (comp_routine) StderrLine: {'line': b'  147 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.747381] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.747484] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:55\x1b[m\x1b[K,\n'}
+[1.747577] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[1.747665] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[1.747752] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[1.747841] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[1.747928] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[1.748016] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:19\x1b[m\x1b[K,\n'}
+[1.748103] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.748216] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.748303] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.748390] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6130:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, _CharT)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.748495] (comp_routine) StderrLine: {'line': b' 6130 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,\n'}
+[1.748591] (comp_routine) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.748674] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6130:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.748759] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:147:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.748845] (comp_routine) StderrLine: {'line': b'  147 |      if (std::chrono::steady_clock::now()< start + std::chrono::duration<double>(10\x1b[01;36m\x1b[K)\x1b[m\x1b[K) { // check to see if we have waited 10 secs\n'}
+[1.748934] (comp_routine) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.749025] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/vector:68\x1b[m\x1b[K,\n'}
+[1.749114] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:22\x1b[m\x1b[K,\n'}
+[1.749197] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.749280] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[1.749365] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:1\x1b[m\x1b[K:\n'}
+[1.749447] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_bvector.h:303:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bit_iterator std::operator+(std::ptrdiff_t, const std::_Bit_iterator&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.749547] (comp_routine) StderrLine: {'line': b'  303 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(ptrdiff_t __n, const _Bit_iterator& __x)\n'}
+[1.749636] (comp_routine) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.749723] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_bvector.h:303:49:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 2 from \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::_Bit_iterator&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.749812] (comp_routine) StderrLine: {'line': b'  303 |   operator+(ptrdiff_t __n, \x1b[01;36m\x1b[Kconst _Bit_iterator& __x\x1b[m\x1b[K)\n'}
+[1.749896] (comp_routine) StderrLine: {'line': b'      |                            \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.749989] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_bvector.h:393:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bit_const_iterator std::operator+(std::ptrdiff_t, const std::_Bit_const_iterator&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.750077] (comp_routine) StderrLine: {'line': b'  393 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(ptrdiff_t __n, const _Bit_const_iterator& __x)\n'}
+[1.750161] (comp_routine) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.750245] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_bvector.h:393:55:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 2 from \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<double>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::_Bit_const_iterator&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.750330] (comp_routine) StderrLine: {'line': b'  393 |   operator+(ptrdiff_t __n, \x1b[01;36m\x1b[Kconst _Bit_const_iterator& __x\x1b[m\x1b[K)\n'}
+[1.750408] (comp_routine) StderrLine: {'line': b'      |                            \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.750485] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:148:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::_V2::steady_clock::time_point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99 in assignment\n'}
+[1.750578] (comp_routine) StderrLine: {'line': b'  148 |       start = \x1b[01;31m\x1b[Kstd::chrono::steady_clock::now()\x1b[m\x1b[K; // Reset the start time\n'}
+[1.750660] (comp_routine) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[1.750743] (comp_routine) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[1.750825] (comp_routine) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[Kstd::chrono::_V2::steady_clock::time_point {aka std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >}\x1b[m\x1b[K\n'}
+[1.750913] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid mySigintHandler(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.751007] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:248:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksig\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.751104] (comp_routine) StderrLine: {'line': b'  248 | void mySigintHandler(\x1b[01;35m\x1b[Kint sig\x1b[m\x1b[K) {\n'}
+[1.751199] (comp_routine) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[1.810406] (-) TimerEvent: {}
+[1.911004] (-) TimerEvent: {}
+[2.011589] (-) TimerEvent: {}
+[2.112315] (-) TimerEvent: {}
+[2.213275] (-) TimerEvent: {}
+[2.314245] (-) TimerEvent: {}
+[2.415113] (-) TimerEvent: {}
+[2.516027] (-) TimerEvent: {}
+[2.617155] (-) TimerEvent: {}
+[2.718176] (-) TimerEvent: {}
+[2.819020] (-) TimerEvent: {}
+[2.919904] (-) TimerEvent: {}
+[3.021110] (-) TimerEvent: {}
+[3.122725] (-) TimerEvent: {}
+[3.223726] (-) TimerEvent: {}
+[3.324870] (-) TimerEvent: {}
+[3.426054] (-) TimerEvent: {}
+[3.527542] (-) TimerEvent: {}
+[3.628485] (-) TimerEvent: {}
+[3.719186] (comp_routine) StderrLine: {'line': b'make[2]: *** [CMakeFiles/comp_routine.dir/build.make:76: CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o] Error 1\n'}
+[3.720563] (comp_routine) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comp_routine.dir/all] Error 2\n'}
+[3.721117] (comp_routine) StderrLine: {'line': b'make: *** [Makefile:146: all] Error 2\n'}
+[3.726602] (comp_routine) CommandEnded: {'returncode': 2}
+[3.729658] (-) TimerEvent: {}
+[3.851106] (-) TimerEvent: {}
+[3.854299] (comp_routine) JobEnded: {'identifier': 'comp_routine', 'rc': 2}
+[3.951435] (-) TimerEvent: {}
+[4.052565] (-) TimerEvent: {}
+[4.153933] (-) TimerEvent: {}
+[4.255536] (-) TimerEvent: {}
+[4.356657] (-) TimerEvent: {}
+[4.458099] (-) TimerEvent: {}
+[4.559221] (-) TimerEvent: {}
+[4.660837] (-) TimerEvent: {}
+[4.762353] (-) TimerEvent: {}
+[4.863438] (-) TimerEvent: {}
+[4.964748] (-) TimerEvent: {}
+[5.065910] (-) TimerEvent: {}
+[5.167459] (-) TimerEvent: {}
+[5.269444] (-) TimerEvent: {}
+[5.370741] (-) TimerEvent: {}
+[5.472199] (-) TimerEvent: {}
+[5.573348] (-) TimerEvent: {}
+[5.674891] (-) TimerEvent: {}
+[5.776066] (-) TimerEvent: {}
+[5.877200] (-) TimerEvent: {}
+[5.978522] (-) TimerEvent: {}
+[6.080090] (-) TimerEvent: {}
+[6.181209] (-) TimerEvent: {}
+[6.282470] (-) TimerEvent: {}
+[6.384238] (-) TimerEvent: {}
+[6.485672] (-) TimerEvent: {}
+[6.587405] (-) TimerEvent: {}
+[6.688553] (-) TimerEvent: {}
+[6.789696] (-) TimerEvent: {}
+[6.890853] (-) TimerEvent: {}
+[6.992246] (-) TimerEvent: {}
+[7.093448] (-) TimerEvent: {}
+[7.194879] (-) TimerEvent: {}
+[7.296147] (-) TimerEvent: {}
+[7.397468] (-) TimerEvent: {}
+[7.498649] (-) TimerEvent: {}
+[7.600054] (-) TimerEvent: {}
+[7.701447] (-) TimerEvent: {}
+[7.802856] (-) TimerEvent: {}
+[7.904438] (-) TimerEvent: {}
+[8.005887] (-) TimerEvent: {}
+[8.107920] (-) TimerEvent: {}
+[8.209190] (-) TimerEvent: {}
+[8.310448] (-) TimerEvent: {}
+[8.411925] (-) TimerEvent: {}
+[8.513669] (-) TimerEvent: {}
+[8.614798] (-) TimerEvent: {}
+[8.716413] (-) TimerEvent: {}
+[8.817759] (-) TimerEvent: {}
+[8.918891] (-) TimerEvent: {}
+[9.020226] (-) TimerEvent: {}
+[9.121573] (-) TimerEvent: {}
+[9.222914] (-) TimerEvent: {}
+[9.324500] (-) TimerEvent: {}
+[9.425848] (-) TimerEvent: {}
+[9.526947] (-) TimerEvent: {}
+[9.628136] (-) TimerEvent: {}
+[9.729549] (-) TimerEvent: {}
+[9.830778] (-) TimerEvent: {}
+[9.931943] (-) TimerEvent: {}
+[10.033050] (-) TimerEvent: {}
+[10.134137] (-) TimerEvent: {}
+[10.235204] (-) TimerEvent: {}
+[10.336349] (-) TimerEvent: {}
+[10.437481] (-) TimerEvent: {}
+[10.538789] (-) TimerEvent: {}
+[10.639992] (-) TimerEvent: {}
+[10.741260] (-) TimerEvent: {}
+[10.842851] (-) TimerEvent: {}
+[10.944193] (-) TimerEvent: {}
+[11.045523] (-) TimerEvent: {}
+[11.146609] (-) TimerEvent: {}
+[11.248217] (-) TimerEvent: {}
+[11.349462] (-) TimerEvent: {}
+[11.450544] (-) TimerEvent: {}
+[11.551914] (-) TimerEvent: {}
+[11.653019] (-) TimerEvent: {}
+[11.754169] (-) TimerEvent: {}
+[11.855505] (-) TimerEvent: {}
+[11.956929] (-) TimerEvent: {}
+[12.058174] (-) TimerEvent: {}
+[12.159864] (-) TimerEvent: {}
+[12.260972] (-) TimerEvent: {}
+[12.362071] (-) TimerEvent: {}
+[12.463548] (-) TimerEvent: {}
+[12.564668] (-) TimerEvent: {}
+[12.665810] (-) TimerEvent: {}
+[12.767053] (-) TimerEvent: {}
+[12.868325] (-) TimerEvent: {}
+[12.969448] (-) TimerEvent: {}
+[13.070585] (-) TimerEvent: {}
+[13.171923] (-) TimerEvent: {}
+[13.273171] (-) TimerEvent: {}
+[13.374337] (-) TimerEvent: {}
+[13.475499] (-) TimerEvent: {}
+[13.576620] (-) TimerEvent: {}
+[13.677768] (-) TimerEvent: {}
+[13.779031] (-) TimerEvent: {}
+[13.880346] (-) TimerEvent: {}
+[13.981797] (-) TimerEvent: {}
+[14.083123] (-) TimerEvent: {}
+[14.184622] (-) TimerEvent: {}
+[14.285711] (-) TimerEvent: {}
+[14.387186] (-) TimerEvent: {}
+[14.488314] (-) TimerEvent: {}
+[14.589461] (-) TimerEvent: {}
+[14.690983] (-) TimerEvent: {}
+[14.792180] (-) TimerEvent: {}
+[14.893367] (-) TimerEvent: {}
+[14.994805] (-) TimerEvent: {}
+[15.095995] (-) TimerEvent: {}
+[15.197091] (-) TimerEvent: {}
+[15.298253] (-) TimerEvent: {}
+[15.399499] (-) TimerEvent: {}
+[15.500609] (-) TimerEvent: {}
+[15.601729] (-) TimerEvent: {}
+[15.702846] (-) TimerEvent: {}
+[15.804141] (-) TimerEvent: {}
+[15.905466] (-) TimerEvent: {}
+[16.006697] (-) TimerEvent: {}
+[16.107856] (-) TimerEvent: {}
+[16.209382] (-) TimerEvent: {}
+[16.310513] (-) TimerEvent: {}
+[16.412321] (-) TimerEvent: {}
+[16.513704] (-) TimerEvent: {}
+[16.614845] (-) TimerEvent: {}
+[16.716193] (-) TimerEvent: {}
+[16.818406] (px4_msgs) JobEnded: {'identifier': 'px4_msgs', 'rc': 'SIGINT'}
+[16.820976] (-) TimerEvent: {}
+[16.830264] (px4_ros_com) JobSkipped: {'identifier': 'px4_ros_com'}
+[16.830469] (-) EventReactorShutdown: {}

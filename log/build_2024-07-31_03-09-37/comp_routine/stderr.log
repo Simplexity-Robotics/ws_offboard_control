@@ -1,0 +1,4 @@
+[01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:[m[K In function ‘[01m[Kvoid mySigintHandler(int)[m[K’:
+[01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:203:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksig[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  203 | void mySigintHandler([01;35m[Kint sig[m[K) {
+      |                      [01;35m[K~~~~^~~[m[K

@@ -1,0 +1,281 @@
+[0.000000] (-) TimerEvent: {}
+[0.001767] (comp_routine) JobQueued: {'identifier': 'comp_routine', 'dependencies': OrderedDict()}
+[0.002074] (px4_msgs) JobQueued: {'identifier': 'px4_msgs', 'dependencies': OrderedDict()}
+[0.002505] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/root/ws_offboard_control/install/px4_msgs')])}
+[0.002840] (px4_msgs) JobStarted: {'identifier': 'px4_msgs'}
+[0.014206] (comp_routine) JobStarted: {'identifier': 'comp_routine'}
+[0.023859] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'cmake'}
+[0.024798] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'build'}
+[0.025715] (px4_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ws_offboard_control/build/px4_msgs', '--', '-j8', '-l8'], 'cwd': '/root/ws_offboard_control/build/px4_msgs', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('COLORTERM', 'truecolor'), ('TERM_PROGRAM_VERSION', '1.91.1'), ('ROS_PYTHON_VERSION', '3'), ('PWD', '/root/ws_offboard_control/build/px4_msgs'), ('LOGNAME', 'root'), ('XDG_SESSION_TYPE', 'tty'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/node'), ('ROS_LOG_DIR', '/root/ros2_logs'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('AMENT_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass.sh'), ('CMAKE_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('COLCON_PREFIX_PATH', '/root/ws_offboard_control/install:/opt/motovisio/ros_ws/install'), ('SSH_CONNECTION', '192.168.2.120 65096 192.168.2.2 22'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONPATH', '/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-84e0a71231.sock'), ('SHLVL', '3'), ('XDG_SESSION_ID', '1'), ('LD_LIBRARY_PATH', '/root/ws_offboard_control/install/px4_ros_com/lib:/root/ws_offboard_control/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('LC_CTYPE', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('ROS_LOCALHOST_ONLY', '0'), ('SSH_CLIENT', '192.168.2.120 65096 22'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass-main.js'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/helpers/browser.sh'), ('PATH', '/root/.motovisio/bin/:/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/remote-cli:/opt/ros/foxy/bin:/root/.motovisio/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('ROS_DISTRO', 'foxy'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-4c0ffc84-e914-401a-9656-4550eeabbb3c.sock'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.043499] (comp_routine) JobProgress: {'identifier': 'comp_routine', 'progress': 'cmake'}
+[0.046304] (comp_routine) JobProgress: {'identifier': 'comp_routine', 'progress': 'build'}
+[0.046959] (comp_routine) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ws_offboard_control/build/comp_routine', '--', '-j8', '-l8'], 'cwd': '/root/ws_offboard_control/build/comp_routine', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('COLORTERM', 'truecolor'), ('TERM_PROGRAM_VERSION', '1.91.1'), ('ROS_PYTHON_VERSION', '3'), ('PWD', '/root/ws_offboard_control/build/comp_routine'), ('LOGNAME', 'root'), ('XDG_SESSION_TYPE', 'tty'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/node'), ('ROS_LOG_DIR', '/root/ros2_logs'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('AMENT_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass.sh'), ('CMAKE_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('COLCON_PREFIX_PATH', '/root/ws_offboard_control/install:/opt/motovisio/ros_ws/install'), ('SSH_CONNECTION', '192.168.2.120 65096 192.168.2.2 22'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONPATH', '/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-84e0a71231.sock'), ('SHLVL', '3'), ('XDG_SESSION_ID', '1'), ('LD_LIBRARY_PATH', '/root/ws_offboard_control/install/px4_ros_com/lib:/root/ws_offboard_control/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('LC_CTYPE', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('ROS_LOCALHOST_ONLY', '0'), ('SSH_CLIENT', '192.168.2.120 65096 22'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass-main.js'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/helpers/browser.sh'), ('PATH', '/root/.motovisio/bin/:/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/remote-cli:/opt/ros/foxy/bin:/root/.motovisio/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('ROS_DISTRO', 'foxy'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-4c0ffc84-e914-401a-9656-4550eeabbb3c.sock'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.099916] (-) TimerEvent: {}
+[0.161866] (comp_routine) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o\x1b[0m\n'}
+[0.200161] (-) TimerEvent: {}
+[0.301314] (-) TimerEvent: {}
+[0.402505] (-) TimerEvent: {}
+[0.503490] (-) TimerEvent: {}
+[0.604725] (-) TimerEvent: {}
+[0.705728] (-) TimerEvent: {}
+[0.743729] (px4_msgs) StdoutLine: {'line': b'[  0%] Built target px4_msgs__cpp\n'}
+[0.796147] (px4_msgs) StdoutLine: {'line': b'[ 12%] Built target px4_msgs__rosidl_generator_c\n'}
+[0.805969] (-) TimerEvent: {}
+[0.898197] (px4_msgs) StdoutLine: {'line': b'[ 28%] Built target px4_msgs__rosidl_typesupport_cpp\n'}
+[0.900054] (px4_msgs) StdoutLine: {'line': b'[ 37%] Built target px4_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.904118] (px4_msgs) StdoutLine: {'line': b'[ 50%] Built target px4_msgs__rosidl_typesupport_c\n'}
+[0.906063] (-) TimerEvent: {}
+[0.927035] (px4_msgs) StdoutLine: {'line': b'[ 62%] Built target px4_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.950978] (px4_msgs) StdoutLine: {'line': b'[ 75%] Built target px4_msgs__rosidl_typesupport_introspection_c\n'}
+[1.006330] (-) TimerEvent: {}
+[1.103357] (px4_msgs) StdoutLine: {'line': b'[ 88%] Built target px4_msgs__rosidl_typesupport_fastrtps_c\n'}
+[1.106414] (-) TimerEvent: {}
+[1.146026] (px4_msgs) StdoutLine: {'line': b'[ 88%] Built target px4_msgs\n'}
+[1.206716] (-) TimerEvent: {}
+[1.230510] (px4_msgs) StdoutLine: {'line': b'[ 88%] Built target px4_msgs__py\n'}
+[1.306944] (-) TimerEvent: {}
+[1.400972] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__python\n'}
+[1.407158] (-) TimerEvent: {}
+[1.436535] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__rosidl_typesupport_c__pyext\n'}
+[1.466382] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.472586] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[1.499341] (px4_msgs) CommandEnded: {'returncode': 0}
+[1.507746] (-) TimerEvent: {}
+[1.609429] (-) TimerEvent: {}
+[1.621583] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KCompRoutine::CompRoutine()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.622496] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:70:4:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvehicle_status_subscriber\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kvehicle_status_subscriber_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.622873] (comp_routine) StderrLine: {'line': b'   70 |    \x1b[01;31m\x1b[Kvehicle_status_subscriber\x1b[m\x1b[K = this->create_subscription<px4_msgs::msg::VehicleStatus>("/fmu/out/vehicle_status", qos_profile, std::bind(&CompRoutine::vehicle_status_callback, this, std::placeholders::_1));\n'}
+[1.623228] (comp_routine) StderrLine: {'line': b'      |    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.623577] (comp_routine) StderrLine: {'line': b'      |    \x1b[32m\x1b[Kvehicle_status_subscriber_\x1b[m\x1b[K\n'}
+[1.665369] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid mySigintHandler(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.666098] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:227:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksig\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.666478] (comp_routine) StderrLine: {'line': b'  227 | void mySigintHandler(\x1b[01;35m\x1b[Kint sig\x1b[m\x1b[K) {\n'}
+[1.666832] (comp_routine) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[1.709656] (-) TimerEvent: {}
+[1.810670] (-) TimerEvent: {}
+[1.911703] (-) TimerEvent: {}
+[2.013393] (-) TimerEvent: {}
+[2.114646] (-) TimerEvent: {}
+[2.182153] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_topics_interface.hpp:32\x1b[m\x1b[K,\n'}
+[2.184270] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:55\x1b[m\x1b[K,\n'}
+[2.184685] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.185136] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.185495] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[2.186021] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:6\x1b[m\x1b[K:\n'}
+[2.186623] (comp_routine) StderrLine: {'line': b'/opt/ros/foxy/include/rclcpp/subscription_factory.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Krclcpp::SubscriptionFactory rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<CallbackMessageT> >) [with MessageT = px4_msgs::msg::VehicleStatus_<std::allocator<void> >; CallbackT = std::_Bind<void (CompRoutine::*(CompRoutine*, std::_Placeholder<1>))(px4_msgs::msg::VehicleStatus_<std::allocator<void> >)>; AllocatorT = std::allocator<void>; CallbackMessageT = px4_msgs::msg::VehicleStatus_<std::allocator<void> >; SubscriptionT = rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<px4_msgs::msg::VehicleStatus_<std::allocator<void> >, std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<px4_msgs::msg::VehicleStatus_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.187030] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/create_subscription.hpp:144:63:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<SubscriptionT> rclcpp::create_subscription(NodeT&&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = px4_msgs::msg::VehicleStatus_<std::allocator<void> >; CallbackT = std::_Bind<void (CompRoutine::*(CompRoutine*, std::_Placeholder<1>))(px4_msgs::msg::VehicleStatus_<std::allocator<void> >)>; AllocatorT = std::allocator<void>; CallbackMessageT = px4_msgs::msg::VehicleStatus_<std::allocator<void> >; SubscriptionT = rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<px4_msgs::msg::VehicleStatus_<std::allocator<void> >, std::allocator<void> >; NodeT = rclcpp::Node&; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<px4_msgs::msg::VehicleStatus_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.187463] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:98:47:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = px4_msgs::msg::VehicleStatus_<std::allocator<void> >; CallbackT = std::_Bind<void (CompRoutine::*(CompRoutine*, std::_Placeholder<1>))(px4_msgs::msg::VehicleStatus_<std::allocator<void> >)>; AllocatorT = std::allocator<void>; CallbackMessageT = px4_msgs::msg::VehicleStatus_<std::allocator<void> >; SubscriptionT = rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<px4_msgs::msg::VehicleStatus_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<px4_msgs::msg::VehicleStatus_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.187880] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:70:205:\x1b[m\x1b[K   required from here\n'}
+[2.188234] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/subscription_factory.hpp:97:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::AnySubscriptionCallback<px4_msgs::msg::VehicleStatus_<std::allocator<void> >, std::allocator<void> >::set(std::_Bind<void (CompRoutine::*(CompRoutine*, std::_Placeholder<1>))(px4_msgs::msg::VehicleStatus_<std::allocator<void> >)>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.188620] (comp_routine) StderrLine: {'line': b'   97 |   \x1b[01;31m\x1b[Kany_subscription_callback\x1b[m\x1b[K.set(std::forward<CallbackT>(callback));\n'}
+[2.189012] (comp_routine) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.189364] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/subscription_base.hpp:29\x1b[m\x1b[K,\n'}
+[2.189715] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:26\x1b[m\x1b[K,\n'}
+[2.190069] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.190419] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[2.190772] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.191125] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.191484] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[2.191843] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[2.192198] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.192553] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[2.192965] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:6\x1b[m\x1b[K:\n'}
+[2.193350] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:83:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<_Tp>)> >::value>::type* <anonymous> = <enumerator>; MessageT = px4_msgs::msg::VehicleStatus_<std::allocator<void> >; Alloc = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.193735] (comp_routine) StderrLine: {'line': b'   83 |   void \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(CallbackT callback)\n'}
+[2.194131] (comp_routine) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.194498] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:83:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.194856] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:81:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.195284] (comp_routine) StderrLine: {'line': b'   81 |     >::type * = \x1b[01;31m\x1b[Knullptr\x1b[m\x1b[K\n'}
+[2.195938] (comp_routine) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.196296] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:97:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >, const rclcpp::MessageInfo&)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<_Tp>, const rclcpp::MessageInfo&)> >::value>::type* <anonymous> = <enumerator>; MessageT = px4_msgs::msg::VehicleStatus_<std::allocator<void> >; Alloc = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.196755] (comp_routine) StderrLine: {'line': b'   97 |   void \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(CallbackT callback)\n'}
+[2.197126] (comp_routine) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.197477] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:97:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.197834] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:95:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.198194] (comp_routine) StderrLine: {'line': b'   95 |     >::type * = \x1b[01;31m\x1b[Knullptr\x1b[m\x1b[K\n'}
+[2.198544] (comp_routine) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.198893] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:111:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<const px4_msgs::msg::VehicleStatus_<std::allocator<void> > >)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<const _Tp>)> >::value>::type* <anonymous> = <enumerator>; MessageT = px4_msgs::msg::VehicleStatus_<std::allocator<void> >; Alloc = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.199290] (comp_routine) StderrLine: {'line': b'  111 |   void \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(CallbackT callback)\n'}
+[2.199641] (comp_routine) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.200019] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:111:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.200405] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:109:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.200797] (comp_routine) StderrLine: {'line': b'  109 |     >::type * = \x1b[01;31m\x1b[Knullptr\x1b[m\x1b[K\n'}
+[2.201182] (comp_routine) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.201529] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:125:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<const px4_msgs::msg::VehicleStatus_<std::allocator<void> > >, const rclcpp::MessageInfo&)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<const _Tp>, const rclcpp::MessageInfo&)> >::value>::type* <anonymous> = <enumerator>; MessageT = px4_msgs::msg::VehicleStatus_<std::allocator<void> >; Alloc = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.201946] (comp_routine) StderrLine: {'line': b'  125 |   void \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(CallbackT callback)\n'}
+[2.202313] (comp_routine) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.202663] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:125:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.203012] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:123:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.203363] (comp_routine) StderrLine: {'line': b'  123 |     >::type * = \x1b[01;31m\x1b[Knullptr\x1b[m\x1b[K\n'}
+[2.203704] (comp_routine) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.204049] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:139:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::unique_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> >, std::default_delete<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::unique_ptr<MessageT, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type> >::type>)> >::value>::type* <anonymous> = <enumerator>; MessageT = px4_msgs::msg::VehicleStatus_<std::allocator<void> >; Alloc = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.204499] (comp_routine) StderrLine: {'line': b'  139 |   void \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(CallbackT callback)\n'}
+[2.204929] (comp_routine) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.205283] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:139:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.205629] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:137:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.205976] (comp_routine) StderrLine: {'line': b'  137 |     >::type * = \x1b[01;31m\x1b[Knullptr\x1b[m\x1b[K\n'}
+[2.206336] (comp_routine) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.207181] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:153:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::unique_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> >, std::default_delete<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >, const rclcpp::MessageInfo&)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::unique_ptr<MessageT, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type> >::type>, const rclcpp::MessageInfo&)> >::value>::type* <anonymous> = <enumerator>; MessageT = px4_msgs::msg::VehicleStatus_<std::allocator<void> >; Alloc = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.207584] (comp_routine) StderrLine: {'line': b'  153 |   void \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(CallbackT callback)\n'}
+[2.207927] (comp_routine) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.208266] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:153:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.208639] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:151:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.209079] (comp_routine) StderrLine: {'line': b'  151 |     >::type * = \x1b[01;31m\x1b[Knullptr\x1b[m\x1b[K\n'}
+[2.209169] (comp_routine) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.214876] (-) TimerEvent: {}
+[2.315623] (-) TimerEvent: {}
+[2.416481] (-) TimerEvent: {}
+[2.517469] (-) TimerEvent: {}
+[2.618320] (-) TimerEvent: {}
+[2.719205] (-) TimerEvent: {}
+[2.820036] (-) TimerEvent: {}
+[2.915290] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/future:48\x1b[m\x1b[K,\n'}
+[2.916038] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[2.916479] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[2.916919] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:6\x1b[m\x1b[K:\n'}
+[2.917674] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/std_function.h:\x1b[m\x1b[K At global scope:\n'}
+[2.918015] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/std_function.h:667:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>::function(_Functor) [with _Functor = rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<CallbackMessageT> >) [with MessageT = px4_msgs::msg::VehicleStatus_<std::allocator<void> >; CallbackT = std::_Bind<void (CompRoutine::*(CompRoutine*, std::_Placeholder<1>))(px4_msgs::msg::VehicleStatus_<std::allocator<void> >)>; AllocatorT = std::allocator<void>; CallbackMessageT = px4_msgs::msg::VehicleStatus_<std::allocator<void> >; SubscriptionT = rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<px4_msgs::msg::VehicleStatus_<std::allocator<void> >, std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<px4_msgs::msg::VehicleStatus_<std::allocator<void> >, std::allocator<void> > >]::<lambda(rclcpp::node_interfaces::NodeBaseInterface*, const string&, const rclcpp::QoS&)>; <template-parameter-2-2> = void; <template-parameter-2-3> = void; _Res = std::shared_ptr<rclcpp::SubscriptionBase>; _ArgTypes = {rclcpp::node_interfaces::NodeBaseInterface*, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, const rclcpp::QoS&}]\x1b[m\x1b[K\xe2\x80\x99, declared using local type \xe2\x80\x98\x1b[01m\x1b[Krclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<CallbackMessageT> >) [with MessageT = px4_msgs::msg::VehicleStatus_<std::allocator<void> >; CallbackT = std::_Bind<void (CompRoutine::*(CompRoutine*, std::_Placeholder<1>))(px4_msgs::msg::VehicleStatus_<std::allocator<void> >)>; AllocatorT = std::allocator<void>; CallbackMessageT = px4_msgs::msg::VehicleStatus_<std::allocator<void> >; SubscriptionT = rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<px4_msgs::msg::VehicleStatus_<std::allocator<void> >, std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<px4_msgs::msg::VehicleStatus_<std::allocator<void> >, std::allocator<void> > >]::<lambda(rclcpp::node_interfaces::NodeBaseInterface*, const string&, const rclcpp::QoS&)>\x1b[m\x1b[K\xe2\x80\x99, is used but never defined [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[2.918542] (comp_routine) StderrLine: {'line': b'  667 |       \x1b[01;31m\x1b[Kfunction<_Res(_ArgTypes...)>\x1b[m\x1b[K::\n'}
+[2.918914] (comp_routine) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.920126] (-) TimerEvent: {}
+[3.020896] (-) TimerEvent: {}
+[3.112451] (comp_routine) StderrLine: {'line': b'make[2]: *** [CMakeFiles/comp_routine.dir/build.make:76: CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o] Error 1\n'}
+[3.113850] (comp_routine) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comp_routine.dir/all] Error 2\n'}
+[3.114223] (comp_routine) StderrLine: {'line': b'make: *** [Makefile:146: all] Error 2\n'}
+[3.119081] (comp_routine) CommandEnded: {'returncode': 2}
+[3.126577] (-) TimerEvent: {}
+[3.227042] (comp_routine) JobEnded: {'identifier': 'comp_routine', 'rc': 2}
+[3.229569] (-) TimerEvent: {}
+[3.330221] (-) TimerEvent: {}
+[3.431356] (-) TimerEvent: {}
+[3.533825] (-) TimerEvent: {}
+[3.634948] (-) TimerEvent: {}
+[3.736152] (-) TimerEvent: {}
+[3.837543] (-) TimerEvent: {}
+[3.939175] (-) TimerEvent: {}
+[4.040297] (-) TimerEvent: {}
+[4.141725] (-) TimerEvent: {}
+[4.242818] (-) TimerEvent: {}
+[4.343921] (-) TimerEvent: {}
+[4.445303] (-) TimerEvent: {}
+[4.546427] (-) TimerEvent: {}
+[4.647776] (-) TimerEvent: {}
+[4.749144] (-) TimerEvent: {}
+[4.850324] (-) TimerEvent: {}
+[4.951675] (-) TimerEvent: {}
+[5.053105] (-) TimerEvent: {}
+[5.154326] (-) TimerEvent: {}
+[5.255596] (-) TimerEvent: {}
+[5.356927] (-) TimerEvent: {}
+[5.458060] (-) TimerEvent: {}
+[5.559658] (-) TimerEvent: {}
+[5.660909] (-) TimerEvent: {}
+[5.762081] (-) TimerEvent: {}
+[5.863697] (-) TimerEvent: {}
+[5.965321] (-) TimerEvent: {}
+[6.066828] (-) TimerEvent: {}
+[6.167980] (-) TimerEvent: {}
+[6.269151] (-) TimerEvent: {}
+[6.370347] (-) TimerEvent: {}
+[6.471940] (-) TimerEvent: {}
+[6.573223] (-) TimerEvent: {}
+[6.674345] (-) TimerEvent: {}
+[6.775873] (-) TimerEvent: {}
+[6.877423] (-) TimerEvent: {}
+[6.978692] (-) TimerEvent: {}
+[7.080189] (-) TimerEvent: {}
+[7.181572] (-) TimerEvent: {}
+[7.282770] (-) TimerEvent: {}
+[7.383975] (-) TimerEvent: {}
+[7.485132] (-) TimerEvent: {}
+[7.586288] (-) TimerEvent: {}
+[7.687471] (-) TimerEvent: {}
+[7.788702] (-) TimerEvent: {}
+[7.889922] (-) TimerEvent: {}
+[7.991546] (-) TimerEvent: {}
+[8.092710] (-) TimerEvent: {}
+[8.194143] (-) TimerEvent: {}
+[8.295655] (-) TimerEvent: {}
+[8.397296] (-) TimerEvent: {}
+[8.498863] (-) TimerEvent: {}
+[8.600003] (-) TimerEvent: {}
+[8.701363] (-) TimerEvent: {}
+[8.803045] (-) TimerEvent: {}
+[8.904692] (-) TimerEvent: {}
+[9.005933] (-) TimerEvent: {}
+[9.107125] (-) TimerEvent: {}
+[9.208229] (-) TimerEvent: {}
+[9.309782] (-) TimerEvent: {}
+[9.410920] (-) TimerEvent: {}
+[9.512052] (-) TimerEvent: {}
+[9.613494] (-) TimerEvent: {}
+[9.714708] (-) TimerEvent: {}
+[9.815947] (-) TimerEvent: {}
+[9.917122] (-) TimerEvent: {}
+[10.019849] (-) TimerEvent: {}
+[10.121406] (-) TimerEvent: {}
+[10.222675] (-) TimerEvent: {}
+[10.323829] (-) TimerEvent: {}
+[10.425093] (-) TimerEvent: {}
+[10.526347] (-) TimerEvent: {}
+[10.627487] (-) TimerEvent: {}
+[10.728937] (-) TimerEvent: {}
+[10.830262] (-) TimerEvent: {}
+[10.931614] (-) TimerEvent: {}
+[11.032721] (-) TimerEvent: {}
+[11.134038] (-) TimerEvent: {}
+[11.235153] (-) TimerEvent: {}
+[11.336449] (-) TimerEvent: {}
+[11.437716] (-) TimerEvent: {}
+[11.538999] (-) TimerEvent: {}
+[11.640241] (-) TimerEvent: {}
+[11.741499] (-) TimerEvent: {}
+[11.843247] (-) TimerEvent: {}
+[11.944386] (-) TimerEvent: {}
+[12.045619] (-) TimerEvent: {}
+[12.146793] (-) TimerEvent: {}
+[12.248055] (-) TimerEvent: {}
+[12.349594] (-) TimerEvent: {}
+[12.450848] (-) TimerEvent: {}
+[12.551971] (-) TimerEvent: {}
+[12.653182] (-) TimerEvent: {}
+[12.754353] (-) TimerEvent: {}
+[12.855763] (-) TimerEvent: {}
+[12.957086] (-) TimerEvent: {}
+[13.058267] (-) TimerEvent: {}
+[13.159633] (-) TimerEvent: {}
+[13.260791] (-) TimerEvent: {}
+[13.361879] (-) TimerEvent: {}
+[13.463016] (-) TimerEvent: {}
+[13.564171] (-) TimerEvent: {}
+[13.665442] (-) TimerEvent: {}
+[13.766527] (-) TimerEvent: {}
+[13.867978] (-) TimerEvent: {}
+[13.969139] (-) TimerEvent: {}
+[14.070352] (-) TimerEvent: {}
+[14.171486] (-) TimerEvent: {}
+[14.272814] (-) TimerEvent: {}
+[14.373934] (-) TimerEvent: {}
+[14.475783] (-) TimerEvent: {}
+[14.577027] (-) TimerEvent: {}
+[14.678185] (-) TimerEvent: {}
+[14.779345] (-) TimerEvent: {}
+[14.880602] (-) TimerEvent: {}
+[14.981985] (-) TimerEvent: {}
+[15.083146] (-) TimerEvent: {}
+[15.184295] (-) TimerEvent: {}
+[15.285647] (-) TimerEvent: {}
+[15.386853] (-) TimerEvent: {}
+[15.487973] (-) TimerEvent: {}
+[15.589241] (-) TimerEvent: {}
+[15.690511] (-) TimerEvent: {}
+[15.791630] (-) TimerEvent: {}
+[15.892915] (-) TimerEvent: {}
+[15.994077] (-) TimerEvent: {}
+[16.095206] (-) TimerEvent: {}
+[16.196489] (-) TimerEvent: {}
+[16.297930] (-) TimerEvent: {}
+[16.399173] (-) TimerEvent: {}
+[16.456116] (px4_msgs) JobEnded: {'identifier': 'px4_msgs', 'rc': 'SIGINT'}
+[16.468278] (px4_ros_com) JobSkipped: {'identifier': 'px4_ros_com'}
+[16.468455] (-) EventReactorShutdown: {}

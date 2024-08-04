@@ -1,0 +1,11 @@
+[01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:[m[K In member function ‘[01m[Kvoid CompRoutine::vehicle_status_callback(px4_msgs::msg::VehicleStatus_<std::allocator<void> >::SharedPtr) const[m[K’:
+[01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:27:11:[m[K [01;31m[Kerror: [m[Kassignment of member ‘[01m[KCompRoutine::armed_[m[K’ in read-only object
+   27 |    [01;31m[Karmed_ = msg->arming_state == 2[m[K;
+      |    [01;31m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:[m[K In function ‘[01m[Kvoid mySigintHandler(int)[m[K’:
+[01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:221:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksig[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  221 | void mySigintHandler([01;35m[Kint sig[m[K) {
+      |                      [01;35m[K~~~~^~~[m[K
+make[2]: *** [CMakeFiles/comp_routine.dir/build.make:76: CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comp_routine.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

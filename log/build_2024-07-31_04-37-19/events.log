@@ -1,0 +1,245 @@
+[0.000000] (-) TimerEvent: {}
+[0.000884] (comp_routine) JobQueued: {'identifier': 'comp_routine', 'dependencies': OrderedDict()}
+[0.001034] (px4_msgs) JobQueued: {'identifier': 'px4_msgs', 'dependencies': OrderedDict()}
+[0.001157] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/root/ws_offboard_control/install/px4_msgs')])}
+[0.001773] (px4_msgs) JobStarted: {'identifier': 'px4_msgs'}
+[0.012074] (comp_routine) JobStarted: {'identifier': 'comp_routine'}
+[0.021679] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'cmake'}
+[0.022650] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'build'}
+[0.023635] (px4_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ws_offboard_control/build/px4_msgs', '--', '-j8', '-l8'], 'cwd': '/root/ws_offboard_control/build/px4_msgs', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('ROS_PYTHON_VERSION', '3'), ('PWD', '/root/ws_offboard_control/build/px4_msgs'), ('LOGNAME', 'root'), ('XDG_SESSION_TYPE', 'tty'), ('ROS_LOG_DIR', '/root/ros2_logs'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('CMAKE_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('COLCON_PREFIX_PATH', '/root/ws_offboard_control/install:/opt/motovisio/ros_ws/install'), ('SSH_CONNECTION', '192.168.2.1 52348 192.168.2.2 22'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONPATH', '/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SHLVL', '1'), ('XDG_SESSION_ID', '15'), ('LD_LIBRARY_PATH', '/root/ws_offboard_control/install/px4_ros_com/lib:/root/ws_offboard_control/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('ROS_LOCALHOST_ONLY', '0'), ('SSH_CLIENT', '192.168.2.1 52348 22'), ('PATH', '/opt/ros/foxy/bin:/root/.motovisio/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('SSH_TTY', '/dev/pts/13'), ('ROS_DISTRO', 'foxy'), ('OLDPWD', '/root'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.034766] (comp_routine) JobProgress: {'identifier': 'comp_routine', 'progress': 'cmake'}
+[0.035594] (comp_routine) JobProgress: {'identifier': 'comp_routine', 'progress': 'build'}
+[0.038139] (comp_routine) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ws_offboard_control/build/comp_routine', '--', '-j8', '-l8'], 'cwd': '/root/ws_offboard_control/build/comp_routine', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('ROS_PYTHON_VERSION', '3'), ('PWD', '/root/ws_offboard_control/build/comp_routine'), ('LOGNAME', 'root'), ('XDG_SESSION_TYPE', 'tty'), ('ROS_LOG_DIR', '/root/ros2_logs'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('CMAKE_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('COLCON_PREFIX_PATH', '/root/ws_offboard_control/install:/opt/motovisio/ros_ws/install'), ('SSH_CONNECTION', '192.168.2.1 52348 192.168.2.2 22'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONPATH', '/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SHLVL', '1'), ('XDG_SESSION_ID', '15'), ('LD_LIBRARY_PATH', '/root/ws_offboard_control/install/px4_ros_com/lib:/root/ws_offboard_control/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('ROS_LOCALHOST_ONLY', '0'), ('SSH_CLIENT', '192.168.2.1 52348 22'), ('PATH', '/opt/ros/foxy/bin:/root/.motovisio/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('SSH_TTY', '/dev/pts/13'), ('ROS_DISTRO', 'foxy'), ('OLDPWD', '/root'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.099967] (-) TimerEvent: {}
+[0.164458] (comp_routine) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o\x1b[0m\n'}
+[0.200204] (-) TimerEvent: {}
+[0.301344] (-) TimerEvent: {}
+[0.402395] (-) TimerEvent: {}
+[0.503421] (-) TimerEvent: {}
+[0.604414] (-) TimerEvent: {}
+[0.705465] (-) TimerEvent: {}
+[0.806560] (-) TimerEvent: {}
+[0.856045] (px4_msgs) StdoutLine: {'line': b'[  0%] Built target px4_msgs__cpp\n'}
+[0.898875] (px4_msgs) StdoutLine: {'line': b'[ 12%] Built target px4_msgs__rosidl_generator_c\n'}
+[0.906802] (-) TimerEvent: {}
+[1.006599] (px4_msgs) StdoutLine: {'line': b'[ 25%] Built target px4_msgs__rosidl_typesupport_c\n'}
+[1.007402] (-) TimerEvent: {}
+[1.051244] (px4_msgs) StdoutLine: {'line': b'[ 38%] Built target px4_msgs__rosidl_typesupport_introspection_cpp\n'}
+[1.052013] (px4_msgs) StdoutLine: {'line': b'[ 50%] Built target px4_msgs__rosidl_typesupport_cpp\n'}
+[1.085432] (px4_msgs) StdoutLine: {'line': b'[ 63%] Built target px4_msgs__rosidl_typesupport_introspection_c\n'}
+[1.101468] (px4_msgs) StdoutLine: {'line': b'[ 75%] Built target px4_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[1.107607] (-) TimerEvent: {}
+[1.208588] (-) TimerEvent: {}
+[1.303763] (px4_msgs) StdoutLine: {'line': b'[ 88%] Built target px4_msgs__rosidl_typesupport_fastrtps_c\n'}
+[1.308682] (-) TimerEvent: {}
+[1.343705] (px4_msgs) StdoutLine: {'line': b'[ 88%] Built target px4_msgs\n'}
+[1.408962] (-) TimerEvent: {}
+[1.421577] (px4_msgs) StdoutLine: {'line': b'[ 88%] Built target px4_msgs__py\n'}
+[1.509235] (-) TimerEvent: {}
+[1.601256] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__python\n'}
+[1.609478] (-) TimerEvent: {}
+[1.660846] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__rosidl_typesupport_c__pyext\n'}
+[1.663075] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[1.663557] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.690342] (px4_msgs) CommandEnded: {'returncode': 0}
+[1.709808] (-) TimerEvent: {}
+[1.811114] (-) TimerEvent: {}
+[1.912234] (-) TimerEvent: {}
+[1.981866] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid CompRoutine::publish_offboard_control_mode_dummy()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.983749] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:165:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Publisher<px4_msgs::msg::VehicleCommand_<std::allocator<void> > >::publish(px4_msgs::msg::VehicleRatesSetpoint&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.984151] (comp_routine) StderrLine: {'line': b'  165 |  body_rate_setpoint_publisher_->publish(msg2\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[1.984510] (comp_routine) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.984891] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31\x1b[m\x1b[K,\n'}
+[1.985255] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[1.985611] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[1.986000] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.986388] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.986748] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.987105] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.987463] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.987823] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.988181] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.988541] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:6\x1b[m\x1b[K:\n'}
+[1.988900] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/publisher.hpp:185:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(std::unique_ptr<MessageT, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type> >::type>) [with MessageT = px4_msgs::msg::VehicleCommand_<std::allocator<void> >; AllocatorT = std::allocator<void>; typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type> >::type = std::default_delete<px4_msgs::msg::VehicleCommand_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.989302] (comp_routine) StderrLine: {'line': b'  185 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(std::unique_ptr<MessageT, MessageDeleter> msg)\n'}
+[1.989657] (comp_routine) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.990033] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/publisher.hpp:185:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::VehicleRatesSetpoint\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::VehicleRatesSetpoint_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::unique_ptr<px4_msgs::msg::VehicleCommand_<std::allocator<void> >, std::default_delete<px4_msgs::msg::VehicleCommand_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.990428] (comp_routine) StderrLine: {'line': b'  185 |   publish(\x1b[01;36m\x1b[Kstd::unique_ptr<MessageT, MessageDeleter> msg\x1b[m\x1b[K)\n'}
+[1.990826] (comp_routine) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.991184] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/publisher.hpp:209:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(const MessageT&) [with MessageT = px4_msgs::msg::VehicleCommand_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.991586] (comp_routine) StderrLine: {'line': b'  209 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(const MessageT & msg)\n'}
+[1.991945] (comp_routine) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.992308] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/publisher.hpp:209:28:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::VehicleRatesSetpoint\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::VehicleRatesSetpoint_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst px4_msgs::msg::VehicleCommand_<std::allocator<void> >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.992736] (comp_routine) StderrLine: {'line': b'  209 |   publish(\x1b[01;36m\x1b[Kconst MessageT & msg\x1b[m\x1b[K)\n'}
+[1.993094] (comp_routine) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.993452] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/publisher.hpp:226:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(const rcl_serialized_message_t&) [with MessageT = px4_msgs::msg::VehicleCommand_<std::allocator<void> >; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_t]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.993827] (comp_routine) StderrLine: {'line': b'  226 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(const rcl_serialized_message_t & serialized_msg)\n'}
+[1.994225] (comp_routine) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.994586] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/publisher.hpp:226:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::VehicleRatesSetpoint\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::VehicleRatesSetpoint_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst rcl_serialized_message_t&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst rcutils_uint8_array_t&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[1.994964] (comp_routine) StderrLine: {'line': b'  226 |   publish(\x1b[01;36m\x1b[Kconst rcl_serialized_message_t & serialized_msg\x1b[m\x1b[K)\n'}
+[1.995323] (comp_routine) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.995681] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/publisher.hpp:232:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(const rclcpp::SerializedMessage&) [with MessageT = px4_msgs::msg::VehicleCommand_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.996103] (comp_routine) StderrLine: {'line': b'  232 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(const SerializedMessage & serialized_msg)\n'}
+[1.996463] (comp_routine) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.996826] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/publisher.hpp:232:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::VehicleRatesSetpoint\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::VehicleRatesSetpoint_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::SerializedMessage&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.997453] (comp_routine) StderrLine: {'line': b'  232 |   publish(\x1b[01;36m\x1b[Kconst SerializedMessage & serialized_msg\x1b[m\x1b[K)\n'}
+[1.997815] (comp_routine) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.998208] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/publisher.hpp:246:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(rclcpp::LoanedMessage<MessageT, AllocatorT>&&) [with MessageT = px4_msgs::msg::VehicleCommand_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.998601] (comp_routine) StderrLine: {'line': b'  246 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(rclcpp::LoanedMessage<MessageT, AllocatorT> && loaned_msg)\n'}
+[1.998963] (comp_routine) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.999319] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/publisher.hpp:246:58:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::VehicleRatesSetpoint\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::VehicleRatesSetpoint_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::LoanedMessage<px4_msgs::msg::VehicleCommand_<std::allocator<void> >, std::allocator<void> >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.999694] (comp_routine) StderrLine: {'line': b'  246 |   publish(\x1b[01;36m\x1b[Krclcpp::LoanedMessage<MessageT, AllocatorT> && loaned_msg\x1b[m\x1b[K)\n'}
+[2.000054] (comp_routine) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.000413] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid mySigintHandler(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.000818] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:241:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksig\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.001192] (comp_routine) StderrLine: {'line': b'  241 | void mySigintHandler(\x1b[01;35m\x1b[Kint sig\x1b[m\x1b[K) {\n'}
+[2.001553] (comp_routine) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.012657] (-) TimerEvent: {}
+[2.113518] (-) TimerEvent: {}
+[2.214648] (-) TimerEvent: {}
+[2.315963] (-) TimerEvent: {}
+[2.416960] (-) TimerEvent: {}
+[2.517846] (-) TimerEvent: {}
+[2.618912] (-) TimerEvent: {}
+[2.719912] (-) TimerEvent: {}
+[2.821064] (-) TimerEvent: {}
+[2.922504] (-) TimerEvent: {}
+[3.023391] (-) TimerEvent: {}
+[3.124293] (-) TimerEvent: {}
+[3.225477] (-) TimerEvent: {}
+[3.326719] (-) TimerEvent: {}
+[3.427870] (-) TimerEvent: {}
+[3.528960] (-) TimerEvent: {}
+[3.536713] (comp_routine) StderrLine: {'line': b'make[2]: *** [CMakeFiles/comp_routine.dir/build.make:76: CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o] Error 1\n'}
+[3.538333] (comp_routine) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comp_routine.dir/all] Error 2\n'}
+[3.539536] (comp_routine) StderrLine: {'line': b'make: *** [Makefile:146: all] Error 2\n'}
+[3.544925] (comp_routine) CommandEnded: {'returncode': 2}
+[3.630269] (-) TimerEvent: {}
+[3.644803] (comp_routine) JobEnded: {'identifier': 'comp_routine', 'rc': 2}
+[3.730460] (-) TimerEvent: {}
+[3.831392] (-) TimerEvent: {}
+[3.932224] (-) TimerEvent: {}
+[4.033196] (-) TimerEvent: {}
+[4.134137] (-) TimerEvent: {}
+[4.235278] (-) TimerEvent: {}
+[4.336080] (-) TimerEvent: {}
+[4.437018] (-) TimerEvent: {}
+[4.537873] (-) TimerEvent: {}
+[4.638800] (-) TimerEvent: {}
+[4.739605] (-) TimerEvent: {}
+[4.840459] (-) TimerEvent: {}
+[4.941302] (-) TimerEvent: {}
+[5.042306] (-) TimerEvent: {}
+[5.143120] (-) TimerEvent: {}
+[5.244165] (-) TimerEvent: {}
+[5.345017] (-) TimerEvent: {}
+[5.445835] (-) TimerEvent: {}
+[5.546664] (-) TimerEvent: {}
+[5.647499] (-) TimerEvent: {}
+[5.748344] (-) TimerEvent: {}
+[5.849148] (-) TimerEvent: {}
+[5.949983] (-) TimerEvent: {}
+[6.050814] (-) TimerEvent: {}
+[6.151961] (-) TimerEvent: {}
+[6.252777] (-) TimerEvent: {}
+[6.353701] (-) TimerEvent: {}
+[6.454845] (-) TimerEvent: {}
+[6.555690] (-) TimerEvent: {}
+[6.656499] (-) TimerEvent: {}
+[6.757300] (-) TimerEvent: {}
+[6.858204] (-) TimerEvent: {}
+[6.959052] (-) TimerEvent: {}
+[7.060067] (-) TimerEvent: {}
+[7.160992] (-) TimerEvent: {}
+[7.261819] (-) TimerEvent: {}
+[7.362667] (-) TimerEvent: {}
+[7.463474] (-) TimerEvent: {}
+[7.564431] (-) TimerEvent: {}
+[7.665497] (-) TimerEvent: {}
+[7.766418] (-) TimerEvent: {}
+[7.867524] (-) TimerEvent: {}
+[7.968380] (-) TimerEvent: {}
+[8.069214] (-) TimerEvent: {}
+[8.170310] (-) TimerEvent: {}
+[8.271142] (-) TimerEvent: {}
+[8.371988] (-) TimerEvent: {}
+[8.473135] (-) TimerEvent: {}
+[8.573993] (-) TimerEvent: {}
+[8.675089] (-) TimerEvent: {}
+[8.776112] (-) TimerEvent: {}
+[8.877049] (-) TimerEvent: {}
+[8.978312] (-) TimerEvent: {}
+[9.079388] (-) TimerEvent: {}
+[9.180232] (-) TimerEvent: {}
+[9.281044] (-) TimerEvent: {}
+[9.381842] (-) TimerEvent: {}
+[9.482683] (-) TimerEvent: {}
+[9.583608] (-) TimerEvent: {}
+[9.684608] (-) TimerEvent: {}
+[9.785639] (-) TimerEvent: {}
+[9.886688] (-) TimerEvent: {}
+[9.987448] (-) TimerEvent: {}
+[10.088427] (-) TimerEvent: {}
+[10.189239] (-) TimerEvent: {}
+[10.290260] (-) TimerEvent: {}
+[10.391071] (-) TimerEvent: {}
+[10.492109] (-) TimerEvent: {}
+[10.592902] (-) TimerEvent: {}
+[10.693755] (-) TimerEvent: {}
+[10.794617] (-) TimerEvent: {}
+[10.895747] (-) TimerEvent: {}
+[10.996571] (-) TimerEvent: {}
+[11.097397] (-) TimerEvent: {}
+[11.198388] (-) TimerEvent: {}
+[11.299409] (-) TimerEvent: {}
+[11.400249] (-) TimerEvent: {}
+[11.501179] (-) TimerEvent: {}
+[11.602015] (-) TimerEvent: {}
+[11.702858] (-) TimerEvent: {}
+[11.803627] (-) TimerEvent: {}
+[11.904665] (-) TimerEvent: {}
+[12.005467] (-) TimerEvent: {}
+[12.106486] (-) TimerEvent: {}
+[12.207510] (-) TimerEvent: {}
+[12.308524] (-) TimerEvent: {}
+[12.409367] (-) TimerEvent: {}
+[12.510274] (-) TimerEvent: {}
+[12.611102] (-) TimerEvent: {}
+[12.711894] (-) TimerEvent: {}
+[12.812717] (-) TimerEvent: {}
+[12.913605] (-) TimerEvent: {}
+[13.014577] (-) TimerEvent: {}
+[13.115415] (-) TimerEvent: {}
+[13.216287] (-) TimerEvent: {}
+[13.317129] (-) TimerEvent: {}
+[13.418667] (-) TimerEvent: {}
+[13.519722] (-) TimerEvent: {}
+[13.620725] (-) TimerEvent: {}
+[13.721567] (-) TimerEvent: {}
+[13.822714] (-) TimerEvent: {}
+[13.923530] (-) TimerEvent: {}
+[14.024365] (-) TimerEvent: {}
+[14.125197] (-) TimerEvent: {}
+[14.226068] (-) TimerEvent: {}
+[14.326869] (-) TimerEvent: {}
+[14.427714] (-) TimerEvent: {}
+[14.528557] (-) TimerEvent: {}
+[14.629362] (-) TimerEvent: {}
+[14.730740] (-) TimerEvent: {}
+[14.831518] (-) TimerEvent: {}
+[14.932495] (-) TimerEvent: {}
+[15.033491] (-) TimerEvent: {}
+[15.134547] (-) TimerEvent: {}
+[15.235409] (-) TimerEvent: {}
+[15.336429] (-) TimerEvent: {}
+[15.437272] (-) TimerEvent: {}
+[15.538150] (-) TimerEvent: {}
+[15.638968] (-) TimerEvent: {}
+[15.740057] (-) TimerEvent: {}
+[15.840902] (-) TimerEvent: {}
+[15.941931] (-) TimerEvent: {}
+[16.042793] (-) TimerEvent: {}
+[16.144008] (-) TimerEvent: {}
+[16.214127] (px4_msgs) JobEnded: {'identifier': 'px4_msgs', 'rc': 'SIGINT'}
+[16.225917] (px4_ros_com) JobSkipped: {'identifier': 'px4_ros_com'}
+[16.226167] (-) EventReactorShutdown: {}

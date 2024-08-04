@@ -1,0 +1,29 @@
+[0.028s] Invoking command in '/root/ws_offboard_control/build/comp_routine': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/comp_routine -- -j8 -l8
+[0.135s] [ 50%] [32mBuilding CXX object CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o[0m
+[1.656s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:[m[K In function ‘[01m[Kvoid mySigintHandler(int)[m[K’:
+[1.656s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:222:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksig[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.657s]   222 | void mySigintHandler([01;35m[Kint sig[m[K) {
+[1.658s]       |                      [01;35m[K~~~~^~~[m[K
+[6.408s] [100%] [32m[1mLinking CXX executable comp_routine[0m
+[6.761s] [100%] Built target comp_routine
+[6.784s] Invoked command in '/root/ws_offboard_control/build/comp_routine' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/comp_routine -- -j8 -l8
+[6.892s] Invoking command in '/root/ws_offboard_control/build/comp_routine': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --install /root/ws_offboard_control/build/comp_routine
+[6.903s] -- Install configuration: ""
+[6.906s] -- Installing: /root/ws_offboard_control/install/comp_routine/lib/comp_routine/comp_routine
+[6.919s] -- Set non-toolchain portion of runtime path of "/root/ws_offboard_control/install/comp_routine/lib/comp_routine/comp_routine" to ""
+[6.921s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/ament_index/resource_index/package_run_dependencies/comp_routine
+[6.921s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/ament_index/resource_index/parent_prefix_path/comp_routine
+[6.922s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/environment/ament_prefix_path.sh
+[6.925s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/environment/ament_prefix_path.dsv
+[6.926s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/environment/path.sh
+[6.927s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/environment/path.dsv
+[6.928s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/local_setup.bash
+[6.929s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/local_setup.sh
+[6.930s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/local_setup.zsh
+[6.930s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/local_setup.dsv
+[6.931s] -- Installing: /root/ws_offboard_control/install/comp_routine/share/comp_routine/package.dsv
+[6.932s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/ament_index/resource_index/packages/comp_routine
+[6.933s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/cmake/comp_routineConfig.cmake
+[6.934s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/cmake/comp_routineConfig-version.cmake
+[6.935s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/package.xml
+[6.936s] Invoked command in '/root/ws_offboard_control/build/comp_routine' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --install /root/ws_offboard_control/build/comp_routine

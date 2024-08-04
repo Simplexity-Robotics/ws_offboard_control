@@ -1,0 +1,40 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o[0m
+[01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:[m[K In member function ‘[01m[Kvoid CompRoutine::publish_attitude_setpoint(double, double, double, double, double, double)[m[K’:
+[01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:119:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kx[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  119 | void CompRoutine::publish_attitude_setpoint([01;35m[Kdouble x[m[K, double y, double z, double yaw, double pitch, double roll) {
+      |                                             [01;35m[K~~~~~~~^[m[K
+[01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:119:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ky[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  119 | void CompRoutine::publish_attitude_setpoint(double x, [01;35m[Kdouble y[m[K, double z, double yaw, double pitch, double roll) {
+      |                                                       [01;35m[K~~~~~~~^[m[K
+[01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:119:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kz[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  119 | void CompRoutine::publish_attitude_setpoint(double x, double y, [01;35m[Kdouble z[m[K, double yaw, double pitch, double roll) {
+      |                                                                 [01;35m[K~~~~~~~^[m[K
+[01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:119:82:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kyaw[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  119 | void CompRoutine::publish_attitude_setpoint(double x, double y, double z, [01;35m[Kdouble yaw[m[K, double pitch, double roll) {
+      |                                                                           [01;35m[K~~~~~~~^~~[m[K
+[01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:119:94:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpitch[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  119 | void CompRoutine::publish_attitude_setpoint(double x, double y, double z, double yaw, [01;35m[Kdouble pitch[m[K, double roll) {
+      |                                                                                       [01;35m[K~~~~~~~^~~~~[m[K
+[01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:119:108:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kroll[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  119 | void CompRoutine::publish_attitude_setpoint(double x, double y, double z, double yaw, double pitch, [01;35m[Kdouble roll[m[K) {
+      |                                                                                                     [01;35m[K~~~~~~~^~~~[m[K
+[100%] [32m[1mLinking CXX executable comp_routine[0m
+[100%] Built target comp_routine
+-- Install configuration: ""
+-- Installing: /root/ws_offboard_control/install/comp_routine/lib/comp_routine/comp_routine
+-- Set non-toolchain portion of runtime path of "/root/ws_offboard_control/install/comp_routine/lib/comp_routine/comp_routine" to ""
+-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/ament_index/resource_index/package_run_dependencies/comp_routine
+-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/ament_index/resource_index/parent_prefix_path/comp_routine
+-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/environment/ament_prefix_path.sh
+-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/environment/ament_prefix_path.dsv
+-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/environment/path.sh
+-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/environment/path.dsv
+-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/local_setup.bash
+-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/local_setup.sh
+-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/local_setup.zsh
+-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/local_setup.dsv
+-- Installing: /root/ws_offboard_control/install/comp_routine/share/comp_routine/package.dsv
+-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/ament_index/resource_index/packages/comp_routine
+-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/cmake/comp_routineConfig.cmake
+-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/cmake/comp_routineConfig-version.cmake
+-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/package.xml

@@ -1,0 +1,4 @@
+Invoking command in '/root/ws_offboard_control/build/rb5_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/rb5_ros2_control -- -j8 -l8
+Invoked command in '/root/ws_offboard_control/build/rb5_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/rb5_ros2_control -- -j8 -l8
+Invoking command in '/root/ws_offboard_control/build/rb5_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --install /root/ws_offboard_control/build/rb5_ros2_control
+Invoked command in '/root/ws_offboard_control/build/rb5_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --install /root/ws_offboard_control/build/rb5_ros2_control

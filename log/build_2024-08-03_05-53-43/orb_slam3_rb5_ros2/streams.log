@@ -1,0 +1,36 @@
+[0.054s] Invoking command in '/root/ws_offboard_control/build/orb_slam3_rb5_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake /root/ws_offboard_control/src/rb5_ros2/ORB_SLAM3_RB5 -DCMAKE_INSTALL_PREFIX=/root/ws_offboard_control/install/orb_slam3_rb5_ros2
+[0.078s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.081s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.083s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.083s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.084s]   the cmake_policy command to set the policy and suppress this warning.
+[0.085s] 
+[0.086s] Call Stack (most recent call first):
+[0.092s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.097s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.098s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.098s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.099s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.099s]   CMakeLists.txt:6 (find_package)
+[0.099s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.100s] [0m
+[0.104s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.347s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.403s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.404s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.487s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.540s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.542s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.688s] -- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)
+[0.736s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[1.025s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[1.091s] -- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)
+[1.112s] -- Found image_transport: 2.4.0 (/opt/ros/foxy/share/image_transport/cmake)
+[1.135s] [0mBuild type: Release[0m
+[1.136s] -- Using flag -std=c++14.
+[1.140s] [31mCMake Error at CMakeLists.txt:49 (message):
+[1.140s]   OpenCV > 4.4 not found.
+[1.140s] 
+[1.141s] [0m
+[1.141s] -- Configuring incomplete, errors occurred!
+[1.149s] Invoked command in '/root/ws_offboard_control/build/orb_slam3_rb5_ros2' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake /root/ws_offboard_control/src/rb5_ros2/ORB_SLAM3_RB5 -DCMAKE_INSTALL_PREFIX=/root/ws_offboard_control/install/orb_slam3_rb5_ros2

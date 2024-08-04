@@ -1,0 +1,5 @@
+[0.062s] Invoking command in '/root/ws_offboard_control/build/comp_routine': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/comp_routine -- -j8 -l8
+[0.191s] [ 50%] [32mBuilding CXX object CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o[0m
+[4.481s] make[2]: *** [CMakeFiles/comp_routine.dir/build.make:76: CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o] Interrupt
+[4.483s] make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comp_routine.dir/all] Interrupt
+[4.484s] make: *** [Makefile:146: all] Interrupt

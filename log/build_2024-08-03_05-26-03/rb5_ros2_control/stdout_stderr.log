@@ -1,0 +1,28 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/rb5_ros2_control_node.dir/src/rb5_control_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable rb5_ros2_control_node[0m
+[100%] Built target rb5_ros2_control_node
+-- Install configuration: ""
+-- Installing: /root/ws_offboard_control/install/rb5_ros2_control/lib/rb5_ros2_control/rb5_ros2_control_node
+-- Set non-toolchain portion of runtime path of "/root/ws_offboard_control/install/rb5_ros2_control/lib/rb5_ros2_control/rb5_ros2_control_node" to ""
+-- Installing: /root/ws_offboard_control/install/rb5_ros2_control/share/rb5_ros2_control/environment/pythonpath.sh
+-- Installing: /root/ws_offboard_control/install/rb5_ros2_control/share/rb5_ros2_control/environment/pythonpath.dsv
+-- Installing: /root/ws_offboard_control/install/rb5_ros2_control/lib/python3.8/site-packages/rb5_ros2_control
+-- Installing: /root/ws_offboard_control/install/rb5_ros2_control/lib/python3.8/site-packages/rb5_ros2_control/__init__.py
+Listing '/root/ws_offboard_control/install/rb5_ros2_control/lib/python3.8/site-packages/rb5_ros2_control'...
+Compiling '/root/ws_offboard_control/install/rb5_ros2_control/lib/python3.8/site-packages/rb5_ros2_control/__init__.py'...
+-- Installing: /root/ws_offboard_control/install/rb5_ros2_control/lib/rb5_ros2_control/rb5_mpi_control.py
+-- Installing: /root/ws_offboard_control/install/rb5_ros2_control/share/ament_index/resource_index/package_run_dependencies/rb5_ros2_control
+-- Installing: /root/ws_offboard_control/install/rb5_ros2_control/share/ament_index/resource_index/parent_prefix_path/rb5_ros2_control
+-- Installing: /root/ws_offboard_control/install/rb5_ros2_control/share/rb5_ros2_control/environment/ament_prefix_path.sh
+-- Installing: /root/ws_offboard_control/install/rb5_ros2_control/share/rb5_ros2_control/environment/ament_prefix_path.dsv
+-- Installing: /root/ws_offboard_control/install/rb5_ros2_control/share/rb5_ros2_control/environment/path.sh
+-- Installing: /root/ws_offboard_control/install/rb5_ros2_control/share/rb5_ros2_control/environment/path.dsv
+-- Installing: /root/ws_offboard_control/install/rb5_ros2_control/share/rb5_ros2_control/local_setup.bash
+-- Installing: /root/ws_offboard_control/install/rb5_ros2_control/share/rb5_ros2_control/local_setup.sh
+-- Installing: /root/ws_offboard_control/install/rb5_ros2_control/share/rb5_ros2_control/local_setup.zsh
+-- Installing: /root/ws_offboard_control/install/rb5_ros2_control/share/rb5_ros2_control/local_setup.dsv
+-- Installing: /root/ws_offboard_control/install/rb5_ros2_control/share/rb5_ros2_control/package.dsv
+-- Installing: /root/ws_offboard_control/install/rb5_ros2_control/share/ament_index/resource_index/packages/rb5_ros2_control
+-- Installing: /root/ws_offboard_control/install/rb5_ros2_control/share/rb5_ros2_control/cmake/rb5_ros2_controlConfig.cmake
+-- Installing: /root/ws_offboard_control/install/rb5_ros2_control/share/rb5_ros2_control/cmake/rb5_ros2_controlConfig-version.cmake
+-- Installing: /root/ws_offboard_control/install/rb5_ros2_control/share/rb5_ros2_control/package.xml

@@ -1,0 +1,1 @@
+Invoking command in '/root/ws_offboard_control/build/rb5_ros2_vision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake /root/ws_offboard_control/src/rb5_ros2/rb5_ros2_vision -DCMAKE_INSTALL_PREFIX=/root/ws_offboard_control/install/rb5_ros2_vision

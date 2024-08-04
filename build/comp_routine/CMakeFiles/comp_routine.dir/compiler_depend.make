@@ -18,11 +18,16 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
   /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__struct.hpp \
   /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__traits.hpp \
   /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__type_support.hpp \
+  /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__builder.hpp \
+  /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__struct.hpp \
+  /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__traits.hpp \
+  /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__type_support.hpp \
   /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp \
   /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_attitude_setpoint.hpp \
   /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_command.hpp \
   /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_control_mode.hpp \
+  /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_status.hpp \
   /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__builder.hpp \
   /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp \
   /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__traits.hpp \
@@ -324,15 +329,19 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
   /usr/include/aarch64-linux-gnu/asm/sve_context.h \
   /usr/include/aarch64-linux-gnu/asm/types.h \
   /usr/include/aarch64-linux-gnu/bits/byteswap.h \
+  /usr/include/aarch64-linux-gnu/bits/confname.h \
   /usr/include/aarch64-linux-gnu/bits/cpu-set.h \
   /usr/include/aarch64-linux-gnu/bits/endian.h \
   /usr/include/aarch64-linux-gnu/bits/endianness.h \
+  /usr/include/aarch64-linux-gnu/bits/environments.h \
   /usr/include/aarch64-linux-gnu/bits/errno.h \
   /usr/include/aarch64-linux-gnu/bits/floatn-common.h \
   /usr/include/aarch64-linux-gnu/bits/floatn.h \
   /usr/include/aarch64-linux-gnu/bits/flt-eval-method.h \
   /usr/include/aarch64-linux-gnu/bits/fp-fast.h \
   /usr/include/aarch64-linux-gnu/bits/fp-logb.h \
+  /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
+  /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
   /usr/include/aarch64-linux-gnu/bits/iscanonical.h \
   /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
   /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -342,6 +351,7 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
   /usr/include/aarch64-linux-gnu/bits/mathcalls-helper-functions.h \
   /usr/include/aarch64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/aarch64-linux-gnu/bits/mathcalls.h \
+  /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
   /usr/include/aarch64-linux-gnu/bits/procfs-extra.h \
   /usr/include/aarch64-linux-gnu/bits/procfs-id.h \
   /usr/include/aarch64-linux-gnu/bits/procfs-prregset.h \
@@ -408,6 +418,7 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
   /usr/include/aarch64-linux-gnu/bits/types/wint_t.h \
   /usr/include/aarch64-linux-gnu/bits/typesizes.h \
   /usr/include/aarch64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
   /usr/include/aarch64-linux-gnu/bits/waitflags.h \
   /usr/include/aarch64-linux-gnu/bits/waitstatus.h \
   /usr/include/aarch64-linux-gnu/bits/wchar.h \
@@ -609,6 +620,7 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
   /usr/include/string.h \
   /usr/include/strings.h \
   /usr/include/time.h \
+  /usr/include/unistd.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
   /usr/lib/gcc/aarch64-linux-gnu/9/include/stdalign.h \
@@ -629,6 +641,8 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 /usr/lib/gcc/aarch64-linux-gnu/9/include/stdalign.h:
 
 /usr/include/wctype.h:
+
+/usr/include/unistd.h:
 
 /usr/include/string.h:
 
@@ -692,8 +706,6 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 
 /usr/include/c++/9/ext/new_allocator.h:
 
-/usr/include/c++/9/ext/concurrence.h:
-
 /usr/include/c++/9/ext/atomicity.h:
 
 /usr/include/c++/9/ext/alloc_traits.h:
@@ -706,11 +718,25 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 
 /usr/include/c++/9/ctime:
 
-/opt/ros/foxy/include/rcutils/error_handling.h:
+/usr/include/c++/9/stdexcept:
 
-/opt/ros/foxy/include/rclcpp/experimental/subscription_intra_process_base.hpp:
+/usr/include/c++/9/cstdio:
 
-/usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h:
+/usr/include/c++/9/cstdint:
+
+/usr/include/c++/9/csignal:
+
+/usr/include/c++/9/condition_variable:
+
+/usr/include/c++/9/cmath:
+
+/usr/include/c++/9/clocale:
+
+/usr/include/c++/9/chrono:
+
+/usr/include/c++/9/cerrno:
+
+/usr/include/c++/9/cctype:
 
 /opt/ros/foxy/include/rcpputils/pointer_traits.hpp:
 
@@ -745,12 +771,6 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 /opt/ros/foxy/include/rcutils/types/hash_map.h:
 
 /opt/ros/foxy/include/rclcpp/publisher_base.hpp:
-
-/opt/ros/foxy/include/rcutils/logging_macros.h:
-
-/usr/include/c++/9/bits/predefined_ops.h:
-
-/usr/include/c++/9/cctype:
 
 /opt/ros/foxy/include/rclcpp/parameter_value.hpp:
 
@@ -818,8 +838,6 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 
 /opt/ros/foxy/include/rcl_interfaces/srv/set_parameters_atomically.hpp:
 
-/opt/ros/foxy/include/rclcpp/experimental/buffers/ring_buffer_implementation.hpp:
-
 /opt/ros/foxy/include/rcl/node_options.h:
 
 /opt/ros/foxy/include/rclcpp/subscription_traits.hpp:
@@ -852,14 +870,6 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 
 /usr/include/aarch64-linux-gnu/bits/types/siginfo_t.h:
 
-/opt/ros/foxy/include/rclcpp/subscription_base.hpp:
-
-/usr/include/aarch64-linux-gnu/c++/9/bits/os_defines.h:
-
-/opt/ros/foxy/include/rclcpp/detail/rmw_implementation_specific_payload.hpp:
-
-/opt/ros/foxy/include/rcl_interfaces/srv/detail/set_parameters__builder.hpp:
-
 /opt/ros/foxy/include/rclcpp/experimental/create_intra_process_buffer.hpp:
 
 /opt/ros/foxy/include/rclcpp/detail/resolve_enable_topic_statistics.hpp:
@@ -877,8 +887,6 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 /opt/ros/foxy/include/rosidl_typesupport_cpp/service_type_support.hpp:
 
 /usr/include/c++/9/bits/refwrap.h:
-
-/usr/include/c++/9/clocale:
 
 /opt/ros/foxy/include/rclcpp/contexts/default_context.hpp:
 
@@ -916,6 +924,18 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 
 /opt/ros/foxy/include/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
 
+/usr/include/c++/9/list:
+
+/usr/include/c++/9/istream:
+
+/opt/ros/foxy/include/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
+
+/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__builder.hpp:
+
+/usr/include/aarch64-linux-gnu/c++/9/bits/c++locale.h:
+
+/opt/ros/foxy/include/rcl_interfaces/srv/detail/set_parameters__struct.hpp:
+
 /opt/ros/foxy/include/rcl/macros.h:
 
 /opt/ros/foxy/include/rclcpp/wait_set_policies/sequential_synchronization.hpp:
@@ -936,16 +956,6 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 
 /opt/ros/foxy/include/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
 
-/opt/ros/foxy/include/rclcpp/create_service.hpp:
-
-/opt/ros/foxy/include/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
-
-/usr/include/c++/9/bits/erase_if.h:
-
-/usr/include/asm-generic/bitsperlong.h:
-
-/usr/include/asm-generic/types.h:
-
 /opt/ros/foxy/include/rcl/visibility_control.h:
 
 /opt/ros/foxy/include/libstatistics_collector/collector/metric_details_interface.hpp:
@@ -962,11 +972,39 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 
 /usr/include/c++/9/bits/stl_map.h:
 
-/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:
+/opt/ros/foxy/include/libstatistics_collector/topic_statistics_collector/constants.hpp:
 
-/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__struct.hpp:
+/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__traits.hpp:
 
-/usr/include/c++/9/bits/uniform_int_dist.h:
+/opt/ros/foxy/include/rclcpp/node_interfaces/node_services_interface.hpp:
+
+/usr/include/aarch64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/c++/9/bits/unique_ptr.h:
+
+/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__struct.hpp:
+
+/usr/include/c++/9/thread:
+
+/opt/ros/foxy/include/rclcpp/logging.hpp:
+
+/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp:
+
+/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__builder.hpp:
+
+/opt/ros/foxy/include/rcl_interfaces/msg/detail/parameter_event__traits.hpp:
+
+/usr/include/aarch64-linux-gnu/bits/typesizes.h:
+
+/usr/include/c++/9/cstddef:
+
+/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__type_support.hpp:
+
+/opt/ros/foxy/include/rclcpp/subscription_base.hpp:
+
+/usr/include/aarch64-linux-gnu/c++/9/bits/os_defines.h:
+
+/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__struct.hpp:
 
 /usr/include/aarch64-linux-gnu/bits/stdlib-float.h:
 
@@ -976,45 +1014,17 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 
 /opt/ros/foxy/include/rcl_interfaces/msg/set_parameters_result.hpp:
 
+/opt/ros/foxy/include/libstatistics_collector/visibility_control.hpp:
+
+/usr/include/c++/9/future:
+
+/opt/ros/foxy/include/rmw/localhost.h:
+
 /opt/ros/foxy/include/rclcpp/rclcpp.hpp:
 
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__type_support.hpp:
 
 /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__builder.hpp:
-
-/opt/ros/foxy/include/rclcpp/parameter.hpp:
-
-/usr/include/aarch64-linux-gnu/asm/posix_types.h:
-
-/usr/include/aarch64-linux-gnu/bits/setjmp.h:
-
-/opt/ros/foxy/include/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
-
-/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:
-
-/usr/include/c++/9/ratio:
-
-/opt/ros/foxy/include/rcutils/types.h:
-
-/opt/ros/foxy/include/rcl_interfaces/msg/parameter_event.hpp:
-
-/usr/include/aarch64-linux-gnu/sys/cdefs.h:
-
-/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__struct.hpp:
-
-/opt/ros/foxy/include/rclcpp/node_interfaces/node_services_interface.hpp:
-
-/usr/include/aarch64-linux-gnu/bits/iscanonical.h:
-
-/usr/include/c++/9/bits/unique_ptr.h:
-
-/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__traits.hpp:
-
-/usr/include/c++/9/thread:
-
-/opt/ros/foxy/include/rclcpp/logging.hpp:
-
-/opt/ros/foxy/include/libstatistics_collector/topic_statistics_collector/constants.hpp:
 
 /usr/include/math.h:
 
@@ -1028,33 +1038,17 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 
 /opt/ros/foxy/include/rcl/service.h:
 
-/usr/include/c++/9/chrono:
-
 /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__type_support.hpp:
 
 /opt/ros/foxy/include/rcl/arguments.h:
 
 /opt/ros/foxy/include/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
 
-/opt/ros/foxy/include/rcutils/logging.h:
-
 /opt/ros/foxy/include/libstatistics_collector/moving_average_statistics/moving_average.hpp:
 
 /usr/include/c++/9/typeindex:
 
 /opt/ros/foxy/include/rcl_interfaces/msg/parameter_value.hpp:
-
-/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
-
-/opt/ros/foxy/include/rclcpp/node_interfaces/node_base_interface.hpp:
-
-/usr/include/c++/9/bits/parse_numbers.h:
-
-/opt/ros/foxy/include/rclcpp/executors/static_single_threaded_executor.hpp:
-
-/opt/ros/foxy/include/tracetools/config.h:
-
-/opt/ros/foxy/include/rcl/time.h:
 
 /opt/ros/foxy/include/rcpputils/join.hpp:
 
@@ -1064,9 +1058,25 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 
 /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_command.hpp:
 
-/usr/include/aarch64-linux-gnu/c++/9/bits/c++locale.h:
+/opt/ros/foxy/include/rclcpp/parameter.hpp:
 
-/opt/ros/foxy/include/rcl_interfaces/srv/detail/set_parameters__struct.hpp:
+/usr/include/aarch64-linux-gnu/asm/posix_types.h:
+
+/usr/include/aarch64-linux-gnu/bits/setjmp.h:
+
+/usr/include/c++/9/ratio:
+
+/opt/ros/foxy/include/rcutils/types.h:
+
+/opt/ros/foxy/include/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
+
+/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:
+
+/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_command__struct.hpp:
+
+/usr/include/c++/9/bits/uniform_int_dist.h:
+
+/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:
 
 /opt/ros/foxy/include/rclcpp/timer.hpp:
 
@@ -1102,6 +1112,24 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 
 /opt/ros/foxy/include/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp:
 
+/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__builder.hpp:
+
+/opt/ros/foxy/include/rclcpp/detail/rmw_implementation_specific_payload.hpp:
+
+/opt/ros/foxy/include/rcl_interfaces/srv/detail/set_parameters__builder.hpp:
+
+/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_status.hpp:
+
+/opt/ros/foxy/include/rmw/ret_types.h:
+
+/opt/ros/foxy/include/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp:
+
+/opt/ros/foxy/include/rosidl_runtime_c/message_initialization.h:
+
+/usr/include/features.h:
+
+/opt/ros/foxy/include/libstatistics_collector/collector/collector.hpp:
+
 /opt/ros/foxy/include/rcl/error_handling.h:
 
 /opt/ros/foxy/include/rcl/domain_id.h:
@@ -1118,29 +1146,21 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 
 /usr/include/c++/9/bits/stl_uninitialized.h:
 
+/opt/ros/foxy/include/rclcpp/experimental/subscription_intra_process_base.hpp:
+
+/usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h:
+
 /opt/ros/foxy/include/rclcpp/create_client.hpp:
 
 /opt/ros/foxy/include/rclcpp/topic_statistics_state.hpp:
 
 /opt/ros/foxy/include/rcl_interfaces/srv/detail/get_parameters__struct.hpp:
 
-/opt/ros/foxy/include/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp:
-
-/opt/ros/foxy/include/rosidl_runtime_c/message_initialization.h:
-
-/usr/include/features.h:
-
-/opt/ros/foxy/include/libstatistics_collector/collector/collector.hpp:
-
 /opt/ros/foxy/include/rcl/allocator.h:
 
 /usr/include/c++/9/bits/range_access.h:
 
 /opt/ros/foxy/include/rclcpp/create_timer.hpp:
-
-/usr/include/aarch64-linux-gnu/bits/types/mbstate_t.h:
-
-/opt/ros/foxy/include/rcl_interfaces/srv/detail/get_parameters__traits.hpp:
 
 /usr/include/c++/9/bits/stl_list.h:
 
@@ -1154,13 +1174,31 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 
 /opt/ros/foxy/include/rcutils/types/string_map.h:
 
-/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__builder.hpp:
+/opt/ros/foxy/include/rcl_interfaces/msg/parameter_event.hpp:
 
-/opt/ros/foxy/include/rcl_interfaces/msg/detail/parameter_event__traits.hpp:
+/usr/include/aarch64-linux-gnu/sys/cdefs.h:
 
-/usr/include/aarch64-linux-gnu/bits/typesizes.h:
+/opt/ros/foxy/include/rclcpp/node_interfaces/node_base_interface.hpp:
 
-/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp:
+/usr/include/c++/9/bits/parse_numbers.h:
+
+/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/asm-generic/types.h:
+
+/opt/ros/foxy/include/rclcpp/create_service.hpp:
+
+/opt/ros/foxy/include/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
+
+/usr/include/c++/9/bits/erase_if.h:
+
+/opt/ros/foxy/include/rclcpp/executors/static_single_threaded_executor.hpp:
+
+/opt/ros/foxy/include/rcl/time.h:
+
+/opt/ros/foxy/include/tracetools/config.h:
 
 /usr/include/c++/9/system_error:
 
@@ -1187,10 +1225,6 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 /usr/include/aarch64-linux-gnu/bits/libc-header-start.h:
 
 /opt/ros/foxy/include/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp:
-
-/opt/ros/foxy/include/rcutils/allocator.h:
-
-/opt/ros/foxy/include/rclcpp/node.hpp:
 
 /opt/ros/foxy/include/rcl_interfaces/msg/list_parameters_result.hpp:
 
@@ -1220,6 +1254,10 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 
 /opt/ros/foxy/include/rcl_interfaces/msg/detail/parameter_event__type_support.hpp:
 
+/opt/ros/foxy/include/rclcpp/node.hpp:
+
+/opt/ros/foxy/include/rcutils/allocator.h:
+
 /opt/ros/foxy/include/rcl_interfaces/msg/detail/parameter__traits.hpp:
 
 /opt/ros/foxy/include/rclcpp/node_interfaces/node_timers_interface.hpp:
@@ -1240,17 +1278,11 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 
 /usr/include/aarch64-linux-gnu/bits/types/clock_t.h:
 
-/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__traits.hpp:
-
-/usr/include/aarch64-linux-gnu/bits/types/locale_t.h:
-
 /usr/include/c++/9/bits/std_abs.h:
 
 /opt/ros/foxy/include/rclcpp/waitable.hpp:
 
 /opt/ros/foxy/include/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp:
-
-/usr/include/c++/9/csignal:
 
 /opt/ros/foxy/include/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
 
@@ -1336,13 +1368,13 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 
 /usr/include/c++/9/bits/basic_string.tcc:
 
-/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__type_support.hpp:
-
-/usr/include/c++/9/cstddef:
-
 /opt/ros/foxy/include/rcl_interfaces/srv/detail/list_parameters__type_support.hpp:
 
 /opt/ros/foxy/include/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
+
+/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_attitude_setpoint.hpp:
+
+/opt/ros/foxy/include/rcl_interfaces/srv/detail/list_parameters__traits.hpp:
 
 /usr/include/wchar.h:
 
@@ -1350,23 +1382,17 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 
 /usr/include/c++/9/atomic:
 
-/opt/ros/foxy/include/libstatistics_collector/visibility_control.hpp:
+/opt/ros/foxy/include/rcutils/error_handling.h:
 
-/opt/ros/foxy/include/rcl_interfaces/srv/detail/list_parameters__traits.hpp:
+/opt/ros/foxy/include/rcutils/logging.h:
 
-/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_attitude_setpoint.hpp:
+/usr/include/aarch64-linux-gnu/bits/types/locale_t.h:
 
-/usr/include/c++/9/future:
+/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__traits.hpp:
 
-/opt/ros/foxy/include/rmw/localhost.h:
+/opt/ros/foxy/include/rcutils/logging_macros.h:
 
-/usr/include/c++/9/list:
-
-/usr/include/c++/9/istream:
-
-/opt/ros/foxy/include/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
-
-/opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__builder.hpp:
+/usr/include/c++/9/bits/predefined_ops.h:
 
 /opt/ros/foxy/include/rcutils/qsort.h:
 
@@ -1402,8 +1428,6 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 
 /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h:
 
-/usr/include/c++/9/condition_variable:
-
 /opt/ros/foxy/include/rmw/macros.h:
 
 /usr/include/aarch64-linux-gnu/bits/timesize.h:
@@ -1425,8 +1449,6 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 /usr/include/c++/9/bits/stl_pair.h:
 
 /opt/ros/foxy/include/rmw/qos_profiles.h:
-
-/opt/ros/foxy/include/rmw/ret_types.h:
 
 /opt/ros/foxy/include/rcutils/macros.h:
 
@@ -1516,8 +1538,6 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 
 /usr/include/c++/9/bits/stl_vector.h:
 
-/usr/include/c++/9/cstdint:
-
 /usr/include/aarch64-linux-gnu/bits/byteswap.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/struct_sigstack.h:
@@ -1527,6 +1547,10 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 /usr/include/c++/9/bits/alloc_traits.h:
 
 /usr/include/c++/9/bits/stl_heap.h:
+
+/opt/ros/foxy/include/rclcpp/experimental/buffers/ring_buffer_implementation.hpp:
+
+/usr/include/aarch64-linux-gnu/bits/environments.h:
 
 /usr/include/aarch64-linux-gnu/bits/errno.h:
 
@@ -1548,6 +1572,14 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 
 /usr/include/aarch64-linux-gnu/bits/types/wint_t.h:
 
+/usr/include/aarch64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/c++/9/ext/concurrence.h:
+
+/usr/include/aarch64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/c++/9/bits/ostream.tcc:
+
 /opt/ros/foxy/include/rclcpp/loaned_message.hpp:
 
 /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h:
@@ -1557,6 +1589,14 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 /usr/include/aarch64-linux-gnu/bits/math-vector.h:
 
 /usr/include/aarch64-linux-gnu/gnu/stubs.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/mbstate_t.h:
+
+/opt/ros/foxy/include/rcl_interfaces/srv/detail/get_parameters__traits.hpp:
+
+/usr/include/aarch64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/c++/9/bits/stl_set.h:
 
 /usr/include/aarch64-linux-gnu/bits/procfs-id.h:
 
@@ -1680,6 +1720,10 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 
 /usr/include/aarch64-linux-gnu/bits/uintn-identity.h:
 
+/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__traits.hpp:
+
+/usr/include/aarch64-linux-gnu/bits/unistd_ext.h:
+
 /usr/include/aarch64-linux-gnu/bits/waitflags.h:
 
 /usr/include/c++/9/bits/hash_bytes.h:
@@ -1717,6 +1761,8 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 /usr/include/aarch64-linux-gnu/c++/9/bits/error_constants.h:
 
 /usr/include/c++/9/cwchar:
+
+/opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__type_support.hpp:
 
 /usr/include/aarch64-linux-gnu/c++/9/bits/gthr-default.h:
 
@@ -1794,8 +1840,6 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 
 /usr/include/c++/9/bits/localefwd.h:
 
-/usr/include/c++/9/bits/ostream.tcc:
-
 /usr/include/c++/9/bits/ostream_insert.h:
 
 /opt/ros/foxy/include/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp:
@@ -1820,9 +1864,9 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 
 /usr/include/c++/9/bits/stl_multimap.h:
 
-/usr/include/c++/9/bits/stl_multiset.h:
+/usr/include/aarch64-linux-gnu/bits/confname.h:
 
-/usr/include/c++/9/bits/stl_set.h:
+/usr/include/c++/9/bits/stl_multiset.h:
 
 /usr/include/c++/9/bits/streambuf.tcc:
 
@@ -1839,11 +1883,3 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: /root/ws_offboard_control/sr
 /opt/ros/foxy/include/libstatistics_collector/topic_statistics_collector/received_message_period.hpp:
 
 /usr/include/c++/9/cassert:
-
-/usr/include/c++/9/cerrno:
-
-/usr/include/c++/9/cmath:
-
-/usr/include/c++/9/stdexcept:
-
-/usr/include/c++/9/cstdio:

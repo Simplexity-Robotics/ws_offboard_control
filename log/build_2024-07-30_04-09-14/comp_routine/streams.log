@@ -1,0 +1,13 @@
+[0.150s] Invoking command in '/root/ws_offboard_control/build/comp_routine': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/comp_routine -- -j8 -l8
+[0.469s] [ 50%] [32mBuilding CXX object CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o[0m
+[7.113s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:47:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kconstexpr[m[K’ needed for in-class initialization of static data member ‘[01m[Kdouble CompRoutine::currentHeading[m[K’ of non-integral type [[01;31m[K-fpermissive[m[K]
+[7.114s]    47 |   static double [01;31m[KcurrentHeading[m[K = 0.0
+[7.114s]       |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[7.114s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:47:34:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[7.114s]    47 |   static double currentHeading = [01;31m[K0.0[m[K
+[7.114s]       |                                  [01;31m[K^~~[m[K
+[7.114s]       |                                     [32m[K;[m[K
+[12.900s] make[2]: *** [CMakeFiles/comp_routine.dir/build.make:76: CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o] Error 1
+[12.905s] make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comp_routine.dir/all] Error 2
+[12.906s] make: *** [Makefile:146: all] Error 2
+[12.906s] Invoked command in '/root/ws_offboard_control/build/comp_routine' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/comp_routine -- -j8 -l8

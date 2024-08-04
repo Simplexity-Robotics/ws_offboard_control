@@ -1,0 +1,228 @@
+[0.000000] (-) TimerEvent: {}
+[0.001808] (comp_routine) JobQueued: {'identifier': 'comp_routine', 'dependencies': OrderedDict()}
+[0.001974] (px4_msgs) JobQueued: {'identifier': 'px4_msgs', 'dependencies': OrderedDict()}
+[0.002266] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/root/ws_offboard_control/install/px4_msgs')])}
+[0.002750] (px4_msgs) JobStarted: {'identifier': 'px4_msgs'}
+[0.014834] (comp_routine) JobStarted: {'identifier': 'comp_routine'}
+[0.024003] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'cmake'}
+[0.024883] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'build'}
+[0.025632] (px4_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ws_offboard_control/build/px4_msgs', '--', '-j8', '-l8'], 'cwd': '/root/ws_offboard_control/build/px4_msgs', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('ROS_PYTHON_VERSION', '3'), ('PWD', '/root/ws_offboard_control/build/px4_msgs'), ('LOGNAME', 'root'), ('XDG_SESSION_TYPE', 'tty'), ('ROS_LOG_DIR', '/root/ros2_logs'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('CMAKE_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('COLCON_PREFIX_PATH', '/root/ws_offboard_control/install:/opt/motovisio/ros_ws/install'), ('SSH_CONNECTION', '192.168.2.120 50258 192.168.2.2 22'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONPATH', '/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SHLVL', '1'), ('XDG_SESSION_ID', '3'), ('LD_LIBRARY_PATH', '/root/ws_offboard_control/install/px4_ros_com/lib:/root/ws_offboard_control/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('ROS_LOCALHOST_ONLY', '0'), ('SSH_CLIENT', '192.168.2.120 50258 22'), ('PATH', '/opt/ros/foxy/bin:/root/.motovisio/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('SSH_TTY', '/dev/pts/0'), ('ROS_DISTRO', 'foxy'), ('OLDPWD', '/root'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.040494] (comp_routine) JobProgress: {'identifier': 'comp_routine', 'progress': 'cmake'}
+[0.041291] (comp_routine) JobProgress: {'identifier': 'comp_routine', 'progress': 'build'}
+[0.044185] (comp_routine) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ws_offboard_control/build/comp_routine', '--', '-j8', '-l8'], 'cwd': '/root/ws_offboard_control/build/comp_routine', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('ROS_PYTHON_VERSION', '3'), ('PWD', '/root/ws_offboard_control/build/comp_routine'), ('LOGNAME', 'root'), ('XDG_SESSION_TYPE', 'tty'), ('ROS_LOG_DIR', '/root/ros2_logs'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('CMAKE_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('COLCON_PREFIX_PATH', '/root/ws_offboard_control/install:/opt/motovisio/ros_ws/install'), ('SSH_CONNECTION', '192.168.2.120 50258 192.168.2.2 22'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONPATH', '/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SHLVL', '1'), ('XDG_SESSION_ID', '3'), ('LD_LIBRARY_PATH', '/root/ws_offboard_control/install/px4_ros_com/lib:/root/ws_offboard_control/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('ROS_LOCALHOST_ONLY', '0'), ('SSH_CLIENT', '192.168.2.120 50258 22'), ('PATH', '/opt/ros/foxy/bin:/root/.motovisio/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('SSH_TTY', '/dev/pts/0'), ('ROS_DISTRO', 'foxy'), ('OLDPWD', '/root'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.099876] (-) TimerEvent: {}
+[0.171352] (comp_routine) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o\x1b[0m\n'}
+[0.200107] (-) TimerEvent: {}
+[0.301159] (-) TimerEvent: {}
+[0.402283] (-) TimerEvent: {}
+[0.503263] (-) TimerEvent: {}
+[0.604452] (-) TimerEvent: {}
+[0.705438] (-) TimerEvent: {}
+[0.787674] (px4_msgs) StdoutLine: {'line': b'[  0%] Built target px4_msgs__cpp\n'}
+[0.800960] (px4_msgs) StdoutLine: {'line': b'[ 12%] Built target px4_msgs__rosidl_generator_c\n'}
+[0.805642] (-) TimerEvent: {}
+[0.898533] (px4_msgs) StdoutLine: {'line': b'[ 25%] Built target px4_msgs__rosidl_typesupport_c\n'}
+[0.906096] (-) TimerEvent: {}
+[0.907450] (px4_msgs) StdoutLine: {'line': b'[ 38%] Built target px4_msgs__rosidl_typesupport_introspection_c\n'}
+[0.955362] (px4_msgs) StdoutLine: {'line': b'[ 50%] Built target px4_msgs__rosidl_typesupport_cpp\n'}
+[0.971157] (px4_msgs) StdoutLine: {'line': b'[ 63%] Built target px4_msgs__rosidl_typesupport_introspection_cpp\n'}
+[1.005906] (px4_msgs) StdoutLine: {'line': b'[ 75%] Built target px4_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[1.006739] (-) TimerEvent: {}
+[1.107489] (-) TimerEvent: {}
+[1.182578] (px4_msgs) StdoutLine: {'line': b'[ 88%] Built target px4_msgs__rosidl_typesupport_fastrtps_c\n'}
+[1.207734] (-) TimerEvent: {}
+[1.222855] (px4_msgs) StdoutLine: {'line': b'[ 88%] Built target px4_msgs\n'}
+[1.305786] (px4_msgs) StdoutLine: {'line': b'[ 88%] Built target px4_msgs__py\n'}
+[1.307850] (-) TimerEvent: {}
+[1.408920] (-) TimerEvent: {}
+[1.479783] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__python\n'}
+[1.509141] (-) TimerEvent: {}
+[1.532420] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__rosidl_typesupport_c__pyext\n'}
+[1.537400] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[1.541258] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.552719] (px4_msgs) CommandEnded: {'returncode': 0}
+[1.609617] (-) TimerEvent: {}
+[1.711011] (-) TimerEvent: {}
+[1.771810] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.772998] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:299:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kspin(CompRoutine*&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.773383] (comp_routine) StderrLine: {'line': b'  299 |  rclcpp::spin(myCompRoutine\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[1.773778] (comp_routine) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.774154] (comp_routine) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.774543] (comp_routine) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:6\x1b[m\x1b[K:\n'}
+[1.774909] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:45:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::spin(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.775276] (comp_routine) StderrLine: {'line': b'   45 | \x1b[01;36m\x1b[Kspin\x1b[m\x1b[K(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr);\n'}
+[1.775640] (comp_routine) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.776001] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:45:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KCompRoutine*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::node_interfaces::NodeBaseInterface::SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::node_interfaces::NodeBaseInterface>\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[1.776380] (comp_routine) StderrLine: {'line': b'   45 | spin(\x1b[01;36m\x1b[Krclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr\x1b[m\x1b[K);\n'}
+[1.776739] (comp_routine) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[1.777100] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:49:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::spin(rclcpp::Node::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.777464] (comp_routine) StderrLine: {'line': b'   49 | \x1b[01;36m\x1b[Kspin\x1b[m\x1b[K(rclcpp::Node::SharedPtr node_ptr);\n'}
+[1.777872] (comp_routine) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.778289] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:49:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KCompRoutine*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Node>\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[1.778665] (comp_routine) StderrLine: {'line': b'   49 | spin(\x1b[01;36m\x1b[Krclcpp::Node::SharedPtr node_ptr\x1b[m\x1b[K);\n'}
+[1.779029] (comp_routine) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[1.811416] (-) TimerEvent: {}
+[1.912451] (-) TimerEvent: {}
+[2.013464] (-) TimerEvent: {}
+[2.114550] (-) TimerEvent: {}
+[2.215599] (-) TimerEvent: {}
+[2.317188] (-) TimerEvent: {}
+[2.418149] (-) TimerEvent: {}
+[2.519020] (-) TimerEvent: {}
+[2.619861] (-) TimerEvent: {}
+[2.720743] (-) TimerEvent: {}
+[2.821678] (-) TimerEvent: {}
+[2.922640] (-) TimerEvent: {}
+[3.023768] (-) TimerEvent: {}
+[3.125092] (-) TimerEvent: {}
+[3.226099] (-) TimerEvent: {}
+[3.326996] (-) TimerEvent: {}
+[3.427933] (-) TimerEvent: {}
+[3.528919] (-) TimerEvent: {}
+[3.630332] (-) TimerEvent: {}
+[3.731469] (-) TimerEvent: {}
+[3.743170] (comp_routine) StderrLine: {'line': b'make[2]: *** [CMakeFiles/comp_routine.dir/build.make:76: CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o] Error 1\n'}
+[3.745303] (comp_routine) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comp_routine.dir/all] Error 2\n'}
+[3.745755] (comp_routine) StderrLine: {'line': b'make: *** [Makefile:146: all] Error 2\n'}
+[3.750939] (comp_routine) CommandEnded: {'returncode': 2}
+[3.831811] (-) TimerEvent: {}
+[3.864449] (comp_routine) JobEnded: {'identifier': 'comp_routine', 'rc': 2}
+[3.931953] (-) TimerEvent: {}
+[4.032767] (-) TimerEvent: {}
+[4.133647] (-) TimerEvent: {}
+[4.234535] (-) TimerEvent: {}
+[4.336916] (-) TimerEvent: {}
+[4.438416] (-) TimerEvent: {}
+[4.539678] (-) TimerEvent: {}
+[4.641985] (-) TimerEvent: {}
+[4.743114] (-) TimerEvent: {}
+[4.844993] (-) TimerEvent: {}
+[4.947105] (-) TimerEvent: {}
+[5.048358] (-) TimerEvent: {}
+[5.149787] (-) TimerEvent: {}
+[5.250801] (-) TimerEvent: {}
+[5.351940] (-) TimerEvent: {}
+[5.453069] (-) TimerEvent: {}
+[5.554514] (-) TimerEvent: {}
+[5.655625] (-) TimerEvent: {}
+[5.756852] (-) TimerEvent: {}
+[5.858284] (-) TimerEvent: {}
+[5.959684] (-) TimerEvent: {}
+[6.061206] (-) TimerEvent: {}
+[6.162480] (-) TimerEvent: {}
+[6.263645] (-) TimerEvent: {}
+[6.364997] (-) TimerEvent: {}
+[6.466184] (-) TimerEvent: {}
+[6.568298] (-) TimerEvent: {}
+[6.670066] (-) TimerEvent: {}
+[6.771549] (-) TimerEvent: {}
+[6.872892] (-) TimerEvent: {}
+[6.974072] (-) TimerEvent: {}
+[7.075383] (-) TimerEvent: {}
+[7.176533] (-) TimerEvent: {}
+[7.277694] (-) TimerEvent: {}
+[7.378863] (-) TimerEvent: {}
+[7.479990] (-) TimerEvent: {}
+[7.581584] (-) TimerEvent: {}
+[7.682757] (-) TimerEvent: {}
+[7.783853] (-) TimerEvent: {}
+[7.885175] (-) TimerEvent: {}
+[7.986479] (-) TimerEvent: {}
+[8.087623] (-) TimerEvent: {}
+[8.188902] (-) TimerEvent: {}
+[8.290222] (-) TimerEvent: {}
+[8.391369] (-) TimerEvent: {}
+[8.492510] (-) TimerEvent: {}
+[8.593656] (-) TimerEvent: {}
+[8.694854] (-) TimerEvent: {}
+[8.796006] (-) TimerEvent: {}
+[8.897152] (-) TimerEvent: {}
+[8.998625] (-) TimerEvent: {}
+[9.099757] (-) TimerEvent: {}
+[9.200884] (-) TimerEvent: {}
+[9.302878] (-) TimerEvent: {}
+[9.404059] (-) TimerEvent: {}
+[9.505342] (-) TimerEvent: {}
+[9.606755] (-) TimerEvent: {}
+[9.707861] (-) TimerEvent: {}
+[9.809005] (-) TimerEvent: {}
+[9.910181] (-) TimerEvent: {}
+[10.011309] (-) TimerEvent: {}
+[10.112555] (-) TimerEvent: {}
+[10.213686] (-) TimerEvent: {}
+[10.314861] (-) TimerEvent: {}
+[10.416189] (-) TimerEvent: {}
+[10.517465] (-) TimerEvent: {}
+[10.618794] (-) TimerEvent: {}
+[10.719952] (-) TimerEvent: {}
+[10.821198] (-) TimerEvent: {}
+[10.922577] (-) TimerEvent: {}
+[11.023897] (-) TimerEvent: {}
+[11.125342] (-) TimerEvent: {}
+[11.226662] (-) TimerEvent: {}
+[11.327790] (-) TimerEvent: {}
+[11.428965] (-) TimerEvent: {}
+[11.530152] (-) TimerEvent: {}
+[11.631320] (-) TimerEvent: {}
+[11.732504] (-) TimerEvent: {}
+[11.833635] (-) TimerEvent: {}
+[11.935191] (-) TimerEvent: {}
+[12.036301] (-) TimerEvent: {}
+[12.137454] (-) TimerEvent: {}
+[12.238756] (-) TimerEvent: {}
+[12.339869] (-) TimerEvent: {}
+[12.440994] (-) TimerEvent: {}
+[12.542282] (-) TimerEvent: {}
+[12.643603] (-) TimerEvent: {}
+[12.744884] (-) TimerEvent: {}
+[12.846146] (-) TimerEvent: {}
+[12.947640] (-) TimerEvent: {}
+[13.048769] (-) TimerEvent: {}
+[13.150036] (-) TimerEvent: {}
+[13.251207] (-) TimerEvent: {}
+[13.352580] (-) TimerEvent: {}
+[13.453817] (-) TimerEvent: {}
+[13.554926] (-) TimerEvent: {}
+[13.656043] (-) TimerEvent: {}
+[13.757237] (-) TimerEvent: {}
+[13.859005] (-) TimerEvent: {}
+[13.960157] (-) TimerEvent: {}
+[14.061784] (-) TimerEvent: {}
+[14.162918] (-) TimerEvent: {}
+[14.264114] (-) TimerEvent: {}
+[14.365285] (-) TimerEvent: {}
+[14.466522] (-) TimerEvent: {}
+[14.567662] (-) TimerEvent: {}
+[14.668785] (-) TimerEvent: {}
+[14.769942] (-) TimerEvent: {}
+[14.871030] (-) TimerEvent: {}
+[14.972411] (-) TimerEvent: {}
+[15.073669] (-) TimerEvent: {}
+[15.174840] (-) TimerEvent: {}
+[15.276003] (-) TimerEvent: {}
+[15.377150] (-) TimerEvent: {}
+[15.478391] (-) TimerEvent: {}
+[15.579534] (-) TimerEvent: {}
+[15.680753] (-) TimerEvent: {}
+[15.781990] (-) TimerEvent: {}
+[15.883196] (-) TimerEvent: {}
+[15.984554] (-) TimerEvent: {}
+[16.085932] (-) TimerEvent: {}
+[16.187077] (-) TimerEvent: {}
+[16.288592] (-) TimerEvent: {}
+[16.390046] (-) TimerEvent: {}
+[16.491180] (-) TimerEvent: {}
+[16.592318] (-) TimerEvent: {}
+[16.693409] (-) TimerEvent: {}
+[16.794760] (-) TimerEvent: {}
+[16.895779] (-) TimerEvent: {}
+[16.996706] (-) TimerEvent: {}
+[17.098257] (-) TimerEvent: {}
+[17.199672] (-) TimerEvent: {}
+[17.300683] (-) TimerEvent: {}
+[17.401959] (-) TimerEvent: {}
+[17.503510] (-) TimerEvent: {}
+[17.604633] (-) TimerEvent: {}
+[17.659719] (px4_msgs) JobEnded: {'identifier': 'px4_msgs', 'rc': 'SIGINT'}
+[17.671981] (px4_ros_com) JobSkipped: {'identifier': 'px4_ros_com'}
+[17.672211] (-) EventReactorShutdown: {}

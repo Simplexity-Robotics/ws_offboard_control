@@ -1,0 +1,18 @@
+[0.032s] Invoking command in '/root/ws_offboard_control/build/comp_routine': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/comp_routine -- -j8 -l8
+[0.148s] [ 50%] [32mBuilding CXX object CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o[0m
+[1.636s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:[m[K In member function ‘[01m[Kvoid CompRoutine::publish_offboard_control_mode_dummy()[m[K’:
+[1.637s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:156:2:[m[K [01;31m[Kerror: [m[K‘[01m[KVehicleRatesSetpoint[m[K’ was not declared in this scope
+[1.637s]   156 |  [01;31m[KVehicleRatesSetpoint[m[K msg2{};
+[1.638s]       |  [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[1.638s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:157:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg2[m[K’ was not declared in this scope; did you mean ‘[01m[Kmsg[m[K’?
+[1.638s]   157 |  [01;31m[Kmsg2[m[K.timestamp = this->get_clock()->now().nanoseconds() / 1000;
+[1.639s]       |  [01;31m[K^~~~[m[K
+[1.639s]       |  [32m[Kmsg[m[K
+[1.657s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:[m[K In function ‘[01m[Kvoid mySigintHandler(int)[m[K’:
+[1.657s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:240:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksig[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.657s]   240 | void mySigintHandler([01;35m[Kint sig[m[K) {
+[1.658s]       |                      [01;35m[K~~~~^~~[m[K
+[2.857s] make[2]: *** [CMakeFiles/comp_routine.dir/build.make:76: CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o] Error 1
+[2.858s] make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comp_routine.dir/all] Error 2
+[2.858s] make: *** [Makefile:146: all] Error 2
+[2.864s] Invoked command in '/root/ws_offboard_control/build/comp_routine' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/comp_routine -- -j8 -l8

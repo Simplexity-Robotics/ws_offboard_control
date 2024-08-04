@@ -1,0 +1,20 @@
+[0.110s] Invoking command in '/root/ws_offboard_control/build/comp_routine': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/comp_routine -- -j8 -l8
+[0.250s] [ 50%] [32mBuilding CXX object CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o[0m
+[4.804s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:[m[K In member function ‘[01m[Kvoid CompRoutine::loop()[m[K’:
+[4.805s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:97:40:[m[K [01;31m[Kerror: [m[Kinvalid use of void expression
+[4.805s]    97 |      move(0.5,0.0,0.3,toRadians(255),10[01;31m[K)[m[K;
+[4.805s]       |                                        [01;31m[K^[m[K
+[4.840s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:[m[K At global scope:
+[4.840s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:162:8:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kdouble CompRoutine::toRadians(double)[m[K’
+[4.843s]   162 | double [01;31m[KCompRoutine[m[K::toRadians(double degrees) {
+[4.845s]       |        [01;31m[K^~~~~~~~~~~[m[K
+[4.846s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:29:8:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid CompRoutine::toRadians(double)[m[K’
+[4.846s]    29 |   void [01;36m[KtoRadians[m[K(double degree);
+[4.846s]       |        [01;36m[K^~~~~~~~~[m[K
+[4.847s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:15:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass CompRoutine[m[K’ defined here
+[4.847s]    15 | class [01;36m[KCompRoutine[m[K : public rclcpp::Node {
+[4.848s]       |       [01;36m[K^~~~~~~~~~~[m[K
+[7.427s] make[2]: *** [CMakeFiles/comp_routine.dir/build.make:76: CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o] Error 1
+[7.428s] make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comp_routine.dir/all] Error 2
+[7.431s] make: *** [Makefile:146: all] Error 2
+[7.442s] Invoked command in '/root/ws_offboard_control/build/comp_routine' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/comp_routine -- -j8 -l8

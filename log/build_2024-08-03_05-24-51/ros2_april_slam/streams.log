@@ -1,0 +1,71 @@
+[0.141s] Invoking command in '/root/ws_offboard_control/build/ros2_april_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake /root/ws_offboard_control/src/rb5_ros2/ros2_april_slam -DCMAKE_INSTALL_PREFIX=/root/ws_offboard_control/install/ros2_april_slam
+[0.262s] -- The C compiler identification is GNU 9.4.0
+[0.384s] -- The CXX compiler identification is GNU 9.4.0
+[0.397s] -- Detecting C compiler ABI info
+[0.497s] -- Detecting C compiler ABI info - done
+[0.536s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.548s] -- Detecting C compile features
+[0.550s] -- Detecting C compile features - done
+[0.550s] -- Detecting CXX compiler ABI info
+[0.697s] -- Detecting CXX compiler ABI info - done
+[0.745s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.745s] -- Detecting CXX compile features
+[0.746s] -- Detecting CXX compile features - done
+[0.746s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.747s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.748s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.748s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.748s]   the cmake_policy command to set the policy and suppress this warning.
+[0.749s] 
+[0.750s] Call Stack (most recent call first):
+[0.751s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.751s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.752s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.752s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.753s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.753s]   CMakeLists.txt:19 (find_package)
+[0.754s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.754s] [0m
+[0.773s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3")
+[0.774s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.109s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.171s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.182s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.358s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")
+[1.408s] -- Found FastRTPS: /opt/ros/foxy/include
+[1.520s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.617s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.618s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.622s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.752s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.753s] -- Looking for pthread_create in pthreads
+[1.907s] -- Looking for pthread_create in pthreads - not found
+[1.911s] -- Looking for pthread_create in pthread
+[2.062s] -- Looking for pthread_create in pthread - found
+[2.080s] -- Found Threads: TRUE
+[2.261s] -- Found rclcpp_components: 2.4.3 (/opt/ros/foxy/share/rclcpp_components/cmake)
+[2.381s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[2.509s] -- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)
+[2.570s] -- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)
+[2.580s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[3.027s] -- Found rosbag2_storage: 0.3.11 (/opt/ros/foxy/share/rosbag2_storage/cmake)
+[3.048s] -- Setting yaml-cpp_DIR to: '/opt/ros/foxy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/lib/cmake/yaml-cpp'
+[3.051s] -- Found rosbag2_storage_default_plugins: 0.3.11 (/opt/ros/foxy/share/rosbag2_storage_default_plugins/cmake)
+[3.070s] -- Configuring incomplete, errors occurred!
+[3.070s] [31mCMake Error at CMakeLists.txt:33 (find_package):
+[3.071s]   By not providing "Findrosbag2_test_common.cmake" in CMAKE_MODULE_PATH this
+[3.072s]   project has asked CMake to find a package configuration file provided by
+[3.072s]   "rosbag2_test_common", but CMake did not find one.
+[3.074s] 
+[3.075s]   Could not find a package configuration file provided by
+[3.076s]   "rosbag2_test_common" with any of the following names:
+[3.077s] 
+[3.078s]     rosbag2_test_commonConfig.cmake
+[3.079s]     rosbag2_test_common-config.cmake
+[3.080s] 
+[3.080s]   Add the installation prefix of "rosbag2_test_common" to CMAKE_PREFIX_PATH
+[3.081s]   or set "rosbag2_test_common_DIR" to a directory containing one of the above
+[3.081s]   files.  If "rosbag2_test_common" provides a separate development package or
+[3.082s]   SDK, be sure it has been installed.
+[3.082s] 
+[3.089s] [0m

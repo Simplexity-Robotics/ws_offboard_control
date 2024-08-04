@@ -1,0 +1,20 @@
+[0.028s] Invoking command in '/root/ws_offboard_control/build/comp_routine': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/comp_routine -- -j8 -l8
+[0.149s] [ 50%] [32mBuilding CXX object CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o[0m
+[1.614s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:[m[K In member function ‘[01m[Kvoid CompRoutine::mySigintHandler(int)[m[K’:
+[1.614s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:122:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksig[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.615s]   122 | void CompRoutine::mySigintHandler([01;35m[Kint sig[m[K) {
+[1.615s]       |                                   [01;35m[K~~~~^~~[m[K
+[1.640s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.640s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:209:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid CompRoutine::mySigintHandler(int)[m[K’ is private within this context
+[1.641s]   209 |  signal(SIGINT, CompRoutine::[01;31m[KmySigintHandler[m[K);
+[1.641s]       |                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.642s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:122:6:[m[K [01;36m[Knote: [m[Kdeclared private here
+[1.642s]   122 | void [01;36m[KCompRoutine[m[K::mySigintHandler(int sig) {
+[1.642s]       |      [01;36m[K^~~~~~~~~~~[m[K
+[1.643s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:209:30:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid CompRoutine::mySigintHandler(int)[m[K’
+[1.643s]   209 |  signal(SIGINT, CompRoutine::[01;31m[KmySigintHandler[m[K);
+[1.643s]       |                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.834s] make[2]: *** [CMakeFiles/comp_routine.dir/build.make:76: CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o] Error 1
+[2.835s] make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comp_routine.dir/all] Error 2
+[2.838s] make: *** [Makefile:146: all] Error 2
+[2.845s] Invoked command in '/root/ws_offboard_control/build/comp_routine' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/comp_routine -- -j8 -l8

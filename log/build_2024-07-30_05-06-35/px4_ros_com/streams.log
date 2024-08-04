@@ -1,0 +1,57 @@
+[0.064s] Invoking command in '/root/ws_offboard_control/build/px4_ros_com': CMAKE_PREFIX_PATH=/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/root/ws_offboard_control/install/px4_msgs/lib:/root/ws_offboard_control/install/px4_ros_com/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/px4_ros_com -- -j8 -l8
+[0.236s] [ 16%] Built target frame_transforms
+[0.312s] [ 33%] Built target offboard_control_srv
+[0.381s] [ 50%] Built target offboard_control
+[0.476s] [ 66%] Built target debug_vect_advertiser
+[0.556s] [ 83%] Built target vehicle_gps_position_listener
+[0.636s] [100%] Built target sensor_combined_listener
+[0.667s] Invoked command in '/root/ws_offboard_control/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/root/ws_offboard_control/install/px4_msgs/lib:/root/ws_offboard_control/install/px4_ros_com/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/px4_ros_com -- -j8 -l8
+[0.933s] Invoking command in '/root/ws_offboard_control/build/px4_ros_com': CMAKE_PREFIX_PATH=/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/root/ws_offboard_control/install/px4_msgs/lib:/root/ws_offboard_control/install/px4_ros_com/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages _=/usr/bin/env /usr/bin/cmake --install /root/ws_offboard_control/build/px4_ros_com
+[0.953s] -- Install configuration: ""
+[0.954s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/lib/px4_ros_com/sensor_combined_listener
+[0.960s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/lib/px4_ros_com/vehicle_gps_position_listener
+[0.961s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/lib/px4_ros_com/debug_vect_advertiser
+[0.963s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/lib/px4_ros_com/offboard_control
+[0.964s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/lib/px4_ros_com/offboard_control_srv
+[0.964s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com/environment/library_path.sh
+[0.968s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com/environment/library_path.dsv
+[0.968s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/include/px4_ros_com
+[0.969s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/include/px4_ros_com/frame_transforms.h
+[0.969s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/lib/libframe_transforms.so
+[0.972s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com//launch
+[0.973s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com//launch/offboard_control_launch.yaml
+[0.974s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com//launch/sensor_combined_listener.launch.py
+[0.976s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com//test
+[0.976s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com//test/__init__.py
+[0.976s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com//test/pipeline_io_test.py
+[0.978s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com//test/test_input.py
+[0.978s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com//test/test_output.py
+[0.979s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com/environment/pythonpath.sh
+[0.982s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com/environment/pythonpath.dsv
+[0.983s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages/px4_ros_com
+[0.983s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages/px4_ros_com/__init__.py
+[0.983s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages/px4_ros_com/module_to_import.py
+[1.054s] Listing '/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages/px4_ros_com'...
+[1.064s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/lib/px4_ros_com/offboard_control.py
+[1.070s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/ament_index/resource_index/package_run_dependencies/px4_ros_com
+[1.070s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/ament_index/resource_index/parent_prefix_path/px4_ros_com
+[1.070s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.sh
+[1.070s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.dsv
+[1.070s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com/environment/path.sh
+[1.070s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com/environment/path.dsv
+[1.070s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com/local_setup.bash
+[1.070s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com/local_setup.sh
+[1.071s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com/local_setup.zsh
+[1.071s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com/local_setup.dsv
+[1.071s] -- Installing: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com/package.dsv
+[1.071s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/ament_index/resource_index/packages/px4_ros_com
+[1.071s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport.cmake
+[1.071s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport-noconfig.cmake
+[1.071s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.071s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_targets-extras.cmake
+[1.071s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.071s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_libraries-extras.cmake
+[1.071s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig.cmake
+[1.071s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig-version.cmake
+[1.071s] -- Up-to-date: /root/ws_offboard_control/install/px4_ros_com/share/px4_ros_com/package.xml
+[1.085s] Invoked command in '/root/ws_offboard_control/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/root/ws_offboard_control/install/px4_msgs/lib:/root/ws_offboard_control/install/px4_ros_com/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages _=/usr/bin/env /usr/bin/cmake --install /root/ws_offboard_control/build/px4_ros_com

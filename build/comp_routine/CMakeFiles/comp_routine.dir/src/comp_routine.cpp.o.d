@@ -173,6 +173,11 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: \
  /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__builder.hpp \
  /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__traits.hpp \
  /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__type_support.hpp \
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_status.hpp \
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__struct.hpp \
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__builder.hpp \
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__traits.hpp \
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__type_support.hpp \
  /opt/ros/foxy/include/rclcpp/rclcpp.hpp /usr/include/c++/9/csignal \
  /usr/include/signal.h /usr/include/aarch64-linux-gnu/bits/signum.h \
  /usr/include/aarch64-linux-gnu/bits/signum-generic.h \
@@ -541,4 +546,10 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o: \
  /opt/ros/foxy/include/rclcpp/wait_set_policies/static_storage.hpp \
  /opt/ros/foxy/include/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
  /opt/ros/foxy/include/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
- /opt/ros/foxy/include/rclcpp/wait_set_template.hpp
+ /opt/ros/foxy/include/rclcpp/wait_set_template.hpp /usr/include/unistd.h \
+ /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
+ /usr/include/aarch64-linux-gnu/bits/environments.h \
+ /usr/include/aarch64-linux-gnu/bits/confname.h \
+ /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
+ /usr/include/aarch64-linux-gnu/bits/unistd_ext.h

@@ -1,0 +1,586 @@
+[0.000000] (-) TimerEvent: {}
+[0.001776] (comp_routine) JobQueued: {'identifier': 'comp_routine', 'dependencies': OrderedDict()}
+[0.002554] (orb_slam3_rb5_ros2) JobQueued: {'identifier': 'orb_slam3_rb5_ros2', 'dependencies': OrderedDict()}
+[0.002684] (px4_msgs) JobQueued: {'identifier': 'px4_msgs', 'dependencies': OrderedDict()}
+[0.002804] (rb5_ros2_control) JobQueued: {'identifier': 'rb5_ros2_control', 'dependencies': OrderedDict()}
+[0.002921] (rb5_ros2_vision) JobQueued: {'identifier': 'rb5_ros2_vision', 'dependencies': OrderedDict()}
+[0.003027] (ros2_april_detection) JobQueued: {'identifier': 'ros2_april_detection', 'dependencies': OrderedDict()}
+[0.003131] (ros2_april_slam) JobQueued: {'identifier': 'ros2_april_slam', 'dependencies': OrderedDict()}
+[0.003235] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/root/ws_offboard_control/install/px4_msgs')])}
+[0.003351] (px4_msgs) JobStarted: {'identifier': 'px4_msgs'}
+[0.014731] (comp_routine) JobStarted: {'identifier': 'comp_routine'}
+[0.022282] (orb_slam3_rb5_ros2) JobStarted: {'identifier': 'orb_slam3_rb5_ros2'}
+[0.029490] (rb5_ros2_control) JobStarted: {'identifier': 'rb5_ros2_control'}
+[0.038749] (rb5_ros2_vision) JobStarted: {'identifier': 'rb5_ros2_vision'}
+[0.050848] (ros2_april_detection) JobStarted: {'identifier': 'ros2_april_detection'}
+[0.065697] (ros2_april_slam) JobStarted: {'identifier': 'ros2_april_slam'}
+[0.083874] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'cmake'}
+[0.084953] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'build'}
+[0.086182] (px4_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ws_offboard_control/build/px4_msgs', '--', '-j8', '-l8'], 'cwd': '/root/ws_offboard_control/build/px4_msgs', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('ROS_PYTHON_VERSION', '3'), ('PWD', '/root/ws_offboard_control/build/px4_msgs'), ('LOGNAME', 'root'), ('XDG_SESSION_TYPE', 'tty'), ('ROS_LOG_DIR', '/root/ros2_logs'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('CMAKE_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('COLCON_PREFIX_PATH', '/root/ws_offboard_control/install:/opt/motovisio/ros_ws/install'), ('SSH_CONNECTION', '192.168.2.120 64401 192.168.2.2 22'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONPATH', '/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SHLVL', '1'), ('XDG_SESSION_ID', '3'), ('LD_LIBRARY_PATH', '/root/ws_offboard_control/install/px4_ros_com/lib:/root/ws_offboard_control/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('ROS_LOCALHOST_ONLY', '0'), ('SSH_CLIENT', '192.168.2.120 64401 22'), ('PATH', '/opt/ros/foxy/bin:/root/.motovisio/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('SSH_TTY', '/dev/pts/0'), ('ROS_DISTRO', 'foxy'), ('OLDPWD', '/root/ws_offboard_control/src'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.098223] (comp_routine) JobProgress: {'identifier': 'comp_routine', 'progress': 'cmake'}
+[0.098865] (comp_routine) JobProgress: {'identifier': 'comp_routine', 'progress': 'build'}
+[0.101273] (comp_routine) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ws_offboard_control/build/comp_routine', '--', '-j8', '-l8'], 'cwd': '/root/ws_offboard_control/build/comp_routine', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('ROS_PYTHON_VERSION', '3'), ('PWD', '/root/ws_offboard_control/build/comp_routine'), ('LOGNAME', 'root'), ('XDG_SESSION_TYPE', 'tty'), ('ROS_LOG_DIR', '/root/ros2_logs'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('CMAKE_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('COLCON_PREFIX_PATH', '/root/ws_offboard_control/install:/opt/motovisio/ros_ws/install'), ('SSH_CONNECTION', '192.168.2.120 64401 192.168.2.2 22'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONPATH', '/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SHLVL', '1'), ('XDG_SESSION_ID', '3'), ('LD_LIBRARY_PATH', '/root/ws_offboard_control/install/px4_ros_com/lib:/root/ws_offboard_control/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('ROS_LOCALHOST_ONLY', '0'), ('SSH_CLIENT', '192.168.2.120 64401 22'), ('PATH', '/opt/ros/foxy/bin:/root/.motovisio/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('SSH_TTY', '/dev/pts/0'), ('ROS_DISTRO', 'foxy'), ('OLDPWD', '/root/ws_offboard_control/src'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.105549] (-) TimerEvent: {}
+[0.107157] (orb_slam3_rb5_ros2) JobProgress: {'identifier': 'orb_slam3_rb5_ros2', 'progress': 'cmake'}
+[0.109551] (orb_slam3_rb5_ros2) Command: {'cmd': ['/usr/bin/cmake', '/root/ws_offboard_control/src/rb5_ros2/ORB_SLAM3_RB5', '-DCMAKE_INSTALL_PREFIX=/root/ws_offboard_control/install/orb_slam3_rb5_ros2'], 'cwd': '/root/ws_offboard_control/build/orb_slam3_rb5_ros2', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('ROS_PYTHON_VERSION', '3'), ('PWD', '/root/ws_offboard_control/build/orb_slam3_rb5_ros2'), ('LOGNAME', 'root'), ('XDG_SESSION_TYPE', 'tty'), ('ROS_LOG_DIR', '/root/ros2_logs'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('CMAKE_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('COLCON_PREFIX_PATH', '/root/ws_offboard_control/install:/opt/motovisio/ros_ws/install'), ('SSH_CONNECTION', '192.168.2.120 64401 192.168.2.2 22'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONPATH', '/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SHLVL', '1'), ('XDG_SESSION_ID', '3'), ('LD_LIBRARY_PATH', '/root/ws_offboard_control/install/px4_ros_com/lib:/root/ws_offboard_control/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('ROS_LOCALHOST_ONLY', '0'), ('SSH_CLIENT', '192.168.2.120 64401 22'), ('PATH', '/opt/ros/foxy/bin:/root/.motovisio/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('SSH_TTY', '/dev/pts/0'), ('ROS_DISTRO', 'foxy'), ('OLDPWD', '/root/ws_offboard_control/src'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.118727] (rb5_ros2_control) JobProgress: {'identifier': 'rb5_ros2_control', 'progress': 'cmake'}
+[0.119058] (rb5_ros2_control) Command: {'cmd': ['/usr/bin/cmake', '/root/ws_offboard_control/src/rb5_ros2/rb5_ros2_control', '-DCMAKE_INSTALL_PREFIX=/root/ws_offboard_control/install/rb5_ros2_control'], 'cwd': '/root/ws_offboard_control/build/rb5_ros2_control', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('ROS_PYTHON_VERSION', '3'), ('PWD', '/root/ws_offboard_control/build/rb5_ros2_control'), ('LOGNAME', 'root'), ('XDG_SESSION_TYPE', 'tty'), ('ROS_LOG_DIR', '/root/ros2_logs'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('CMAKE_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('COLCON_PREFIX_PATH', '/root/ws_offboard_control/install:/opt/motovisio/ros_ws/install'), ('SSH_CONNECTION', '192.168.2.120 64401 192.168.2.2 22'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONPATH', '/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SHLVL', '1'), ('XDG_SESSION_ID', '3'), ('LD_LIBRARY_PATH', '/root/ws_offboard_control/install/px4_ros_com/lib:/root/ws_offboard_control/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('ROS_LOCALHOST_ONLY', '0'), ('SSH_CLIENT', '192.168.2.120 64401 22'), ('PATH', '/opt/ros/foxy/bin:/root/.motovisio/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('SSH_TTY', '/dev/pts/0'), ('ROS_DISTRO', 'foxy'), ('OLDPWD', '/root/ws_offboard_control/src'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.124716] (rb5_ros2_vision) JobProgress: {'identifier': 'rb5_ros2_vision', 'progress': 'cmake'}
+[0.125457] (rb5_ros2_vision) Command: {'cmd': ['/usr/bin/cmake', '/root/ws_offboard_control/src/rb5_ros2/rb5_ros2_vision', '-DCMAKE_INSTALL_PREFIX=/root/ws_offboard_control/install/rb5_ros2_vision'], 'cwd': '/root/ws_offboard_control/build/rb5_ros2_vision', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('ROS_PYTHON_VERSION', '3'), ('PWD', '/root/ws_offboard_control/build/rb5_ros2_vision'), ('LOGNAME', 'root'), ('XDG_SESSION_TYPE', 'tty'), ('ROS_LOG_DIR', '/root/ros2_logs'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('CMAKE_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('COLCON_PREFIX_PATH', '/root/ws_offboard_control/install:/opt/motovisio/ros_ws/install'), ('SSH_CONNECTION', '192.168.2.120 64401 192.168.2.2 22'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONPATH', '/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SHLVL', '1'), ('XDG_SESSION_ID', '3'), ('LD_LIBRARY_PATH', '/root/ws_offboard_control/install/px4_ros_com/lib:/root/ws_offboard_control/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('ROS_LOCALHOST_ONLY', '0'), ('SSH_CLIENT', '192.168.2.120 64401 22'), ('PATH', '/opt/ros/foxy/bin:/root/.motovisio/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('SSH_TTY', '/dev/pts/0'), ('ROS_DISTRO', 'foxy'), ('OLDPWD', '/root/ws_offboard_control/src'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.133713] (ros2_april_detection) JobProgress: {'identifier': 'ros2_april_detection', 'progress': 'cmake'}
+[0.136961] (ros2_april_detection) Command: {'cmd': ['/usr/bin/cmake', '/root/ws_offboard_control/src/rb5_ros2/ros2_april_detection', '-DCMAKE_INSTALL_PREFIX=/root/ws_offboard_control/install/ros2_april_detection'], 'cwd': '/root/ws_offboard_control/build/ros2_april_detection', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('ROS_PYTHON_VERSION', '3'), ('PWD', '/root/ws_offboard_control/build/ros2_april_detection'), ('LOGNAME', 'root'), ('XDG_SESSION_TYPE', 'tty'), ('ROS_LOG_DIR', '/root/ros2_logs'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('CMAKE_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('COLCON_PREFIX_PATH', '/root/ws_offboard_control/install:/opt/motovisio/ros_ws/install'), ('SSH_CONNECTION', '192.168.2.120 64401 192.168.2.2 22'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONPATH', '/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SHLVL', '1'), ('XDG_SESSION_ID', '3'), ('LD_LIBRARY_PATH', '/root/ws_offboard_control/install/px4_ros_com/lib:/root/ws_offboard_control/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('ROS_LOCALHOST_ONLY', '0'), ('SSH_CLIENT', '192.168.2.120 64401 22'), ('PATH', '/opt/ros/foxy/bin:/root/.motovisio/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('SSH_TTY', '/dev/pts/0'), ('ROS_DISTRO', 'foxy'), ('OLDPWD', '/root/ws_offboard_control/src'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.188024] (comp_routine) StdoutLine: {'line': b'[100%] Built target comp_routine\n'}
+[0.200523] (ros2_april_slam) JobProgress: {'identifier': 'ros2_april_slam', 'progress': 'cmake'}
+[0.201277] (ros2_april_slam) Command: {'cmd': ['/usr/bin/cmake', '/root/ws_offboard_control/src/rb5_ros2/ros2_april_slam', '-DCMAKE_INSTALL_PREFIX=/root/ws_offboard_control/install/ros2_april_slam'], 'cwd': '/root/ws_offboard_control/build/ros2_april_slam', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('ROS_PYTHON_VERSION', '3'), ('PWD', '/root/ws_offboard_control/build/ros2_april_slam'), ('LOGNAME', 'root'), ('XDG_SESSION_TYPE', 'tty'), ('ROS_LOG_DIR', '/root/ros2_logs'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('CMAKE_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('COLCON_PREFIX_PATH', '/root/ws_offboard_control/install:/opt/motovisio/ros_ws/install'), ('SSH_CONNECTION', '192.168.2.120 64401 192.168.2.2 22'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONPATH', '/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SHLVL', '1'), ('XDG_SESSION_ID', '3'), ('LD_LIBRARY_PATH', '/root/ws_offboard_control/install/px4_ros_com/lib:/root/ws_offboard_control/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('ROS_LOCALHOST_ONLY', '0'), ('SSH_CLIENT', '192.168.2.120 64401 22'), ('PATH', '/opt/ros/foxy/bin:/root/.motovisio/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('SSH_TTY', '/dev/pts/0'), ('ROS_DISTRO', 'foxy'), ('OLDPWD', '/root/ws_offboard_control/src'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.209737] (-) TimerEvent: {}
+[0.213317] (comp_routine) CommandEnded: {'returncode': 0}
+[0.223575] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.243188] (rb5_ros2_vision) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.260401] (rb5_ros2_control) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.291705] (ros2_april_detection) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.310004] (-) TimerEvent: {}
+[0.328089] (ros2_april_slam) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.332314] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.337029] (comp_routine) JobProgress: {'identifier': 'comp_routine', 'progress': 'install'}
+[0.358206] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.366396] (comp_routine) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/ws_offboard_control/build/comp_routine'], 'cwd': '/root/ws_offboard_control/build/comp_routine', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('ROS_PYTHON_VERSION', '3'), ('PWD', '/root/ws_offboard_control/build/comp_routine'), ('LOGNAME', 'root'), ('XDG_SESSION_TYPE', 'tty'), ('ROS_LOG_DIR', '/root/ros2_logs'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('CMAKE_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('COLCON_PREFIX_PATH', '/root/ws_offboard_control/install:/opt/motovisio/ros_ws/install'), ('SSH_CONNECTION', '192.168.2.120 64401 192.168.2.2 22'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONPATH', '/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SHLVL', '1'), ('XDG_SESSION_ID', '3'), ('LD_LIBRARY_PATH', '/root/ws_offboard_control/install/px4_ros_com/lib:/root/ws_offboard_control/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('ROS_LOCALHOST_ONLY', '0'), ('SSH_CLIENT', '192.168.2.120 64401 22'), ('PATH', '/opt/ros/foxy/bin:/root/.motovisio/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('SSH_TTY', '/dev/pts/0'), ('ROS_DISTRO', 'foxy'), ('OLDPWD', '/root/ws_offboard_control/src'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.369800] (rb5_ros2_vision) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.387207] (rb5_ros2_control) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.395002] (rb5_ros2_vision) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.402647] (rb5_ros2_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.410264] (-) TimerEvent: {}
+[0.433903] (ros2_april_detection) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.449249] (ros2_april_slam) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.457066] (ros2_april_detection) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.463007] (ros2_april_slam) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.510582] (-) TimerEvent: {}
+[0.519259] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.557139] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.560767] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.561283] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.561748] (rb5_ros2_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.563250] (ros2_april_slam) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.564038] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.588462] (rb5_ros2_vision) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.598730] (ros2_april_slam) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.607003] (ros2_april_slam) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.615288] (-) TimerEvent: {}
+[0.616016] (ros2_april_slam) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.616530] (ros2_april_slam) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.616970] (rb5_ros2_control) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.617429] (rb5_ros2_control) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.617868] (rb5_ros2_control) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.618295] (rb5_ros2_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.618774] (ros2_april_detection) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.627926] (rb5_ros2_vision) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.631268] (rb5_ros2_vision) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.632025] (rb5_ros2_vision) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.633074] (rb5_ros2_vision) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.643671] (ros2_april_detection) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.644758] (ros2_april_detection) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.645251] (ros2_april_detection) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.650385] (ros2_april_detection) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.715555] (-) TimerEvent: {}
+[0.747783] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.762613] (ros2_april_slam) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.778842] (rb5_ros2_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.781821] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.783057] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.783511] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.789386] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.797508] (orb_slam3_rb5_ros2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):\n'}
+[0.799130] (orb_slam3_rb5_ros2) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[0.800079] (orb_slam3_rb5_ros2) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[0.800639] (orb_slam3_rb5_ros2) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[0.801199] (orb_slam3_rb5_ros2) StderrLine: {'line': b'\n'}
+[0.801793] (orb_slam3_rb5_ros2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.804813] (orb_slam3_rb5_ros2) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)\n'}
+[0.805758] (orb_slam3_rb5_ros2) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)\n'}
+[0.806726] (orb_slam3_rb5_ros2) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[0.807286] (orb_slam3_rb5_ros2) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[0.809359] (orb_slam3_rb5_ros2) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[0.809820] (orb_slam3_rb5_ros2) StderrLine: {'line': b'  CMakeLists.txt:6 (find_package)\n'}
+[0.810237] (orb_slam3_rb5_ros2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.810746] (orb_slam3_rb5_ros2) StderrLine: {'line': b'\x1b[0m\n'}
+[0.811140] (ros2_april_slam) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.811576] (ros2_april_slam) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.811971] (ros2_april_slam) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.812372] (rb5_ros2_vision) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.812821] (ros2_april_slam) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.813251] (ros2_april_slam) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):\n'}
+[0.813964] (ros2_april_slam) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[0.814382] (ros2_april_slam) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[0.814820] (ros2_april_slam) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[0.815256] (ros2_april_slam) StderrLine: {'line': b'\n'}
+[0.815776] (-) TimerEvent: {}
+[0.816781] (ros2_april_slam) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.817351] (ros2_april_slam) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)\n'}
+[0.817816] (ros2_april_slam) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)\n'}
+[0.818259] (ros2_april_slam) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[0.818860] (ros2_april_slam) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[0.819293] (ros2_april_slam) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[0.819695] (ros2_april_slam) StderrLine: {'line': b'  CMakeLists.txt:19 (find_package)\n'}
+[0.820101] (ros2_april_slam) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.820499] (ros2_april_slam) StderrLine: {'line': b'\x1b[0m\n'}
+[0.820900] (ros2_april_detection) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.837068] (rb5_ros2_control) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.838269] (rb5_ros2_control) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.839221] (ros2_april_slam) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3")\n'}
+[0.839875] (ros2_april_slam) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.842042] (rb5_ros2_control) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.842752] (ros2_april_detection) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.843365] (ros2_april_detection) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.843779] (ros2_april_detection) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.845635] (ros2_april_detection) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.847168] (rb5_ros2_vision) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.847919] (rb5_ros2_vision) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.851421] (rb5_ros2_vision) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.851940] (ros2_april_detection) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):\n'}
+[0.852635] (ros2_april_detection) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[0.853174] (ros2_april_detection) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[0.853664] (ros2_april_detection) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[0.854165] (ros2_april_detection) StderrLine: {'line': b'\n'}
+[0.855687] (ros2_april_detection) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.856379] (ros2_april_detection) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)\n'}
+[0.856585] (ros2_april_detection) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)\n'}
+[0.856748] (ros2_april_detection) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[0.856880] (ros2_april_detection) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[0.857036] (ros2_april_detection) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[0.857184] (ros2_april_detection) StderrLine: {'line': b'  CMakeLists.txt:19 (find_package)\n'}
+[0.857312] (ros2_april_detection) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.857428] (ros2_april_detection) StderrLine: {'line': b'\x1b[0m\n'}
+[0.857540] (rb5_ros2_control) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.857686] (rb5_ros2_vision) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.857826] (rb5_ros2_vision) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):\n'}
+[0.858000] (rb5_ros2_vision) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[0.858131] (rb5_ros2_vision) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[0.858272] (rb5_ros2_vision) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[0.858403] (rb5_ros2_vision) StderrLine: {'line': b'\n'}
+[0.858543] (rb5_ros2_vision) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.858660] (rb5_ros2_vision) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)\n'}
+[0.858790] (rb5_ros2_vision) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)\n'}
+[0.858953] (rb5_ros2_vision) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[0.859107] (rb5_ros2_vision) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[0.859253] (rb5_ros2_vision) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[0.859397] (rb5_ros2_vision) StderrLine: {'line': b'  CMakeLists.txt:19 (find_package)\n'}
+[0.859522] (rb5_ros2_vision) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.860935] (rb5_ros2_vision) StderrLine: {'line': b'\x1b[0m\n'}
+[0.861532] (rb5_ros2_control) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):\n'}
+[0.862396] (rb5_ros2_control) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[0.863522] (rb5_ros2_control) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[0.864167] (rb5_ros2_control) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[0.865466] (rb5_ros2_control) StderrLine: {'line': b'\n'}
+[0.867142] (rb5_ros2_control) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.867578] (rb5_ros2_control) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)\n'}
+[0.868080] (rb5_ros2_control) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)\n'}
+[0.868540] (rb5_ros2_control) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[0.869001] (rb5_ros2_control) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[0.869427] (rb5_ros2_control) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[0.869841] (rb5_ros2_control) StderrLine: {'line': b'  CMakeLists.txt:19 (find_package)\n'}
+[0.870297] (rb5_ros2_control) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.870890] (rb5_ros2_control) StderrLine: {'line': b'\x1b[0m\n'}
+[0.871366] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3")\n'}
+[0.871854] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.893182] (rb5_ros2_control) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3")\n'}
+[0.894266] (rb5_ros2_control) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.899768] (rb5_ros2_vision) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3")\n'}
+[0.901744] (rb5_ros2_vision) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.916262] (-) TimerEvent: {}
+[0.919880] (ros2_april_detection) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3")\n'}
+[0.921106] (ros2_april_detection) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.016533] (-) TimerEvent: {}
+[1.117665] (-) TimerEvent: {}
+[1.174931] (ros2_april_slam) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.179828] (rb5_ros2_control) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.182766] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.217863] (-) TimerEvent: {}
+[1.237321] (ros2_april_slam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.247717] (ros2_april_slam) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.281769] (rb5_ros2_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.285906] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.288241] (rb5_ros2_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.292915] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.301694] (ros2_april_detection) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.318344] (-) TimerEvent: {}
+[1.334603] (rb5_ros2_vision) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.337905] (ros2_april_detection) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.343638] (ros2_april_detection) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.376140] (rb5_ros2_vision) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.383699] (rb5_ros2_vision) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.392259] (px4_msgs) StdoutLine: {'line': b'[  0%] Built target px4_msgs__cpp\n'}
+[1.420719] (-) TimerEvent: {}
+[1.423500] (ros2_april_slam) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")\n'}
+[1.441810] (rb5_ros2_control) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")\n'}
+[1.449346] (px4_msgs) StdoutLine: {'line': b'[ 12%] Built target px4_msgs__rosidl_generator_c\n'}
+[1.460207] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")\n'}
+[1.468176] (rb5_ros2_control) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include\n'}
+[1.473870] (ros2_april_slam) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include\n'}
+[1.518572] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include\n'}
+[1.520710] (-) TimerEvent: {}
+[1.548555] (ros2_april_detection) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")\n'}
+[1.572050] (px4_msgs) StdoutLine: {'line': b'[ 32%] Built target px4_msgs__rosidl_typesupport_c\n'}
+[1.572512] (px4_msgs) StdoutLine: {'line': b'[ 50%] Built target px4_msgs__rosidl_typesupport_introspection_cpp\n'}
+[1.572632] (px4_msgs) StdoutLine: {'line': b'[ 50%] Built target px4_msgs__rosidl_typesupport_cpp\n'}
+[1.585322] (rb5_ros2_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.586777] (ros2_april_slam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.591258] (rb5_ros2_vision) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")\n'}
+[1.592974] (ros2_april_detection) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include\n'}
+[1.606710] (px4_msgs) StdoutLine: {'line': b'[ 62%] Built target px4_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[1.617809] (rb5_ros2_vision) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include\n'}
+[1.618976] (px4_msgs) StdoutLine: {'line': b'[ 75%] Built target px4_msgs__rosidl_typesupport_introspection_c\n'}
+[1.620908] (-) TimerEvent: {}
+[1.639210] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.670532] (ros2_april_detection) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.680804] (rb5_ros2_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[1.682816] (ros2_april_slam) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[1.684374] (ros2_april_slam) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.684798] (rb5_ros2_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.685436] (rb5_ros2_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.688433] (ros2_april_slam) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.697865] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[1.700863] (orb_slam3_rb5_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.701636] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.711237] (rb5_ros2_vision) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.721239] (-) TimerEvent: {}
+[1.730733] (ros2_april_detection) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[1.732335] (ros2_april_detection) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.733272] (ros2_april_detection) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.766132] (rb5_ros2_vision) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[1.767826] (rb5_ros2_vision) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.768399] (rb5_ros2_vision) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.799694] (px4_msgs) StdoutLine: {'line': b'[ 88%] Built target px4_msgs__rosidl_typesupport_fastrtps_c\n'}
+[1.817173] (px4_msgs) StdoutLine: {'line': b'[ 88%] Built target px4_msgs\n'}
+[1.818557] (ros2_april_slam) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.819193] (ros2_april_slam) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.821318] (-) TimerEvent: {}
+[1.853967] (rb5_ros2_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.855395] (rb5_ros2_control) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.868454] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.870001] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.871528] (px4_msgs) StdoutLine: {'line': b'[ 88%] Built target px4_msgs__py\n'}
+[1.879855] (ros2_april_detection) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.880875] (ros2_april_detection) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.906127] (rb5_ros2_vision) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.909573] (rb5_ros2_vision) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.921697] (-) TimerEvent: {}
+[1.968392] (rb5_ros2_control) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.972022] (ros2_april_slam) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.973937] (rb5_ros2_control) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[1.974925] (ros2_april_slam) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[1.980858] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.982260] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[2.017131] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__python\n'}
+[2.020376] (ros2_april_detection) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[2.021889] (-) TimerEvent: {}
+[2.025867] (ros2_april_detection) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[2.028509] (rb5_ros2_vision) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[2.029327] (rb5_ros2_vision) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[2.052825] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.061334] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[2.080723] (rb5_ros2_control) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[2.088111] (rb5_ros2_control) StdoutLine: {'line': b'-- Found Threads: TRUE\n'}
+[2.089882] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__rosidl_typesupport_c__pyext\n'}
+[2.100940] (comp_routine) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.112183] (comp_routine) StdoutLine: {'line': b'-- Up-to-date: /root/ws_offboard_control/install/comp_routine/lib/comp_routine/comp_routine\n'}
+[2.113136] (comp_routine) StdoutLine: {'line': b'-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/ament_index/resource_index/package_run_dependencies/comp_routine\n'}
+[2.114248] (comp_routine) StdoutLine: {'line': b'-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/ament_index/resource_index/parent_prefix_path/comp_routine\n'}
+[2.115225] (comp_routine) StdoutLine: {'line': b'-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/environment/ament_prefix_path.sh\n'}
+[2.115739] (comp_routine) StdoutLine: {'line': b'-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/environment/ament_prefix_path.dsv\n'}
+[2.116133] (comp_routine) StdoutLine: {'line': b'-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/environment/path.sh\n'}
+[2.116517] (comp_routine) StdoutLine: {'line': b'-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/environment/path.dsv\n'}
+[2.116908] (comp_routine) StdoutLine: {'line': b'-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/local_setup.bash\n'}
+[2.117315] (comp_routine) StdoutLine: {'line': b'-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/local_setup.sh\n'}
+[2.117790] (comp_routine) StdoutLine: {'line': b'-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/local_setup.zsh\n'}
+[2.118249] (comp_routine) StdoutLine: {'line': b'-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/local_setup.dsv\n'}
+[2.119550] (comp_routine) StdoutLine: {'line': b'-- Installing: /root/ws_offboard_control/install/comp_routine/share/comp_routine/package.dsv\n'}
+[2.120079] (comp_routine) StdoutLine: {'line': b'-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/ament_index/resource_index/packages/comp_routine\n'}
+[2.120677] (comp_routine) StdoutLine: {'line': b'-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/cmake/comp_routineConfig.cmake\n'}
+[2.121079] (comp_routine) StdoutLine: {'line': b'-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/cmake/comp_routineConfig-version.cmake\n'}
+[2.121463] (comp_routine) StdoutLine: {'line': b'-- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/package.xml\n'}
+[2.121875] (px4_msgs) CommandEnded: {'returncode': 0}
+[2.125121] (-) TimerEvent: {}
+[2.126667] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[2.127457] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Found Threads: TRUE\n'}
+[2.127965] (ros2_april_slam) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[2.134903] (ros2_april_slam) StdoutLine: {'line': b'-- Found Threads: TRUE\n'}
+[2.147038] (comp_routine) CommandEnded: {'returncode': 0}
+[2.150936] (ros2_april_detection) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[2.158378] (ros2_april_detection) StdoutLine: {'line': b'-- Found Threads: TRUE\n'}
+[2.225270] (-) TimerEvent: {}
+[2.259004] (rb5_ros2_vision) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[2.263554] (rb5_ros2_vision) StdoutLine: {'line': b'-- Found Threads: TRUE\n'}
+[2.319224] (rb5_ros2_control) StdoutLine: {'line': b'-- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)\n'}
+[2.324184] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)\n'}
+[2.325673] (-) TimerEvent: {}
+[2.326842] (ros2_april_slam) StdoutLine: {'line': b'-- Found rclcpp_components: 2.4.3 (/opt/ros/foxy/share/rclcpp_components/cmake)\n'}
+[2.332075] (comp_routine) JobEnded: {'identifier': 'comp_routine', 'rc': 0}
+[2.336451] (ros2_april_detection) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[2.404756] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)\n'}
+[2.425894] (-) TimerEvent: {}
+[2.446749] (ros2_april_slam) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[2.473793] (rb5_ros2_vision) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[2.523327] (ros2_april_detection) StdoutLine: {'line': b'-- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)\n'}
+[2.526008] (-) TimerEvent: {}
+[2.575246] (ros2_april_slam) StdoutLine: {'line': b'-- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)\n'}
+[2.584879] (ros2_april_detection) StdoutLine: {'line': b'-- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)\n'}
+[2.596272] (ros2_april_detection) StdoutLine: {'line': b'-- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)\n'}
+[2.607596] (rb5_ros2_vision) StdoutLine: {'line': b'-- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)\n'}
+[2.626223] (-) TimerEvent: {}
+[2.635996] (ros2_april_slam) StdoutLine: {'line': b'-- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)\n'}
+[2.641671] (rb5_ros2_vision) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.2.0")\n'}
+[2.646052] (ros2_april_slam) StdoutLine: {'line': b'-- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)\n'}
+[2.651378] (rb5_ros2_vision) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1")\n'}
+[2.655968] (rb5_ros2_vision) StdoutLine: {'line': b"-- Checking for module 'gstreamer-1.0>=1.8'\n"}
+[2.707350] (rb5_ros2_vision) StdoutLine: {'line': b'--   Found gstreamer-1.0, version 1.16.3\n'}
+[2.726436] (-) TimerEvent: {}
+[2.817166] (rb5_ros2_vision) StdoutLine: {'line': b"-- Checking for one of the modules 'glib-2.0'\n"}
+[2.826891] (-) TimerEvent: {}
+[2.838630] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[2.927091] (-) TimerEvent: {}
+[2.928284] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)\n'}
+[2.961439] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Found image_transport: 2.4.0 (/opt/ros/foxy/share/image_transport/cmake)\n'}
+[2.981905] (rb5_ros2_vision) StdoutLine: {'line': b"-- Checking for module 'gstreamer-1.0'\n"}
+[2.984090] (rb5_ros2_control) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[3.011455] (orb_slam3_rb5_ros2) StderrLine: {'line': b'\x1b[0mBuild type: Release\x1b[0m\n'}
+[3.015343] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Performing Test COMPILER_SUPPORTS_CXX11\n'}
+[3.027601] (-) TimerEvent: {}
+[3.030691] (rb5_ros2_vision) StdoutLine: {'line': b'--   Found gstreamer-1.0, version 1.16.3\n'}
+[3.034271] (ros2_april_detection) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:29 (find_package):\n'}
+[3.035690] (ros2_april_detection) StderrLine: {'line': b'  By not providing "Findapriltag.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[3.036269] (ros2_april_detection) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "apriltag",\n'}
+[3.036795] (ros2_april_detection) StderrLine: {'line': b'  but CMake did not find one.\n'}
+[3.037260] (ros2_april_detection) StderrLine: {'line': b'\n'}
+[3.037747] (ros2_april_detection) StderrLine: {'line': b'  Could not find a package configuration file provided by "apriltag" with any\n'}
+[3.038258] (ros2_april_detection) StderrLine: {'line': b'  of the following names:\n'}
+[3.038846] (ros2_april_detection) StderrLine: {'line': b'\n'}
+[3.039338] (ros2_april_detection) StderrLine: {'line': b'    apriltagConfig.cmake\n'}
+[3.039793] (ros2_april_detection) StderrLine: {'line': b'    apriltag-config.cmake\n'}
+[3.043130] (ros2_april_detection) StderrLine: {'line': b'\n'}
+[3.043892] (ros2_april_detection) StderrLine: {'line': b'  Add the installation prefix of "apriltag" to CMAKE_PREFIX_PATH or set\n'}
+[3.044414] (ros2_april_detection) StderrLine: {'line': b'  "apriltag_DIR" to a directory containing one of the above files.  If\n'}
+[3.044870] (ros2_april_detection) StderrLine: {'line': b'  "apriltag" provides a separate development package or SDK, be sure it has\n'}
+[3.045318] (ros2_april_detection) StderrLine: {'line': b'  been installed.\n'}
+[3.045743] (ros2_april_detection) StderrLine: {'line': b'\n'}
+[3.046179] (ros2_april_detection) StderrLine: {'line': b'\x1b[0m\n'}
+[3.046667] (ros2_april_detection) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.051718] (ros2_april_detection) CommandEnded: {'returncode': 1}
+[3.081046] (ros2_april_detection) JobEnded: {'identifier': 'ros2_april_detection', 'rc': 1}
+[3.093166] (ros2_april_slam) StdoutLine: {'line': b'-- Found rosbag2_storage: 0.3.11 (/opt/ros/foxy/share/rosbag2_storage/cmake)\n'}
+[3.112777] (ros2_april_slam) StdoutLine: {'line': b"-- Setting yaml-cpp_DIR to: '/opt/ros/foxy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/lib/cmake/yaml-cpp'\n"}
+[3.116531] (rb5_ros2_control) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[3.117225] (ros2_april_slam) StdoutLine: {'line': b'-- Found rosbag2_storage_default_plugins: 0.3.11 (/opt/ros/foxy/share/rosbag2_storage_default_plugins/cmake)\n'}
+[3.117970] (rb5_ros2_control) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.118404] (rb5_ros2_control) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /root/ws_offboard_control/src/rb5_ros2/rb5_ros2_control/include\n'}
+[3.118858] (rb5_ros2_control) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.119402] (rb5_ros2_control) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[3.120773] (rb5_ros2_control) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[3.121310] (rb5_ros2_control) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.121742] (rb5_ros2_control) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.122112] (rb5_ros2_control) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[3.122897] (rb5_ros2_control) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.123312] (rb5_ros2_control) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.123804] (rb5_ros2_control) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.125660] (rb5_ros2_control) StdoutLine: {'line': b'-- Configuring done (3.0s)\n'}
+[3.127912] (-) TimerEvent: {}
+[3.135194] (ros2_april_slam) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.136640] (ros2_april_slam) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:33 (find_package):\n'}
+[3.137248] (ros2_april_slam) StderrLine: {'line': b'  By not providing "Findrosbag2_test_common.cmake" in CMAKE_MODULE_PATH this\n'}
+[3.137895] (ros2_april_slam) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[3.138364] (ros2_april_slam) StderrLine: {'line': b'  "rosbag2_test_common", but CMake did not find one.\n'}
+[3.139200] (ros2_april_slam) StderrLine: {'line': b'\n'}
+[3.140806] (ros2_april_slam) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[3.141888] (ros2_april_slam) StderrLine: {'line': b'  "rosbag2_test_common" with any of the following names:\n'}
+[3.143372] (ros2_april_slam) StderrLine: {'line': b'\n'}
+[3.144724] (ros2_april_slam) StderrLine: {'line': b'    rosbag2_test_commonConfig.cmake\n'}
+[3.145334] (ros2_april_slam) StderrLine: {'line': b'    rosbag2_test_common-config.cmake\n'}
+[3.145832] (ros2_april_slam) StderrLine: {'line': b'\n'}
+[3.146506] (ros2_april_slam) StderrLine: {'line': b'  Add the installation prefix of "rosbag2_test_common" to CMAKE_PREFIX_PATH\n'}
+[3.147212] (ros2_april_slam) StderrLine: {'line': b'  or set "rosbag2_test_common_DIR" to a directory containing one of the above\n'}
+[3.147657] (ros2_april_slam) StderrLine: {'line': b'  files.  If "rosbag2_test_common" provides a separate development package or\n'}
+[3.148067] (ros2_april_slam) StderrLine: {'line': b'  SDK, be sure it has been installed.\n'}
+[3.148461] (ros2_april_slam) StderrLine: {'line': b'\n'}
+[3.148870] (ros2_april_slam) StderrLine: {'line': b'\x1b[0m\n'}
+[3.156140] (rb5_ros2_control) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[3.157526] (rb5_ros2_control) StdoutLine: {'line': b'-- Build files have been written to: /root/ws_offboard_control/build/rb5_ros2_control\n'}
+[3.157662] (rb5_ros2_vision) StdoutLine: {'line': b"-- Checking for module 'gstreamer-app-1.0'\n"}
+[3.160149] (ros2_april_slam) JobEnded: {'identifier': 'ros2_april_slam', 'rc': 'SIGINT'}
+[3.162366] (rb5_ros2_control) JobEnded: {'identifier': 'rb5_ros2_control', 'rc': 'SIGINT'}
+[3.184899] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Performing Test COMPILER_SUPPORTS_CXX11 - Success\n'}
+[3.186009] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Performing Test COMPILER_SUPPORTS_CXX0X\n'}
+[3.210288] (rb5_ros2_vision) StdoutLine: {'line': b'--   Found gstreamer-app-1.0, version 1.16.3\n'}
+[3.228133] (-) TimerEvent: {}
+[3.319994] (rb5_ros2_vision) StdoutLine: {'line': b"-- Checking for module 'gstreamer-video-1.0'\n"}
+[3.328303] (-) TimerEvent: {}
+[3.353358] (rb5_ros2_vision) StdoutLine: {'line': b'--   Found gstreamer-video-1.0, version 1.16.3\n'}
+[3.368609] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Performing Test COMPILER_SUPPORTS_CXX0X - Success\n'}
+[3.369441] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Using flag -std=c++14.\n'}
+[3.383474] (orb_slam3_rb5_ros2) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.384405] (orb_slam3_rb5_ros2) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:49 (message):\n'}
+[3.384871] (orb_slam3_rb5_ros2) StderrLine: {'line': b'  OpenCV > 4.4 not found.\n'}
+[3.385310] (orb_slam3_rb5_ros2) StderrLine: {'line': b'\n'}
+[3.385706] (orb_slam3_rb5_ros2) StderrLine: {'line': b'\x1b[0m\n'}
+[3.398739] (orb_slam3_rb5_ros2) JobEnded: {'identifier': 'orb_slam3_rb5_ros2', 'rc': 'SIGINT'}
+[3.428520] (-) TimerEvent: {}
+[3.474939] (rb5_ros2_vision) StdoutLine: {'line': b'-- Check if compiler accepts -pthread\n'}
+[3.528724] (-) TimerEvent: {}
+[3.629996] (-) TimerEvent: {}
+[3.688539] (rb5_ros2_vision) StdoutLine: {'line': b'-- Check if compiler accepts -pthread - yes\n'}
+[3.705491] (rb5_ros2_vision) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[3.730189] (-) TimerEvent: {}
+[3.800310] (rb5_ros2_vision) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[3.801744] (rb5_ros2_vision) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.802585] (rb5_ros2_vision) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /root/ws_offboard_control/src/rb5_ros2/rb5_ros2_vision/include/rb5_ros2_vision\n'}
+[3.802989] (rb5_ros2_vision) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.803735] (rb5_ros2_vision) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[3.804454] (rb5_ros2_vision) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[3.805268] (rb5_ros2_vision) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.806983] (rb5_ros2_vision) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.807358] (rb5_ros2_vision) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[3.808015] (rb5_ros2_vision) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.809011] (rb5_ros2_vision) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.809446] (rb5_ros2_vision) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.809900] (rb5_ros2_vision) StdoutLine: {'line': b'-- Configuring done (3.7s)\n'}
+[3.824818] (rb5_ros2_vision) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[3.826396] (rb5_ros2_vision) StdoutLine: {'line': b'-- Build files have been written to: /root/ws_offboard_control/build/rb5_ros2_vision\n'}
+[3.830329] (-) TimerEvent: {}
+[3.840659] (rb5_ros2_vision) JobEnded: {'identifier': 'rb5_ros2_vision', 'rc': 'SIGINT'}
+[3.930655] (-) TimerEvent: {}
+[4.031741] (-) TimerEvent: {}
+[4.132907] (-) TimerEvent: {}
+[4.234030] (-) TimerEvent: {}
+[4.335219] (-) TimerEvent: {}
+[4.436357] (-) TimerEvent: {}
+[4.537720] (-) TimerEvent: {}
+[4.639206] (-) TimerEvent: {}
+[4.740300] (-) TimerEvent: {}
+[4.841603] (-) TimerEvent: {}
+[4.942979] (-) TimerEvent: {}
+[5.044350] (-) TimerEvent: {}
+[5.145456] (-) TimerEvent: {}
+[5.246561] (-) TimerEvent: {}
+[5.347664] (-) TimerEvent: {}
+[5.448882] (-) TimerEvent: {}
+[5.550261] (-) TimerEvent: {}
+[5.652126] (-) TimerEvent: {}
+[5.753358] (-) TimerEvent: {}
+[5.854792] (-) TimerEvent: {}
+[5.956065] (-) TimerEvent: {}
+[6.057318] (-) TimerEvent: {}
+[6.158768] (-) TimerEvent: {}
+[6.259895] (-) TimerEvent: {}
+[6.361047] (-) TimerEvent: {}
+[6.462273] (-) TimerEvent: {}
+[6.563665] (-) TimerEvent: {}
+[6.664795] (-) TimerEvent: {}
+[6.765946] (-) TimerEvent: {}
+[6.867370] (-) TimerEvent: {}
+[6.968585] (-) TimerEvent: {}
+[7.069708] (-) TimerEvent: {}
+[7.171188] (-) TimerEvent: {}
+[7.272307] (-) TimerEvent: {}
+[7.373598] (-) TimerEvent: {}
+[7.475057] (-) TimerEvent: {}
+[7.576228] (-) TimerEvent: {}
+[7.677668] (-) TimerEvent: {}
+[7.778982] (-) TimerEvent: {}
+[7.880140] (-) TimerEvent: {}
+[7.981327] (-) TimerEvent: {}
+[8.082774] (-) TimerEvent: {}
+[8.184084] (-) TimerEvent: {}
+[8.285729] (-) TimerEvent: {}
+[8.387099] (-) TimerEvent: {}
+[8.488209] (-) TimerEvent: {}
+[8.589717] (-) TimerEvent: {}
+[8.691118] (-) TimerEvent: {}
+[8.792221] (-) TimerEvent: {}
+[8.893313] (-) TimerEvent: {}
+[8.994408] (-) TimerEvent: {}
+[9.095618] (-) TimerEvent: {}
+[9.196756] (-) TimerEvent: {}
+[9.298321] (-) TimerEvent: {}
+[9.399577] (-) TimerEvent: {}
+[9.500704] (-) TimerEvent: {}
+[9.601818] (-) TimerEvent: {}
+[9.703048] (-) TimerEvent: {}
+[9.804134] (-) TimerEvent: {}
+[9.905259] (-) TimerEvent: {}
+[10.007273] (-) TimerEvent: {}
+[10.108368] (-) TimerEvent: {}
+[10.209500] (-) TimerEvent: {}
+[10.310933] (-) TimerEvent: {}
+[10.412306] (-) TimerEvent: {}
+[10.513416] (-) TimerEvent: {}
+[10.614798] (-) TimerEvent: {}
+[10.716353] (-) TimerEvent: {}
+[10.817482] (-) TimerEvent: {}
+[10.918611] (-) TimerEvent: {}
+[11.019961] (-) TimerEvent: {}
+[11.121136] (-) TimerEvent: {}
+[11.222341] (-) TimerEvent: {}
+[11.323702] (-) TimerEvent: {}
+[11.424854] (-) TimerEvent: {}
+[11.525972] (-) TimerEvent: {}
+[11.627244] (-) TimerEvent: {}
+[11.728718] (-) TimerEvent: {}
+[11.829804] (-) TimerEvent: {}
+[11.930913] (-) TimerEvent: {}
+[12.032011] (-) TimerEvent: {}
+[12.133188] (-) TimerEvent: {}
+[12.234580] (-) TimerEvent: {}
+[12.335749] (-) TimerEvent: {}
+[12.436887] (-) TimerEvent: {}
+[12.538204] (-) TimerEvent: {}
+[12.640077] (-) TimerEvent: {}
+[12.741385] (-) TimerEvent: {}
+[12.842619] (-) TimerEvent: {}
+[12.943688] (-) TimerEvent: {}
+[13.045001] (-) TimerEvent: {}
+[13.146131] (-) TimerEvent: {}
+[13.247281] (-) TimerEvent: {}
+[13.348437] (-) TimerEvent: {}
+[13.449532] (-) TimerEvent: {}
+[13.550629] (-) TimerEvent: {}
+[13.651735] (-) TimerEvent: {}
+[13.752822] (-) TimerEvent: {}
+[13.853927] (-) TimerEvent: {}
+[13.955364] (-) TimerEvent: {}
+[14.056595] (-) TimerEvent: {}
+[14.157815] (-) TimerEvent: {}
+[14.259098] (-) TimerEvent: {}
+[14.360357] (-) TimerEvent: {}
+[14.461468] (-) TimerEvent: {}
+[14.562621] (-) TimerEvent: {}
+[14.663696] (-) TimerEvent: {}
+[14.764795] (-) TimerEvent: {}
+[14.865877] (-) TimerEvent: {}
+[14.967294] (-) TimerEvent: {}
+[15.068702] (-) TimerEvent: {}
+[15.169844] (-) TimerEvent: {}
+[15.270931] (-) TimerEvent: {}
+[15.372600] (-) TimerEvent: {}
+[15.473728] (-) TimerEvent: {}
+[15.575251] (-) TimerEvent: {}
+[15.676343] (-) TimerEvent: {}
+[15.777688] (-) TimerEvent: {}
+[15.878961] (-) TimerEvent: {}
+[15.980198] (-) TimerEvent: {}
+[16.081317] (-) TimerEvent: {}
+[16.182748] (-) TimerEvent: {}
+[16.283808] (-) TimerEvent: {}
+[16.385261] (-) TimerEvent: {}
+[16.486464] (-) TimerEvent: {}
+[16.587813] (-) TimerEvent: {}
+[16.689000] (-) TimerEvent: {}
+[16.790087] (-) TimerEvent: {}
+[16.891467] (-) TimerEvent: {}
+[16.992563] (-) TimerEvent: {}
+[17.093655] (-) TimerEvent: {}
+[17.195016] (-) TimerEvent: {}
+[17.296675] (-) TimerEvent: {}
+[17.397750] (-) TimerEvent: {}
+[17.499017] (-) TimerEvent: {}
+[17.600295] (-) TimerEvent: {}
+[17.691632] (px4_msgs) JobEnded: {'identifier': 'px4_msgs', 'rc': 'SIGINT'}
+[17.700370] (-) TimerEvent: {}
+[17.703925] (px4_ros_com) JobSkipped: {'identifier': 'px4_ros_com'}
+[17.704239] (-) EventReactorShutdown: {}

@@ -1,0 +1,44 @@
+[0.032s] Invoking command in '/root/ws_offboard_control/build/comp_routine': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/comp_routine -- -j8 -l8
+[0.250s] [ 50%] [32mBuilding CXX object CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o[0m
+[1.849s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:[m[K In member function ‘[01m[Kvoid CompRoutine::publish_attitude_setpoint(double, double, double, double, double, double)[m[K’:
+[1.850s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:119:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kx[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.850s]   119 | void CompRoutine::publish_attitude_setpoint([01;35m[Kdouble x[m[K, double y, double z, double yaw, double pitch, double roll) {
+[1.851s]       |                                             [01;35m[K~~~~~~~^[m[K
+[1.851s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:119:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ky[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.852s]   119 | void CompRoutine::publish_attitude_setpoint(double x, [01;35m[Kdouble y[m[K, double z, double yaw, double pitch, double roll) {
+[1.852s]       |                                                       [01;35m[K~~~~~~~^[m[K
+[1.852s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:119:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kz[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.853s]   119 | void CompRoutine::publish_attitude_setpoint(double x, double y, [01;35m[Kdouble z[m[K, double yaw, double pitch, double roll) {
+[1.853s]       |                                                                 [01;35m[K~~~~~~~^[m[K
+[1.853s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:119:82:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kyaw[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.854s]   119 | void CompRoutine::publish_attitude_setpoint(double x, double y, double z, [01;35m[Kdouble yaw[m[K, double pitch, double roll) {
+[1.854s]       |                                                                           [01;35m[K~~~~~~~^~~[m[K
+[1.855s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:119:94:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpitch[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.855s]   119 | void CompRoutine::publish_attitude_setpoint(double x, double y, double z, double yaw, [01;35m[Kdouble pitch[m[K, double roll) {
+[1.856s]       |                                                                                       [01;35m[K~~~~~~~^~~~~[m[K
+[1.856s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:119:108:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kroll[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.857s]   119 | void CompRoutine::publish_attitude_setpoint(double x, double y, double z, double yaw, double pitch, [01;35m[Kdouble roll[m[K) {
+[1.857s]       |                                                                                                     [01;35m[K~~~~~~~^~~~[m[K
+[4.267s] [100%] [32m[1mLinking CXX executable comp_routine[0m
+[4.559s] [100%] Built target comp_routine
+[4.573s] Invoked command in '/root/ws_offboard_control/build/comp_routine' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/comp_routine -- -j8 -l8
+[4.668s] Invoking command in '/root/ws_offboard_control/build/comp_routine': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --install /root/ws_offboard_control/build/comp_routine
+[4.681s] -- Install configuration: ""
+[4.686s] -- Installing: /root/ws_offboard_control/install/comp_routine/lib/comp_routine/comp_routine
+[4.689s] -- Set non-toolchain portion of runtime path of "/root/ws_offboard_control/install/comp_routine/lib/comp_routine/comp_routine" to ""
+[4.690s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/ament_index/resource_index/package_run_dependencies/comp_routine
+[4.692s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/ament_index/resource_index/parent_prefix_path/comp_routine
+[4.696s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/environment/ament_prefix_path.sh
+[4.696s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/environment/ament_prefix_path.dsv
+[4.697s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/environment/path.sh
+[4.697s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/environment/path.dsv
+[4.698s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/local_setup.bash
+[4.698s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/local_setup.sh
+[4.698s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/local_setup.zsh
+[4.699s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/local_setup.dsv
+[4.699s] -- Installing: /root/ws_offboard_control/install/comp_routine/share/comp_routine/package.dsv
+[4.699s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/ament_index/resource_index/packages/comp_routine
+[4.700s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/cmake/comp_routineConfig.cmake
+[4.700s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/cmake/comp_routineConfig-version.cmake
+[4.700s] -- Up-to-date: /root/ws_offboard_control/install/comp_routine/share/comp_routine/package.xml
+[4.701s] Invoked command in '/root/ws_offboard_control/build/comp_routine' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --install /root/ws_offboard_control/build/comp_routine

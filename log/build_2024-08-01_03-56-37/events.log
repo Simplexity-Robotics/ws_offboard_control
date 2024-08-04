@@ -1,0 +1,222 @@
+[0.000000] (-) TimerEvent: {}
+[0.001844] (comp_routine) JobQueued: {'identifier': 'comp_routine', 'dependencies': OrderedDict()}
+[0.002446] (px4_msgs) JobQueued: {'identifier': 'px4_msgs', 'dependencies': OrderedDict()}
+[0.002716] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/root/ws_offboard_control/install/px4_msgs')])}
+[0.002847] (px4_msgs) JobStarted: {'identifier': 'px4_msgs'}
+[0.014268] (comp_routine) JobStarted: {'identifier': 'comp_routine'}
+[0.023283] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'cmake'}
+[0.024098] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'build'}
+[0.024994] (px4_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ws_offboard_control/build/px4_msgs', '--', '-j8', '-l8'], 'cwd': '/root/ws_offboard_control/build/px4_msgs', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('COLORTERM', 'truecolor'), ('TERM_PROGRAM_VERSION', '1.91.1'), ('ROS_PYTHON_VERSION', '3'), ('PWD', '/root/ws_offboard_control/build/px4_msgs'), ('LOGNAME', 'root'), ('XDG_SESSION_TYPE', 'tty'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/node'), ('ROS_LOG_DIR', '/root/ros2_logs'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('AMENT_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass.sh'), ('CMAKE_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('COLCON_PREFIX_PATH', '/root/ws_offboard_control/install:/opt/motovisio/ros_ws/install'), ('SSH_CONNECTION', '192.168.2.120 65096 192.168.2.2 22'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONPATH', '/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-84e0a71231.sock'), ('SHLVL', '3'), ('XDG_SESSION_ID', '1'), ('LD_LIBRARY_PATH', '/root/ws_offboard_control/install/px4_ros_com/lib:/root/ws_offboard_control/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('LC_CTYPE', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('ROS_LOCALHOST_ONLY', '0'), ('SSH_CLIENT', '192.168.2.120 65096 22'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass-main.js'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/helpers/browser.sh'), ('PATH', '/root/.motovisio/bin/:/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/remote-cli:/opt/ros/foxy/bin:/root/.motovisio/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('ROS_DISTRO', 'foxy'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-4c0ffc84-e914-401a-9656-4550eeabbb3c.sock'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.042877] (comp_routine) JobProgress: {'identifier': 'comp_routine', 'progress': 'cmake'}
+[0.046714] (comp_routine) JobProgress: {'identifier': 'comp_routine', 'progress': 'build'}
+[0.047642] (comp_routine) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ws_offboard_control/build/comp_routine', '--', '-j8', '-l8'], 'cwd': '/root/ws_offboard_control/build/comp_routine', 'env': OrderedDict([('SHELL', '/bin/bash'), ('ROS_VERSION', '2'), ('COLORTERM', 'truecolor'), ('TERM_PROGRAM_VERSION', '1.91.1'), ('ROS_PYTHON_VERSION', '3'), ('PWD', '/root/ws_offboard_control/build/comp_routine'), ('LOGNAME', 'root'), ('XDG_SESSION_TYPE', 'tty'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/node'), ('ROS_LOG_DIR', '/root/ros2_logs'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('AMENT_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass.sh'), ('CMAKE_PREFIX_PATH', '/root/ws_offboard_control/install/px4_ros_com:/root/ws_offboard_control/install/px4_msgs:/root/ws_offboard_control/install/comp_routine:/opt/motovisio/ros_ws/install/px4_msgs:/opt/motovisio/ros_ws/install/micro_ros_setup:/opt/motovisio/ros_ws/install/micro_ros_agent:/opt/motovisio/ros_ws/install/micro_ros_msgs:/opt/ros/foxy'), ('COLCON_PREFIX_PATH', '/root/ws_offboard_control/install:/opt/motovisio/ros_ws/install'), ('SSH_CONNECTION', '192.168.2.120 65096 192.168.2.2 22'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_SESSION_CLASS', 'user'), ('PYTHONPATH', '/root/ws_offboard_control/install/px4_ros_com/lib/python3.8/site-packages:/root/ws_offboard_control/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/px4_msgs/lib/python3.8/site-packages:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-84e0a71231.sock'), ('SHLVL', '3'), ('XDG_SESSION_ID', '1'), ('LD_LIBRARY_PATH', '/root/ws_offboard_control/install/px4_ros_com/lib:/root/ws_offboard_control/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/px4_msgs/lib:/opt/motovisio/ros_ws/install/micro_ros_agent/lib:/opt/motovisio/ros_ws/install/micro_ros_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('LC_CTYPE', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('ROS_LOCALHOST_ONLY', '0'), ('SSH_CLIENT', '192.168.2.120 65096 22'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass-main.js'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/helpers/browser.sh'), ('PATH', '/root/.motovisio/bin/:/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/remote-cli:/opt/ros/foxy/bin:/root/.motovisio/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('ROS_DISTRO', 'foxy'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-4c0ffc84-e914-401a-9656-4550eeabbb3c.sock'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.099978] (-) TimerEvent: {}
+[0.164941] (comp_routine) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o\x1b[0m\n'}
+[0.200338] (-) TimerEvent: {}
+[0.301321] (-) TimerEvent: {}
+[0.402368] (-) TimerEvent: {}
+[0.503574] (-) TimerEvent: {}
+[0.604737] (-) TimerEvent: {}
+[0.705881] (-) TimerEvent: {}
+[0.749398] (px4_msgs) StdoutLine: {'line': b'[  0%] Built target px4_msgs__cpp\n'}
+[0.793505] (px4_msgs) StdoutLine: {'line': b'[ 12%] Built target px4_msgs__rosidl_generator_c\n'}
+[0.806117] (-) TimerEvent: {}
+[0.899715] (px4_msgs) StdoutLine: {'line': b'[ 25%] Built target px4_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.906553] (-) TimerEvent: {}
+[0.908201] (px4_msgs) StdoutLine: {'line': b'[ 37%] Built target px4_msgs__rosidl_typesupport_cpp\n'}
+[0.911276] (px4_msgs) StdoutLine: {'line': b'[ 61%] Built target px4_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.911910] (px4_msgs) StdoutLine: {'line': b'[ 62%] Built target px4_msgs__rosidl_typesupport_c\n'}
+[0.924947] (px4_msgs) StdoutLine: {'line': b'[ 75%] Built target px4_msgs__rosidl_typesupport_introspection_c\n'}
+[1.006762] (-) TimerEvent: {}
+[1.064689] (px4_msgs) StdoutLine: {'line': b'[ 88%] Built target px4_msgs__rosidl_typesupport_fastrtps_c\n'}
+[1.106986] (-) TimerEvent: {}
+[1.108416] (px4_msgs) StdoutLine: {'line': b'[ 88%] Built target px4_msgs\n'}
+[1.193913] (px4_msgs) StdoutLine: {'line': b'[ 88%] Built target px4_msgs__py\n'}
+[1.207228] (-) TimerEvent: {}
+[1.308201] (-) TimerEvent: {}
+[1.371060] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__python\n'}
+[1.408445] (-) TimerEvent: {}
+[1.414470] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__rosidl_typesupport_c__pyext\n'}
+[1.420111] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[1.421373] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.447676] (px4_msgs) CommandEnded: {'returncode': 0}
+[1.509411] (-) TimerEvent: {}
+[1.610697] (-) TimerEvent: {}
+[1.636378] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:107:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid CompRoutine::vehicle_status_callback(px4_msgs::msg::VehicleStatus_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99 cannot be overloaded with \xe2\x80\x98\x1b[01m\x1b[Kvoid CompRoutine::vehicle_status_callback(px4_msgs::msg::VehicleStatus_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.637281] (comp_routine) StderrLine: {'line': b'  107 |   void \x1b[01;31m\x1b[Kvehicle_status_callback\x1b[m\x1b[K(const px4_msgs::msg::VehicleStatus::SharedPtr msg) {\n'}
+[1.637649] (comp_routine) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.638002] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:24:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kvoid CompRoutine::vehicle_status_callback(px4_msgs::msg::VehicleStatus_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.638367] (comp_routine) StderrLine: {'line': b'   24 |   void \x1b[01;36m\x1b[Kvehicle_status_callback\x1b[m\x1b[K(const px4_msgs::msg::VehicleStatus::SharedPtr msg);\n'}
+[1.638722] (comp_routine) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.639070] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:123:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid CompRoutine::run_state_machine()\x1b[m\x1b[K\xe2\x80\x99 cannot be overloaded with \xe2\x80\x98\x1b[01m\x1b[Kvoid CompRoutine::run_state_machine()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.639635] (comp_routine) StderrLine: {'line': b'  123 |   void \x1b[01;31m\x1b[Krun_state_machine\x1b[m\x1b[K() {\n'}
+[1.639984] (comp_routine) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.640335] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:36:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kvoid CompRoutine::run_state_machine()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.640727] (comp_routine) StderrLine: {'line': b'   36 |   void \x1b[01;36m\x1b[Krun_state_machine\x1b[m\x1b[K();\n'}
+[1.641077] (comp_routine) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.641425] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[1.641778] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:77:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected identifier before \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.642170] (comp_routine) StderrLine: {'line': b'   77 |     if (offboard_setpoint_counter_++ >= 10) && \x1b[01;31m\x1b[K(\x1b[m\x1b[K!armed_){\n'}
+[1.642520] (comp_routine) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.642873] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:77:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktaking the address of a label is non-standard [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[1.649549] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid CompRoutine::vehicle_status_callback(px4_msgs::msg::VehicleStatus_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.650166] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:109:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst class std::shared_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Karming_state\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.650540] (comp_routine) StderrLine: {'line': b'  109 |    armed_ = msg.\x1b[01;31m\x1b[Karming_state\x1b[m\x1b[K == 2\n'}
+[1.650891] (comp_routine) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.677290] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid mySigintHandler(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.678003] (comp_routine) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:230:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksig\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.678372] (comp_routine) StderrLine: {'line': b'  230 | void mySigintHandler(\x1b[01;35m\x1b[Kint sig\x1b[m\x1b[K) {\n'}
+[1.678731] (comp_routine) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[1.710936] (-) TimerEvent: {}
+[1.811864] (-) TimerEvent: {}
+[1.912902] (-) TimerEvent: {}
+[2.013953] (-) TimerEvent: {}
+[2.114997] (-) TimerEvent: {}
+[2.215997] (-) TimerEvent: {}
+[2.316977] (-) TimerEvent: {}
+[2.417807] (-) TimerEvent: {}
+[2.518641] (-) TimerEvent: {}
+[2.619488] (-) TimerEvent: {}
+[2.720661] (-) TimerEvent: {}
+[2.821517] (-) TimerEvent: {}
+[2.848236] (comp_routine) StderrLine: {'line': b'make[2]: *** [CMakeFiles/comp_routine.dir/build.make:76: CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o] Error 1\n'}
+[2.850195] (comp_routine) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comp_routine.dir/all] Error 2\n'}
+[2.853276] (comp_routine) StderrLine: {'line': b'make: *** [Makefile:146: all] Error 2\n'}
+[2.856420] (comp_routine) CommandEnded: {'returncode': 2}
+[2.921795] (-) TimerEvent: {}
+[2.952710] (comp_routine) JobEnded: {'identifier': 'comp_routine', 'rc': 2}
+[3.022030] (-) TimerEvent: {}
+[3.123123] (-) TimerEvent: {}
+[3.224359] (-) TimerEvent: {}
+[3.326083] (-) TimerEvent: {}
+[3.427455] (-) TimerEvent: {}
+[3.528615] (-) TimerEvent: {}
+[3.629738] (-) TimerEvent: {}
+[3.731088] (-) TimerEvent: {}
+[3.832904] (-) TimerEvent: {}
+[3.934065] (-) TimerEvent: {}
+[4.035371] (-) TimerEvent: {}
+[4.137072] (-) TimerEvent: {}
+[4.238478] (-) TimerEvent: {}
+[4.339588] (-) TimerEvent: {}
+[4.440763] (-) TimerEvent: {}
+[4.541906] (-) TimerEvent: {}
+[4.643033] (-) TimerEvent: {}
+[4.744191] (-) TimerEvent: {}
+[4.845397] (-) TimerEvent: {}
+[4.946467] (-) TimerEvent: {}
+[5.047703] (-) TimerEvent: {}
+[5.149139] (-) TimerEvent: {}
+[5.250592] (-) TimerEvent: {}
+[5.351807] (-) TimerEvent: {}
+[5.452966] (-) TimerEvent: {}
+[5.554330] (-) TimerEvent: {}
+[5.655471] (-) TimerEvent: {}
+[5.756717] (-) TimerEvent: {}
+[5.857842] (-) TimerEvent: {}
+[5.959270] (-) TimerEvent: {}
+[6.060736] (-) TimerEvent: {}
+[6.161826] (-) TimerEvent: {}
+[6.262978] (-) TimerEvent: {}
+[6.364148] (-) TimerEvent: {}
+[6.465587] (-) TimerEvent: {}
+[6.566672] (-) TimerEvent: {}
+[6.668256] (-) TimerEvent: {}
+[6.769914] (-) TimerEvent: {}
+[6.871040] (-) TimerEvent: {}
+[6.973905] (-) TimerEvent: {}
+[7.075089] (-) TimerEvent: {}
+[7.176562] (-) TimerEvent: {}
+[7.277676] (-) TimerEvent: {}
+[7.379051] (-) TimerEvent: {}
+[7.480457] (-) TimerEvent: {}
+[7.581604] (-) TimerEvent: {}
+[7.682778] (-) TimerEvent: {}
+[7.784022] (-) TimerEvent: {}
+[7.885193] (-) TimerEvent: {}
+[7.986315] (-) TimerEvent: {}
+[8.087439] (-) TimerEvent: {}
+[8.189476] (-) TimerEvent: {}
+[8.290610] (-) TimerEvent: {}
+[8.391707] (-) TimerEvent: {}
+[8.492950] (-) TimerEvent: {}
+[8.594129] (-) TimerEvent: {}
+[8.695244] (-) TimerEvent: {}
+[8.796656] (-) TimerEvent: {}
+[8.897961] (-) TimerEvent: {}
+[8.999559] (-) TimerEvent: {}
+[9.100635] (-) TimerEvent: {}
+[9.201764] (-) TimerEvent: {}
+[9.303467] (-) TimerEvent: {}
+[9.404753] (-) TimerEvent: {}
+[9.505897] (-) TimerEvent: {}
+[9.607392] (-) TimerEvent: {}
+[9.708490] (-) TimerEvent: {}
+[9.809817] (-) TimerEvent: {}
+[9.911067] (-) TimerEvent: {}
+[10.012167] (-) TimerEvent: {}
+[10.113491] (-) TimerEvent: {}
+[10.214747] (-) TimerEvent: {}
+[10.316016] (-) TimerEvent: {}
+[10.417498] (-) TimerEvent: {}
+[10.519358] (-) TimerEvent: {}
+[10.620486] (-) TimerEvent: {}
+[10.721592] (-) TimerEvent: {}
+[10.822710] (-) TimerEvent: {}
+[10.923963] (-) TimerEvent: {}
+[11.025401] (-) TimerEvent: {}
+[11.126590] (-) TimerEvent: {}
+[11.227741] (-) TimerEvent: {}
+[11.328870] (-) TimerEvent: {}
+[11.429982] (-) TimerEvent: {}
+[11.531079] (-) TimerEvent: {}
+[11.632196] (-) TimerEvent: {}
+[11.733414] (-) TimerEvent: {}
+[11.835999] (-) TimerEvent: {}
+[11.937540] (-) TimerEvent: {}
+[12.038908] (-) TimerEvent: {}
+[12.140125] (-) TimerEvent: {}
+[12.241438] (-) TimerEvent: {}
+[12.342562] (-) TimerEvent: {}
+[12.443698] (-) TimerEvent: {}
+[12.545034] (-) TimerEvent: {}
+[12.646240] (-) TimerEvent: {}
+[12.747375] (-) TimerEvent: {}
+[12.848648] (-) TimerEvent: {}
+[12.949855] (-) TimerEvent: {}
+[13.051018] (-) TimerEvent: {}
+[13.152122] (-) TimerEvent: {}
+[13.253517] (-) TimerEvent: {}
+[13.354735] (-) TimerEvent: {}
+[13.455882] (-) TimerEvent: {}
+[13.557317] (-) TimerEvent: {}
+[13.659061] (-) TimerEvent: {}
+[13.760205] (-) TimerEvent: {}
+[13.861970] (-) TimerEvent: {}
+[13.963047] (-) TimerEvent: {}
+[14.064532] (-) TimerEvent: {}
+[14.165652] (-) TimerEvent: {}
+[14.266993] (-) TimerEvent: {}
+[14.368621] (-) TimerEvent: {}
+[14.469700] (-) TimerEvent: {}
+[14.570988] (-) TimerEvent: {}
+[14.672734] (-) TimerEvent: {}
+[14.773914] (-) TimerEvent: {}
+[14.875590] (-) TimerEvent: {}
+[14.976854] (-) TimerEvent: {}
+[15.078160] (-) TimerEvent: {}
+[15.179292] (-) TimerEvent: {}
+[15.280464] (-) TimerEvent: {}
+[15.381947] (-) TimerEvent: {}
+[15.483559] (-) TimerEvent: {}
+[15.584976] (-) TimerEvent: {}
+[15.686304] (-) TimerEvent: {}
+[15.787895] (-) TimerEvent: {}
+[15.889100] (-) TimerEvent: {}
+[15.990454] (-) TimerEvent: {}
+[16.091570] (-) TimerEvent: {}
+[16.192942] (-) TimerEvent: {}
+[16.296698] (px4_msgs) JobEnded: {'identifier': 'px4_msgs', 'rc': 'SIGINT'}
+[16.301785] (-) TimerEvent: {}
+[16.308852] (px4_ros_com) JobSkipped: {'identifier': 'px4_ros_com'}
+[16.309066] (-) EventReactorShutdown: {}

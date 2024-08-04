@@ -1,0 +1,4 @@
+[0.085s] Invoking command in '/root/ws_offboard_control/build/rb5_ros2_vision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/rb5_ros2_vision -- -j8 -l8
+[0.164s] [ 50%] [32mBuilding CXX object CMakeFiles/rb_camera_ocv_node.dir/src/rb_camera_ocv_node.cpp.o[0m
+[5.779s] [100%] [32m[1mLinking CXX executable rb_camera_ocv_node[0m
+[6.211s] [100%] Built target rb_camera_ocv_node

@@ -1,0 +1,17 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o[0m
+[01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:224:17:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kvoid (*)()[m[K’ to ‘[01m[K__sighandler_t[m[K’ {aka ‘[01m[Kvoid (*)(int)[m[K’} [[01;31m[K-fpermissive[m[K]
+  224 |  signal(SIGINT, [01;31m[KmySigintHandler[m[K);
+      |                 [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                 [01;31m[K|[m[K
+      |                 [01;31m[Kvoid (*)()[m[K
+In file included from [01m[K/usr/include/c++/9/csignal:42[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:143[m[K,
+                 from [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:5[m[K:
+[01m[K/usr/include/signal.h:88:57:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid (* signal(int, __sighandler_t))(int)[m[K’
+   88 | ern __sighandler_t signal (int __sig, [01;36m[K__sighandler_t __handler[m[K)
+      |                                       [01;36m[K~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+
+make[2]: *** [CMakeFiles/comp_routine.dir/build.make:76: CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comp_routine.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

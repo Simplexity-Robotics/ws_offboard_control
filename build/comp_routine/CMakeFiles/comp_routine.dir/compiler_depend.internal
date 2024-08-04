@@ -19,11 +19,16 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o
  /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__struct.hpp
  /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__traits.hpp
  /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_control_mode__type_support.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__builder.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__struct.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__traits.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/detail/vehicle_status__type_support.hpp
  /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/offboard_control_mode.hpp
  /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_attitude_setpoint.hpp
  /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_command.hpp
  /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_control_mode.hpp
+ /opt/motovisio/ros_ws/install/px4_msgs/include/px4_msgs/msg/vehicle_status.hpp
  /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__builder.hpp
  /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp
  /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__traits.hpp
@@ -325,15 +330,19 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o
  /usr/include/aarch64-linux-gnu/asm/sve_context.h
  /usr/include/aarch64-linux-gnu/asm/types.h
  /usr/include/aarch64-linux-gnu/bits/byteswap.h
+ /usr/include/aarch64-linux-gnu/bits/confname.h
  /usr/include/aarch64-linux-gnu/bits/cpu-set.h
  /usr/include/aarch64-linux-gnu/bits/endian.h
  /usr/include/aarch64-linux-gnu/bits/endianness.h
+ /usr/include/aarch64-linux-gnu/bits/environments.h
  /usr/include/aarch64-linux-gnu/bits/errno.h
  /usr/include/aarch64-linux-gnu/bits/floatn-common.h
  /usr/include/aarch64-linux-gnu/bits/floatn.h
  /usr/include/aarch64-linux-gnu/bits/flt-eval-method.h
  /usr/include/aarch64-linux-gnu/bits/fp-fast.h
  /usr/include/aarch64-linux-gnu/bits/fp-logb.h
+ /usr/include/aarch64-linux-gnu/bits/getopt_core.h
+ /usr/include/aarch64-linux-gnu/bits/getopt_posix.h
  /usr/include/aarch64-linux-gnu/bits/iscanonical.h
  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h
  /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h
@@ -343,6 +352,7 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o
  /usr/include/aarch64-linux-gnu/bits/mathcalls-helper-functions.h
  /usr/include/aarch64-linux-gnu/bits/mathcalls-narrow.h
  /usr/include/aarch64-linux-gnu/bits/mathcalls.h
+ /usr/include/aarch64-linux-gnu/bits/posix_opt.h
  /usr/include/aarch64-linux-gnu/bits/procfs-extra.h
  /usr/include/aarch64-linux-gnu/bits/procfs-id.h
  /usr/include/aarch64-linux-gnu/bits/procfs-prregset.h
@@ -409,6 +419,7 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o
  /usr/include/aarch64-linux-gnu/bits/types/wint_t.h
  /usr/include/aarch64-linux-gnu/bits/typesizes.h
  /usr/include/aarch64-linux-gnu/bits/uintn-identity.h
+ /usr/include/aarch64-linux-gnu/bits/unistd_ext.h
  /usr/include/aarch64-linux-gnu/bits/waitflags.h
  /usr/include/aarch64-linux-gnu/bits/waitstatus.h
  /usr/include/aarch64-linux-gnu/bits/wchar.h
@@ -610,6 +621,7 @@ CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o
  /usr/include/string.h
  /usr/include/strings.h
  /usr/include/time.h
+ /usr/include/unistd.h
  /usr/include/wchar.h
  /usr/include/wctype.h
  /usr/lib/gcc/aarch64-linux-gnu/9/include/stdalign.h

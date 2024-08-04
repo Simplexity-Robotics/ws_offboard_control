@@ -1,0 +1,40 @@
+[0.030s] Invoking command in '/root/ws_offboard_control/build/comp_routine': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/comp_routine -- -j8 -l8
+[0.149s] [ 50%] [32mBuilding CXX object CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o[0m
+[1.598s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:107:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid CompRoutine::vehicle_status_callback(px4_msgs::msg::VehicleStatus_<std::allocator<void> >::SharedPtr)[m[K’ cannot be overloaded with ‘[01m[Kvoid CompRoutine::vehicle_status_callback(px4_msgs::msg::VehicleStatus_<std::allocator<void> >::SharedPtr)[m[K’
+[1.598s]   107 |   void [01;31m[Kvehicle_status_callback[m[K(const px4_msgs::msg::VehicleStatus::SharedPtr msg) {
+[1.598s]       |        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.599s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:24:8:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kvoid CompRoutine::vehicle_status_callback(px4_msgs::msg::VehicleStatus_<std::allocator<void> >::SharedPtr)[m[K’
+[1.599s]    24 |   void [01;36m[Kvehicle_status_callback[m[K(const px4_msgs::msg::VehicleStatus::SharedPtr msg);
+[1.600s]       |        [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.600s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:123:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid CompRoutine::run_state_machine()[m[K’ cannot be overloaded with ‘[01m[Kvoid CompRoutine::run_state_machine()[m[K’
+[1.600s]   123 |   void [01;31m[Krun_state_machine[m[K() {
+[1.601s]       |        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.601s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:36:8:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kvoid CompRoutine::run_state_machine()[m[K’
+[1.601s]    36 |   void [01;36m[Krun_state_machine[m[K();
+[1.602s]       |        [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[1.604s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:[m[K In constructor ‘[01m[KCompRoutine::CompRoutine()[m[K’:
+[1.604s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:68:4:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle_status_subcriber[m[K’ was not declared in this scope; did you mean ‘[01m[Kvehicle_status_subscriber_[m[K’?
+[1.605s]    68 |    [01;31m[Kvehicle_status_subcriber[m[K = this->create_subscription<px4_msgs::msg::VehicleStatus>("/fmu/out/vehicle_status", qos_profile, std::bind(&OffboardPlane::vehicle_status_callback, this, std::placeholders::_1));
+[1.605s]       |    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.605s]       |    [32m[Kvehicle_status_subscriber_[m[K
+[1.606s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:68:138:[m[K [01;31m[Kerror: [m[K‘[01m[KOffboardPlane[m[K’ has not been declared
+[1.606s]    68 | le_status_subcriber = this->create_subscription<px4_msgs::msg::VehicleStatus>("/fmu/out/vehicle_status", qos_profile, std::bind(&[01;31m[KOffboardPlane[m[K::vehicle_status_callback, this, std::placeholders::_1));
+[1.607s]       |                                                                                                                                  [01;31m[K^~~~~~~~~~~~~[m[K
+[1.607s] 
+[1.607s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:[m[K In lambda function:
+[1.608s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:77:48:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K([m[K’ token
+[1.608s]    77 |     if (offboard_setpoint_counter_++ >= 10) && [01;31m[K([m[K!armed_){
+[1.608s]       |                                                [01;31m[K^[m[K
+[1.610s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:77:48:[m[K [01;35m[Kwarning: [m[Ktaking the address of a label is non-standard [[01;35m[K-Wpedantic[m[K]
+[1.613s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:[m[K In member function ‘[01m[Kvoid CompRoutine::vehicle_status_callback(px4_msgs::msg::VehicleStatus_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.614s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:109:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Karming_state[m[K’
+[1.615s]   109 |    armed_ = msg.[01;31m[Karming_state[m[K == 2
+[1.615s]       |                 [01;31m[K^~~~~~~~~~~~[m[K
+[1.642s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:[m[K In function ‘[01m[Kvoid mySigintHandler(int)[m[K’:
+[1.642s] [01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:230:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksig[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.642s]   230 | void mySigintHandler([01;35m[Kint sig[m[K) {
+[1.643s]       |                      [01;35m[K~~~~^~~[m[K
+[2.839s] make[2]: *** [CMakeFiles/comp_routine.dir/build.make:76: CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o] Error 1
+[2.842s] make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comp_routine.dir/all] Error 2
+[2.843s] make: *** [Makefile:146: all] Error 2
+[2.848s] Invoked command in '/root/ws_offboard_control/build/comp_routine' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/ws_offboard_control/build/comp_routine -- -j8 -l8
