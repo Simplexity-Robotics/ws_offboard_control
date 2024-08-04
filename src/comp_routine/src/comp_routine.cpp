@@ -3,6 +3,7 @@
 #include <px4_msgs/msg/vehicle_command.hpp>
 #include <px4_msgs/msg/vehicle_control_mode.hpp>
 #include <px4_msgs/msg/vehicle_status.hpp>
+#include <px4_msgs/msg/vehicle_status.hpp>
 #include <rclcpp/rclcpp.hpp>
 #include <stdint.h>
 
@@ -31,9 +32,18 @@ class CompRoutine : public rclcpp::Node {
 				armed_ = true;
 			}
 		}
+		rclcpp::Subscription<px4_msgs::msg::VehicleStatus>::SharedPtr vehicle_status_subscriber_;
+
+		void vehicle_status_callback(const px4_msgs::msg::VehicleStatus::SharedPtr msg) {
+			// look for arming state
+			if (msg->arming_state == 2) {
+				armed_ = true;
+			}
+		}
 
 		std::atomic<uint64_t> timestamp_;   //!< common synced timestamped
 
+		uint64_t offboard_setpoint_counter_;   //!< counter for the number of setpoints sent
 		uint64_t offboard_setpoint_counter_;   //!< counter for the number of setpoints sent
 
 		void publish_offboard_control_mode();
@@ -47,8 +57,18 @@ class CompRoutine : public rclcpp::Node {
 
 		void move(double x, double y, double z, double angle, double seconds);
 		void wait(double seconds);
+		
+		double toRadians(double degree);
+
+		double forwardDirection = 0.0;
+		double returnDirection =  0.0;
+
+		void move(double x, double y, double z, double angle, double seconds);
+		void wait(double seconds);
 
 		enum State {
+			INIT,
+			WAIT,
 			INIT,
 			WAIT,
 			SEARCH,
@@ -56,10 +76,14 @@ class CompRoutine : public rclcpp::Node {
 			GATE,
 			TURN,
 			HOME,
+			TURN,
+			HOME,
 			DISARM,
+			IDLE
 			IDLE
 		};
 
+		State currentState = State::INIT;
 		State currentState = State::INIT;
 
 		bool armed_ = false;
@@ -75,6 +99,12 @@ class CompRoutine : public rclcpp::Node {
 			qos_profile.history(RMW_QOS_POLICY_HISTORY_KEEP_LAST);
 			qos_profile.keep_last(1);
 
+			rclcpp::QoS qos_profile = rclcpp::QoS(rclcpp::KeepLast(10));
+			qos_profile.reliability(RMW_QOS_POLICY_RELIABILITY_BEST_EFFORT);
+			qos_profile.durability(RMW_QOS_POLICY_DURABILITY_TRANSIENT_LOCAL);
+			qos_profile.history(RMW_QOS_POLICY_HISTORY_KEEP_LAST);
+			qos_profile.keep_last(1);
+
 			offboard_control_mode_publisher_ = this->create_publisher<OffboardControlMode>("/fmu/in/offboard_control_mode", 10);
 			attitude_setpoint_publisher_ = this->create_publisher<VehicleAttitudeSetpoint>("/fmu/in/vehicle_attitude_setpoint", 10);
 			vehicle_command_publisher_ = this->create_publisher<VehicleCommand>("/fmu/in/vehicle_command", 10);
@@ -82,7 +112,7 @@ class CompRoutine : public rclcpp::Node {
 
 			offboard_setpoint_counter_ = 0;
 
-			forwardDirection = toRadians(240.0);
+			forwardDirection = toRadians(230.0);
 			returnDirection = toRadians(60.0);
 
 			auto timer_callback = [this]() -> void {
@@ -139,6 +169,7 @@ class CompRoutine : public rclcpp::Node {
 		void arm() {
 			publish_vehicle_command(VehicleCommand::VEHICLE_CMD_COMPONENT_ARM_DISARM, 1.0);
 			RCLCPP_INFO(this->get_logger(), "ARM command send");
+			RCLCPP_INFO(this->get_logger(), "ARM command send");
 		}
 
 		void disarm() {
@@ -151,6 +182,9 @@ class CompRoutine : public rclcpp::Node {
 		std::chrono::steady_clock::time_point start;
 
 		void run_state_machine() {
+		std::chrono::steady_clock::time_point start;
+
+		void run_state_machine() {
 			switch (currentState) {
 				case INIT:
 					start = std::chrono::steady_clock::now(); // Get the start time
@@ -159,7 +193,33 @@ class CompRoutine : public rclcpp::Node {
 				case WAIT:
 					std::cout << "WAIT" << std::endl;
 					publish_attitude_setpoint(0.0, 0.0, 0.0, forwardDirection, 0.0, 0.0);
+				case INIT:
+					start = std::chrono::steady_clock::now(); // Get the start time
+					currentState = State::WAIT;	
+					break;
+				case WAIT:
+					std::cout << "WAIT" << std::endl;
+					publish_attitude_setpoint(0.0, 0.0, 0.0, forwardDirection, 0.0, 0.0);
 
+					if (std::chrono::steady_clock::now() > start + std::chrono::duration<double>(10)) { // check to see if we have waited 10 secs
+						start = std::chrono::steady_clock::now(); // Reset the start time
+						currentState = State::GATE;
+					}
+					break;
+				case GATE:
+					std::cout << "GATE" << std::endl;
+					publish_attitude_setpoint(0.3, 0.0, 0.1, forwardDirection, 0.0, 0.0);
+					if (std::chrono::steady_clock::now() > start + std::chrono::duration<double>(15)) { // check to see if we have waited 15 secs
+						start = std::chrono::steady_clock::now(); // Reset the start time
+						currentState = State::TURN;
+					}
+					break;
+				case TURN:
+					std::cout << "TURN" << std::endl;
+					publish_attitude_setpoint(0.0, 0.0, 0.2, returnDirection, 0.0, 0.0);
+					if (std::chrono::steady_clock::now() > start + std::chrono::duration<double>(8)) { // check to see if we have waited 5 secs
+						start = std::chrono::steady_clock::now(); // Reset the start time
+						currentState = State::HOME;
 					if (std::chrono::steady_clock::now() > start + std::chrono::duration<double>(10)) { // check to see if we have waited 10 secs
 						start = std::chrono::steady_clock::now(); // Reset the start time
 						currentState = State::GATE;
@@ -188,6 +248,14 @@ class CompRoutine : public rclcpp::Node {
 						start = std::chrono::steady_clock::now(); // Reset the start time
 						currentState = State::IDLE;
 					}
+					break; 
+				case HOME:
+					std::cout << "HOME" << std::endl;
+					publish_attitude_setpoint(0.3, 0.0, 0.1, returnDirection, 0.0, 0.0);
+					if (std::chrono::steady_clock::now() > start + std::chrono::duration<double>(13)) { // check to see if we have waited 13 secs
+						start = std::chrono::steady_clock::now(); // Reset the start time
+						currentState = State::IDLE;
+					}
 					break;
 				case SEARCH:
 					std::cout << "SEARCH" << std::endl;
@@ -203,14 +271,24 @@ class CompRoutine : public rclcpp::Node {
 						start = std::chrono::steady_clock::now(); // Reset the start time
 						currentState = State::DISARM;
 					}
+				case IDLE:
+					std::cout << "IDLE" << std::endl;
+					publish_attitude_setpoint(0.0, 0.0, 0.0, returnDirection, 0.0, 0.0);
+
+					if (std::chrono::steady_clock::now() > start + std::chrono::duration<double>(2)) { // check to see if we have waited 10 secs
+						start = std::chrono::steady_clock::now(); // Reset the start time
+						currentState = State::DISARM;
+					}
 					break;
 				case DISARM:
 					std::cout << "DISARM" << std::endl;
+					shutdown_ = true;
 					shutdown_ = true;
 					break;
 			}
 		}
 };
+
 
 
 /**
@@ -262,7 +340,14 @@ void CompRoutine::wait(double seconds) {
     while (std::chrono::steady_clock::now() < end) {
 		std::cout << "waiting" << std::endl;
 		publish_offboard_control_mode();
+		std::cout << "waiting" << std::endl;
+		publish_offboard_control_mode();
     }
+}
+
+double CompRoutine::toRadians(double degrees) {
+	double pi = 3.14159265359;
+	return degrees * (pi / 180);
 }
 
 double CompRoutine::toRadians(double degrees) {
