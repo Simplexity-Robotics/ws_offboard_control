@@ -1,9 +1,0 @@
-to run the comp_routine you need to do the following commands:
-
-colcon build (make sure you do this in the ws_offboard_control directory. it will build the comp routine package)
-ros2 run comp_routine comp_routine
-
-some other helpful commands:
-
-ps -ax | grep "comp" (this can be used to check if the comp routine node is still running)
-kill -9 [enter process number] (this can be used to force kill a node)

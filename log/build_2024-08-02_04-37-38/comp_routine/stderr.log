@@ -1,7 +1,0 @@
-[01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:[m[K In function ‘[01m[Kvoid mySigintHandler(int)[m[K’:
-[01m[K/root/ws_offboard_control/src/comp_routine/src/comp_routine.cpp:285:10:[m[K [01;31m[Kerror: [m[K‘[01m[KturnOffThrusters[m[K’ is not a member of ‘[01m[Krclcpp[m[K’
-  285 |  rclcpp::[01;31m[KturnOffThrusters[m[K();
-      |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
-make[2]: *** [CMakeFiles/comp_routine.dir/build.make:76: CMakeFiles/comp_routine.dir/src/comp_routine.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/comp_routine.dir/all] Error 2
-make: *** [Makefile:146: all] Error 2
