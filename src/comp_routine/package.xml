@@ -3,8 +3,8 @@
 <package format="3">
   <name>comp_routine</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="hudson.n.kim@gmail.com">root</maintainer>
+  <description>Comp Routine</description>
+  <maintainer email="hudson.n.kim@gmail.com">Hudson Kim</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>

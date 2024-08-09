@@ -1,0 +1,24 @@
+<package format="2">
+  <name>buoy_detector</name>  <!-- This should match the project name in CMakeLists.txt -->
+  <version>0.0.0</version>
+  <description>The buoy_detector package</description>
+
+  <maintainer email="user@example.com">user</maintainer>
+
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>OpenCV</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

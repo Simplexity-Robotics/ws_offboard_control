@@ -4,6 +4,7 @@
 #include <px4_msgs/msg/vehicle_control_mode.hpp>
 #include <px4_msgs/msg/vehicle_status.hpp>
 #include <rclcpp/rclcpp.hpp>
+#include <geometry_msgs/msg/point.hpp>
 #include <stdint.h>
 
 #include <chrono>
@@ -24,13 +25,7 @@ class CompRoutine : public rclcpp::Node {
 		rclcpp::Publisher<VehicleAttitudeSetpoint>::SharedPtr attitude_setpoint_publisher_;
 		rclcpp::Publisher<VehicleCommand>::SharedPtr vehicle_command_publisher_;
 		rclcpp::Subscription<px4_msgs::msg::VehicleStatus>::SharedPtr vehicle_status_subscriber_;
-
-		void vehicle_status_callback(const px4_msgs::msg::VehicleStatus::SharedPtr msg) {
-			// look for arming state
-			if (msg->arming_state == 2) {
-				armed_ = true;
-			}
-		}
+		rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr buoy_detector_subscriber_;
 
 		std::atomic<uint64_t> timestamp_;   //!< common synced timestamped
 
@@ -41,9 +36,9 @@ class CompRoutine : public rclcpp::Node {
 		void publish_vehicle_command(uint16_t command, float param1 = 0.0, float param2 = 0.0);
 		
 		double toRadians(double degree);
+		double toDegrees(double radians);
 
-		double forwardDirection = 0.0;
-		double returnDirection =  0.0;
+		double searchDirection = 0.0;
 
 		void move(double x, double y, double z, double angle, double seconds);
 		void wait(double seconds);
@@ -51,11 +46,12 @@ class CompRoutine : public rclcpp::Node {
 		enum State {
 			INIT,
 			WAIT,
-			SEARCH,
-			ALIGN,
+			DESCEND,
+			SEARCH_FOR_BUOY,
+			BUOY,
 			GATE,
-			TURN,
-			HOME,
+			STYLE_YAW,
+			STYLE_ROLL,
 			DISARM,
 			IDLE
 		};
@@ -64,8 +60,62 @@ class CompRoutine : public rclcpp::Node {
 
 		bool armed_ = false;
 		bool shutdown_ = false;
-		double currentHeading_ = toRadians(230.0);
-		bool foundTarget = false;
+
+		void vehicle_status_callback(const px4_msgs::msg::VehicleStatus::SharedPtr msg) {
+			// look for arming state
+			if (msg->arming_state == 2) {
+				armed_ = true;
+			}
+		}
+
+		double downPower = 0.15;
+		double descendPower = 0.25;
+		double gateTime = 16.0;
+		double waitTime = 10.0;
+		double armWaitTime = 20.0;
+
+		bool foundBuoy = false;
+		double yPixelError = 0.0;
+		double zPixelError = 0.0;
+
+		double forwardHeading = 0.0;
+		double currentHeading_ = 0.0;
+		int search_counter = 0;
+		int min_search_angle = 0; // whatever you put here must be divisble by the search_incrementor
+		int max_search_angle = 0;
+		int search_incrementor = 10;
+
+		double bestHeading = 0.0;
+		double bestHeadingYError = 0.0;
+
+		double calculatedBuoyHeading = 0.0;
+		double styleHeading = currentHeading_;
+
+		int styleCount = 0;
+
+		void buoy_detector_callback(const geometry_msgs::msg::Point::SharedPtr msg) {
+			yPixelError = (640/2) - msg->x;
+			zPixelError = (480/2) - msg->y;
+			
+			if ((currentState == SEARCH_FOR_BUOY && foundBuoy != true) || abs(yPixelError) < abs(bestHeadingYError)) {
+				foundBuoy = true;
+
+				bestHeading = currentHeading_;
+				bestHeadingYError = abs(yPixelError);
+			}
+
+			// if (abs(yPixelError) < 50) {
+			if (yPixelError > 0) { // positive
+				calculatedBuoyHeading = currentHeading_ - 1;
+			} else {
+				calculatedBuoyHeading = currentHeading_ + 1;
+			}
+			// }
+			
+			if (currentState == BUOY) {
+				std::cout << "calculatedBuoyHeading (deg): " << calculatedBuoyHeading << std::endl;
+			}
+		}
 
 	public:
 		CompRoutine() : Node("comp_routine") { // constructor
@@ -79,18 +129,34 @@ class CompRoutine : public rclcpp::Node {
 			attitude_setpoint_publisher_ = this->create_publisher<VehicleAttitudeSetpoint>("/fmu/in/vehicle_attitude_setpoint", 10);
 			vehicle_command_publisher_ = this->create_publisher<VehicleCommand>("/fmu/in/vehicle_command", 10);
 			vehicle_status_subscriber_ = this->create_subscription<VehicleStatus>("/fmu/out/vehicle_status", qos_profile, std::bind(&CompRoutine::vehicle_status_callback, this, std::placeholders::_1));
+			buoy_detector_subscriber_ = this->create_subscription<geometry_msgs::msg::Point>("/contour_center", 10, std::bind(&CompRoutine::buoy_detector_callback, this, std::placeholders::_1));
 
 			offboard_setpoint_counter_ = 0;
 
-			forwardDirection = toRadians(240.0);
-			returnDirection = toRadians(60.0);
+			this->declare_parameter<double>("forwardHeading", 0.0);
+			this->declare_parameter<double>("downPower", 0.2);
+			this->declare_parameter<double>("descendPower", 0.15);
+			this->declare_parameter<double>("gateTime", 16.0);
+			this->declare_parameter<double>("waitTime", 10.0);
+			this->declare_parameter<double>("armWaitTime", 20.0);
+
+			forwardHeading = this->get_parameter("forwardHeading").as_double();
+			downPower = this->get_parameter("downPower").as_double();
+			descendPower = this->get_parameter("descendPower").as_double();
+			gateTime = this->get_parameter("gateTime").as_double();
+			waitTime = this->get_parameter("waitTime").as_double();
+			armWaitTime = this->get_parameter("armWaitTime").as_double();
+
+			currentHeading_ = forwardHeading;
+			min_search_angle = forwardHeading - 40; // whatever you put here must be divisble by the search_incrementor
+			max_search_angle = forwardHeading + 40;
+			searchDirection = min_search_angle;
 
 			auto timer_callback = [this]() -> void {
-
 				// After 10 iterations (1 second) switch to offboard and ARM.  Keep sending the ARM command until the vehicle is ARMed
 				// If the vehicle is slightly moving it will not ARM so we will keep trying
 
-				if ((offboard_setpoint_counter_ >= 10) && (!armed_)) {
+				if ((offboard_setpoint_counter_ >= armWaitTime*10) && (!armed_)) {
 					RCLCPP_INFO(this->get_logger(), "Offboard command send");
 					// Change to Offboard mode after 10 setpoints
 					this->publish_vehicle_command(VehicleCommand::VEHICLE_CMD_DO_SET_MODE, 1, 6);
@@ -105,9 +171,9 @@ class CompRoutine : public rclcpp::Node {
 				}
 
 				if (!armed_) {
-					publish_attitude_setpoint(0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
+					publish_attitude_setpoint(0.0, 0.0, 0.0, forwardHeading, 0.0, 0.0);
 			
-					if (offboard_setpoint_counter_ > 100) {
+					if (offboard_setpoint_counter_ > (armWaitTime*10 + 200)) {
 						shutdown_ = true;
 					} 
 				} else {
@@ -149,57 +215,108 @@ class CompRoutine : public rclcpp::Node {
 		}
 
 		std::chrono::steady_clock::time_point start;
+		std::chrono::steady_clock::time_point start_of_style;
 
 		void run_state_machine() {
 			switch (currentState) {
 				case INIT:
 					start = std::chrono::steady_clock::now(); // Get the start time
-					currentState = State::WAIT;	
+					std::cout << "GOING INTO WAIT" << std::endl;
+					currentState = State::WAIT;
 					break;
 				case WAIT:
-					std::cout << "WAIT" << std::endl;
-					publish_attitude_setpoint(0.0, 0.0, 0.0, forwardDirection, 0.0, 0.0);
+					publish_attitude_setpoint(0.0, 0.0, 0.0, forwardHeading, 0.0, 0.0);
 
-					if (std::chrono::steady_clock::now() > start + std::chrono::duration<double>(10)) { // check to see if we have waited 10 secs
+					if (std::chrono::steady_clock::now() > start + std::chrono::duration<double>(waitTime)) { // check to see if we have waited 10 secs
 						start = std::chrono::steady_clock::now(); // Reset the start time
-						currentState = State::GATE;
+						std::cout << "GOING INTO DESCEND" << std::endl;
+						currentState = State::DESCEND;
+					}
+					break;
+				case DESCEND:
+				std::cout << "descendPower: " << descendPower << std::endl;
+					publish_attitude_setpoint(0.0, 0.0, descendPower, forwardHeading, 0.0, 0.0);
+					if (std::chrono::steady_clock::now() > start + std::chrono::duration<double>(5)) { // check to see if we have waited 15 secs
+						start = std::chrono::steady_clock::now(); // Reset the start time
+						std::cout << "GOING INTO GATE" << std::endl;
+						currentState = State::GATE; // TODO: change to GATE
 					}
 					break;
 				case GATE:
-					std::cout << "GATE" << std::endl;
-					publish_attitude_setpoint(0.3, 0.0, 0.1, forwardDirection, 0.0, 0.0);
-					if (std::chrono::steady_clock::now() > start + std::chrono::duration<double>(15)) { // check to see if we have waited 15 secs
+					publish_attitude_setpoint(0.3, 0.0, downPower, forwardHeading, 0.0, 0.0);
+					if (std::chrono::steady_clock::now() > start + std::chrono::duration<double>(gateTime)) { // check to see if we have waited 15 secs
 						start = std::chrono::steady_clock::now(); // Reset the start time
-						currentState = State::TURN;
+						std::cout << "GOING INTO STYLE_YAW" << std::endl;
+
+						start_of_style = std::chrono::steady_clock::now();
+						styleHeading = currentHeading_;
+						currentState = State::STYLE_YAW;
 					}
 					break;
-				case TURN:
-					std::cout << "TURN" << std::endl;
-					publish_attitude_setpoint(0.0, 0.0, 0.2, returnDirection, 0.0, 0.0);
-					if (std::chrono::steady_clock::now() > start + std::chrono::duration<double>(8)) { // check to see if we have waited 5 secs
-						start = std::chrono::steady_clock::now(); // Reset the start time
-						currentState = State::HOME;
+				case STYLE_YAW:
+					if (std::chrono::steady_clock::now() > start_of_style + std::chrono::duration<double>(0.5)) { 
+						start_of_style = std::chrono::steady_clock::now();
+						styleHeading += 50;
 					}
-					break; 
-				case HOME:
-					std::cout << "HOME" << std::endl;
-					publish_attitude_setpoint(0.3, 0.0, 0.1, returnDirection, 0.0, 0.0);
-					if (std::chrono::steady_clock::now() > start + std::chrono::duration<double>(13)) { // check to see if we have waited 13 secs
+
+					publish_attitude_setpoint(0.0, 0.0, downPower, styleHeading, 0.0, 0.0);
+
+					if (std::chrono::steady_clock::now() > start + std::chrono::duration<double>(9)) { 
 						start = std::chrono::steady_clock::now(); // Reset the start time
+						styleHeading = 0.0;
+						start_of_style = std::chrono::steady_clock::now();
+						std::cout << "GOING INTO SEARCH FOR BUOY" << std::endl;
+
+						currentState = State::STYLE_ROLL;
+					}
+					break;
+				case STYLE_ROLL:
+					if (std::chrono::steady_clock::now() > start_of_style + std::chrono::duration<double>(0.5)) { 
+						start_of_style = std::chrono::steady_clock::now();
+						styleHeading += 50;
+						std::cout << "styleHeading: " << styleHeading << std::endl;
+					}
+
+					publish_attitude_setpoint(0.0, 0.0, downPower, 0.0, 0.0, styleHeading);
+
+					if (std::chrono::steady_clock::now() > start + std::chrono::duration<double>(13.5)) { 
+						start = std::chrono::steady_clock::now(); // Reset the start time
+						std::cout << "GOING INTO SEARCH FOR BUOY" << std::endl;
+						currentState = State::SEARCH_FOR_BUOY;
+					}	
+					break;
+				case SEARCH_FOR_BUOY:
+					publish_attitude_setpoint(0.0, 0.0, downPower, searchDirection, 0.0, 0.0);
+
+					if (std::chrono::steady_clock::now() > start + std::chrono::duration<double>(5)) { 
+						start = std::chrono::steady_clock::now(); // Reset the start time
+						searchDirection += search_incrementor;
+						if (searchDirection >= max_search_angle) { // we've finished the search pattern
+							searchDirection = min_search_angle;
+							if (foundBuoy) {
+								start = std::chrono::steady_clock::now(); // Reset the start time
+								std::cout << "GOING INTO BUOY" << std::endl;
+								publish_attitude_setpoint(0.0, 0.0, downPower, bestHeading, 0.0, 0.0);
+								calculatedBuoyHeading = bestHeading;
+								currentState = State::BUOY;
+							}
+						}
+					}
+					break;
+				case BUOY:
+					publish_attitude_setpoint(0.2, 0.0, downPower, calculatedBuoyHeading, 0.0, 0.0);
+
+					if (std::chrono::steady_clock::now() > start + std::chrono::duration<double>(60)) {
+						start = std::chrono::steady_clock::now(); // Reset the start time
+						std::cout << "GOING INTO IDLE" << std::endl;
 						currentState = State::IDLE;
 					}
 					break;
-				case SEARCH:
-					std::cout << "SEARCH" << std::endl;
-					break;
-				case ALIGN:
-					std::cout << "FOUND" << std::endl;
-					break;
 				case IDLE:
 					std::cout << "IDLE" << std::endl;
-					publish_attitude_setpoint(0.0, 0.0, 0.0, returnDirection, 0.0, 0.0);
+					publish_attitude_setpoint(0.0, 0.0, 0.0, forwardHeading, 0.0, 0.0);
 
-					if (std::chrono::steady_clock::now() > start + std::chrono::duration<double>(2)) { // check to see if we have waited 10 secs
+					if (std::chrono::steady_clock::now() > start + std::chrono::duration<double>(2)) { 
 						start = std::chrono::steady_clock::now(); // Reset the start time
 						currentState = State::DISARM;
 					}
@@ -229,17 +346,24 @@ void CompRoutine::publish_offboard_control_mode()
 	offboard_control_mode_publisher_->publish(msg);
 }
 
+double lastYaw = -1000;
 void CompRoutine::publish_attitude_setpoint(double x, double y, double z, double yaw, double pitch, double roll) {
 	VehicleAttitudeSetpoint msg{};
 	msg.timestamp = this->get_clock()->now().nanoseconds() / 1000;
 	msg.thrust_body[0] = x; // x
 	msg.thrust_body[1] = y; // y
 	msg.thrust_body[2] = z; // z
-	msg.yaw_body = yaw;
-	msg.pitch_body = pitch;
-	msg.roll_body = roll;
+	msg.yaw_body = toRadians(yaw);
+	msg.pitch_body = toRadians(pitch);
+	msg.roll_body = toRadians(roll);
 
+	currentHeading_ = yaw;
 	attitude_setpoint_publisher_->publish(msg);
+
+	if (lastYaw != yaw) {
+		std::cout << "currentTargetHeading (deg): " << yaw << std::endl;
+		lastYaw = yaw;
+	}
 }
 
 
@@ -270,6 +394,11 @@ double CompRoutine::toRadians(double degrees) {
 	return degrees * (pi / 180);
 }
 
+double CompRoutine::toDegrees(double radians) {
+	double pi = 3.14159265359;
+	return radians * (180 / pi);
+}
+
 /**
  * @brief Publish vehicle commands
  * @param command   Command code (matches VehicleCommand and MAVLink MAV_CMD codes)
@@ -297,6 +426,7 @@ void CompRoutine::publish_vehicle_command(uint16_t command, float param1, float 
 // 	rclcpp::shutdown();
 // }
 
+double inputHeading = 0;
 int main(int argc, char *argv[]) {
 	std::cout << "Starting comp routine..." << std::endl;
 	setvbuf(stdout, NULL, _IONBF, BUFSIZ);

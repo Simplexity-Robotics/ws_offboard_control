@@ -1,0 +1,8 @@
+comp_routine:
+  ros__parameters:
+    forwardHeading: 213.0 # must have .0 after the number
+    descendPower: 0.225 # 0.225
+    downPower: 0.175 # 0.215
+    gateTime: 18.0 # 18.0
+    waitTime: 5.0 # 5.0
+    armWaitTime: 10.0 # 20.0

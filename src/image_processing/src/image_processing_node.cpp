@@ -24,15 +24,10 @@ private:
     cv::cvtColor(frame, hsv_frame, cv::COLOR_BGR2HSV);
     
     // Define the range for orange/red color in HSV
-    cv::Scalar lower_red1(0, 100, 100);
-    cv::Scalar upper_red1(10, 255, 255);
-    cv::Scalar lower_red2(160, 100, 100);
-    cv::Scalar upper_red2(179, 255, 255);
+    cv::Scalar lower_bound(60, 17, 50);
+    cv::Scalar upper_bound(355, 100, 125);
     
-    cv::Mat mask1, mask2;
-    cv::inRange(hsv_frame, lower_red1, upper_red1, mask1);
-    cv::inRange(hsv_frame, lower_red2, upper_red2, mask2);
-    mask = mask1 | mask2;
+    cv::inRange(hsv_frame, lower_bound, upper_bound, mask);
 
     std::vector<std::vector<cv::Point>> contours;
     cv::findContours(mask, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
@@ -57,7 +52,7 @@ private:
       // Save the image with the bounding box
       auto timestamp = std::chrono::system_clock::now().time_since_epoch().count();
       std::string filename = "saved_images/image_" + std::to_string(timestamp) + ".png";
-      cv::imwrite(filename, frame);
+      cv::imwrite(filename, mask);
     }
 
     cv::waitKey(1);
